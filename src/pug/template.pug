@@ -1,0 +1,190 @@
+extends ./_default
+block vars
+    - var path = "./"
+    - var title = "テンプレート"
+    - var pageClass = ""
+
+block content
+
+    .l-container
+        .u-template
+            .u-gap
+                p .c-heading
+                .c-heading
+                    p.c-heading__sub 最新記事
+                    h2.c-heading__main Latest News
+
+                p .c-heading.c-heading--center
+                .c-heading.c-heading--center
+                    p.c-heading__sub 最新記事
+                    h2.c-heading__main Latest News
+                p .c-heading.c-heading--center.c-heading--sub
+                .c-heading.c-heading--center.c-heading--sub
+                    p.c-heading__sub 最新記事
+                    h2.c-heading__main Latest News
+                p .c-heading.c-heading--right.c-heading--sub
+                .c-heading.c-heading--right.c-heading--sub
+                    p.c-heading__sub 最新記事
+                    h2.c-heading__main Latest News
+                p .c-heading-bar
+                h2.c-heading-bar 2. 店舗比較一覧
+                p .c-heading-line
+                h2.c-heading-line 1.1 SWING24/7新宿店
+
+        .u-template
+            .u-gap
+                p .c-paragraph
+                p.c-paragraph
+                    | ゴルフで最も重要なショットの一つであるドライバーショット。ゴルフ初心者にとっては特に、正確な飛距離や方向性を得るのが難しいクラブです。しかし、平均飛距離を理解し、それに基づいた目標設定を行うことで、練習の方向性が明確になり、プレーの上達につながります。ここでは、ドライバーの平均飛距離と、効果的な目標設定法について解説します。
+        .u-template
+            .u-gap
+                p .c-btn-square
+                a(href="#").c-btn-square  もっと見る
+
+                p .c-btn-square.c-btn-square--sub
+                a(href="#").c-btn-square.c-btn-square--sub  もっと見る
+
+                p .c-btn-square.c-btn-square--sub
+                a(href="#").c-btn-square.c-btn-square--sub  もっと見る
+
+        .u-template
+            p .c-card-btn
+            .u-gap(style="flex-direction: row; gap: 30px;")
+                - for (var x = 1; x <= 3; x++)
+                    .c-card-btn
+                        a(href="#").c-card-btn__link
+                            figure.c-card-btn__pic
+                                img(src=img+"600x180.webp")
+                            .c-card-btn__wrap
+                                span.c-card-btn__title 福岡ゴルフスクール
+                                i.c-card-btn__ico
+                                    svg(width=20 height=20)
+                                        use(href="#ico-arrow-right")
+            p .c-card-article
+            .u-gap(style="flex-direction: row; gap: 30px;")
+                - for (var x = 1; x <= 3; x++)
+                    .c-card-article
+                        a(href="#").c-card-article__link
+                            figure.c-card-article__pic
+                                img(src=img+"600x450.webp" alt="")
+                            .c-card-article__meta
+                                span.c-card-article__date 2024年5月1日
+                                h3.c-card-article__title 親譲りの無鉄砲で小供の時から損ばかりしている
+
+        .u-template
+            p .cm-main-pagination
+            .cm-main-pagination
+                ul.cm-main-pagination__list
+                    li.cm-main-pagination__ctrl
+                        a(href="#")
+                            svg(width=20 height=20)
+                                use(href="#ico-arrow-left")
+                    li.cm-main-pagination__no.is-current
+                        span 1
+                    li.cm-main-pagination__no
+                        a(href="#") 2
+                    li.cm-main-pagination__no
+                        a(href="#") 3
+                    li.cm-main-pagination__ctrl
+                        a(href="#")
+                            svg(width=20 height=20)
+                                use(href="#ico-arrow-right")
+        .u-template
+            p .cm-article-shop
+            .u-gap
+                .cm-article-shops
+                    .cm-article-shops__head
+                        h3.c-heading-bar 1. 新宿のシミュレーションゴルフ練習場14選
+                    .cm-article-shops__list
+                        - for (var x = 1; x <= 2; x++)
+                            .cm-article-shop
+                                h3.cm-article-shop__title 1.1 SWING24/7新宿店
+                                figure.cm-article-shop__pic
+                                    img(src=img + "dummy-shop.jpg")
+                                p.cm-article-shop__desc
+                                    | 新宿3丁目駅から徒歩3分にあるインドアゴルフ練習場です。 24時間年中無休なのでお好きな時間に最新シミュレーターでゴルフ練習が思う存分行えます。 打ちっぱなし練習や、コース練習を天候に左右される事なくプライベート空間で思う存分楽しめるのが魅力です。初心者の方からプロの方まで使っていただける屋内ゴルフ練習場です。
+                                ul.cm-article-shop__spec
+                                    li
+                                        figure
+                                            img(src=img + "ico-24h.svg")
+                                            figcaption 24時間営業
+                                    li
+                                        figure
+                                            img(src=img + "ico-visitor.svg")
+                                            figcaption ビジターOK
+                                    li
+                                        figure
+                                            img(src=img + "ico-rental.svg")
+                                            figcaption 無料レンタル
+                                    li
+                                        figure
+                                            img(src=img + "ico-club.svg")
+                                            figcaption クラブ
+                                    li
+                                        figure
+                                            img(src=img + "ico-shoes.svg")
+                                            figcaption レンタルシューズ
+                                .cm-article-shop__info
+                                    dl
+                                        dt 住所
+                                        dd 東京都新宿区新宿5-10-6 THEKINDAI22SHINJUKU 1F A
+                                    dl
+                                        dt お問合せ番号
+                                        dd 03-6273-1085
+                                    dl
+                                        dt 営業時間
+                                        dd 24時間営業
+                                    dl
+                                        dt 駐車場
+                                        dd 無し　新宿三丁目駅 C7出口　徒歩3分
+                                    dl
+                                        dt 料金
+                                        dd (税込)14.800円～
+                                    dl
+                                        dt 打席数
+                                        dd 4打席
+                                    dl
+                                        dt シミュレーター
+                                        dd 【SWING24/7オリジナル】
+
+            p .cm-article-hikaku
+            .cm-article-hikaku
+                .cm-article-hikaku__head
+                    h3.c-heading-bar 2. 店舗比較一覧
+                .cm-article-hikaku__body
+                    table.cm-article-hikaku-table
+                        thead.cm-article-hikaku-table__head
+                            tr
+                                th 店舗名
+                                td 営業時間
+                                td 駐車場
+                                td 料金
+                                td 打席タイプ
+                                td 打席数
+                                td 左打席
+                                td 利用時間
+                        tbody.cm-article-hikaku-table__body
+                            - for (var x = 1; x <= 5; x++)
+                                tr
+                                    th
+                                        a(href="#")
+                                            figure
+                                                figcaption SWING24/7新宿店
+                                                img(src=img + "dummy-shop.jpg")
+                                    td 24時間
+                                    td 無し
+                                    td 14.800円～(税込)
+                                    td オープン
+                                    td 4打席
+                                    td 無し
+                                    td 60分
+
+
+
+
+
+
+
+
+
+

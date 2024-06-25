@@ -1,0 +1,31 @@
+
+/*----------------------------------------------------
+	c-btn
+----------------------------------------------------*/
+.c-btn-square {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+
+	width: 220/16+rem;
+	height: 60/16+rem;
+	background: #61c07b;
+
+	font-size: 17/16+rem;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	@include hover {
+		background: var(--color-accent-dark);
+	}
+}
+// .c-btn-square--sub
+.c-btn-square--sub {
+	background: #a49862;
+	@include hover {
+		background: var(--color-sub-dark);
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/

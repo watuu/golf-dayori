@@ -1,0 +1,32 @@
+// ===================================================================
+// CSS 変数
+// ===================================================================
+:root {
+	--color: #{$color};
+	--color-inverse: #fff;
+	--color-accent: #{$accent};
+	--color-accent-dark: #{$accent-dark};
+	--color-sub: #{$sub};
+	--color-sub-dark: #{$sub-dark};
+	--header-height: #{60/16+rem};
+	--breackpoint-md: 768px;
+	@include pc {
+		--header-height: #{120/16+rem};
+	}
+
+	// 余白
+	--gap: #{12/16+rem};
+	--padding-block: #{24/16+rem};
+	--padding-section: #{50/16+rem};
+	--padding-page: #{100/16+rem};
+	@include pc {
+		--gap: #{16/16+rem};
+		--padding-block: #{40/16+rem};
+		--padding-section: #{80/16+rem};
+		--padding-page: #{200/16+rem};
+	}
+}
+.is-section-dark,
+.is-nav-open {
+	--color: #fff;
+}

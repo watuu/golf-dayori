@@ -1,0 +1,19 @@
+
+/*----------------------------------------------------
+	p-article
+----------------------------------------------------*/
+.p-article {
+	padding-bottom: var(--padding-section);
+	@include pc {}
+}
+.p-article__content {
+	max-width: 720/16+rem;
+	margin-inline: auto;
+	padding-top: var(--padding-section);
+	@include pc {}
+}
+.p-article__related {
+	padding-top: var(--padding-section);
+	@include pc {}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/

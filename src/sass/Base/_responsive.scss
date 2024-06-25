@@ -1,0 +1,20 @@
+/*----------------------------------------------------
+	レスポンシブ
+----------------------------------------------------*/
+.sp{
+	@include pc-tab{display: none;}
+}
+.sp-tab{
+	@include pc{display: none;}
+}
+.pc{
+	@include sp-tab{display: none;}
+}
+.pc-tab{
+	@include sp{display: none;}
+}
+.tab{
+	@include sp{display: none;}
+	@include pc{display: none;}
+}
+

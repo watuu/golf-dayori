@@ -1,0 +1,17 @@
+.idea
+.vscode
+node_modules
+package-lock.json
+*::*
+# *__*
+.DS_Store
+Thumbs.db
+
+# WPの場合テーマのみGIT追加
+/public/*
+!/public/.gitignore
+!/public/wp-content
+/public/wp-content/*
+!/public/wp-content/themes
+/public/wp-content/themes/*
+!/public/wp-content/themes/golf-dayori

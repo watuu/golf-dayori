@@ -1,0 +1,61 @@
+{
+  "name": "name",
+  "author": "watuu",
+  "description": "",
+  "license": "",
+  "engines": {
+    "node": "16.x"
+  },
+  "config": {
+    "path_dest": "dest",
+    "pug_ext": "html",
+    "path_wp": "dest/wp-content/themes/xxx"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "iOS >= 10",
+    "Android >= 4.4"
+  ],
+  "scripts": {
+    "css": "node-sass src/sass -o ${npm_package_config_path_dest}/assets/css --importer node_modules/node-sass-globbing/index.js --output-style expanded && postcss ${npm_package_config_path_dest}/assets/css/*.css --config ./postcss.config.js --no-map --replace",
+    "css-watch": "chokidar src/sass/ -c 'npm run css'",
+    "pug": "pug src/pug/ --hierarchy -o ${npm_package_config_path_dest} -P '\t' -E ${npm_package_config_pug_ext}",
+    "pug-watch": "pug src/pug/ --hierarchy -o ${npm_package_config_path_dest} -w -P '\t'  -E ${npm_package_config_pug_ext}",
+    "server": "browser-sync start --port 3333 --proxy http://localhost/ --files 'dest/**/*.css,dest/**/*.js'",
+    "webpack": "WEBPACK_ENV=${npm_package_config_mode} webpack",
+    "webpack-watch": "WEBPACK_ENV=development webpack --watch",
+    "webpack-watch:production": "WEBPACK_ENV=production webpack --watch",
+    "watch": "npm run css-watch & npm run pug-watch & npm run webpack-watch",
+    "watch:production": "npm run css-watch & npm run pug-watch & npm run webpack-watch:production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "chokidar-cli": "^2.1.0",
+    "css-declaration-sorter": "^6.3.1",
+    "css-loader": "^5.0.1",
+    "node-sass": "^6.0.1",
+    "node-sass-globbing": "0.0.23",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^8.3.1",
+    "pug": "^3.0.2",
+    "pug-cli": "git+https://github.com/watuu/pug-cli.git",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.45.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "budoux": "^0.6.2",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "jquery-jpostal-ja": "^2.14.26",
+    "micromodal": "^0.4.10",
+    "overlayscrollbars": "^2.5.0",
+    "swiper": "^10.3.1"
+  }
+}

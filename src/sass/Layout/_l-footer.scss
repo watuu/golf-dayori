@@ -1,0 +1,128 @@
+
+/*----------------------------------------------------
+	フッター
+----------------------------------------------------*/
+.l-footer {
+	padding: 50/16+rem 0 40/16+rem;
+	color: var(--color);
+	background: #142a26;
+	a:hover {
+		text-decoration: underline;
+	}
+	@include pc {
+		padding: 100/16+rem 0 20/16+rem;
+	}
+}
+.l-footer__wrap {
+	display: grid;
+	gap: 30/16+rem;
+	@include pc {
+		grid-template-areas:
+			"logo info nav"
+			"sns info nav"
+			"copyright nav2 nav2"
+		;
+		grid-template-columns: 300/16+rem 400/16+rem 1fr;
+		grid-template-rows: auto 1fr auto;
+		gap: 40/16+rem 0;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-logo {
+	text-align: center;
+	img {
+		width: 180/16+rem;
+	}
+	@include pc {
+		grid-area: logo;
+		text-align: left;
+		img {
+			width: 211.88/16+rem;
+		}
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-sns {
+	margin-top: -10/16+rem;
+	display: flex;
+	justify-content: center;
+	gap: 16/16+rem;
+	li {
+		width: 35/16+rem;
+	}
+	@include pc {
+		grid-area: sns;
+		justify-content: flex-start;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-info {
+	margin-top: 20/16+rem;
+	@extend .c-paragraph;
+	@include pc {
+		margin-top: 0;
+		grid-area: info;
+	}
+}
+.l-footer-info__title {
+	font-weight: bold;
+	@include pc {}
+}
+.l-footer-info__body {
+	margin-top: 20/16+rem;
+	@include pc {}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-nav {
+	margin-top: 40/16+rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 30/16+rem;
+	@include pc {
+		grid-area: nav;
+		margin-top: 0;
+	}
+}
+.l-footer-nav-item {
+	@extend .c-paragraph;
+	@include pc {}
+}
+.l-footer-nav-item__title {
+	font-weight: bold;
+	@include pc {}
+}
+.l-footer-nav-item__list {
+	margin-top: 12/16+rem;
+	display: flex;
+	flex-direction: column;
+	gap: 12/16+rem;
+	@include pc {
+		margin-top: 16/16+rem;
+		gap: 16/16+rem;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-nav2 {
+	display: flex;
+	flex-direction: column;
+	gap: 12/16+rem;
+	@extend .c-paragraph;
+	font-weight: bold;
+	@include pc {
+		gap: 30/16+rem;
+		flex-direction: row;
+		justify-content: flex-end;
+		grid-area: nav2;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.l-footer-copyright {
+	font-size: 12/16+rem;
+	text-align: center;
+	@include pc {
+		grid-area: copyright;
+		text-align: left;
+		font-size: 12/16+rem;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/

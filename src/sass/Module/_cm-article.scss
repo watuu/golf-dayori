@@ -1,0 +1,231 @@
+
+/*----------------------------------------------------
+	.cm-article
+----------------------------------------------------*/
+.cm-article {
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding-section);
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-editor {
+	@extend .c-paragraph;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	h1,
+	h2 {
+		@extend .c-heading-bar;
+		&:not(:first-child) {
+			margin-top: var(--padding-block);
+		}
+	}
+	h3 {
+		@extend .c-heading-line;
+		&:not(:first-child) {
+			margin-top: var(--gap);
+		}
+	}
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-index {
+	padding: 10/16+rem 20/16+rem;
+	background: #fff;
+	border: $border-accent;
+}
+.cm-article-index__head {
+	font-weight: bold;
+	font-size: 18/16+rem;
+	@include pc {
+		font-size: 25/16+rem;
+	}
+}
+.cm-article-index__list {
+	padding-top: var(--gap);
+	font-size: 14/16+rem;
+	font-weight: bold;
+	line-height: (35/15);
+	ol {
+		ol {
+			padding-left: 1em;
+		}
+	}
+	@include pc {
+		font-size: 15/16+rem;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-shops {
+	max-width: 720/16+rem;
+	margin-inline: auto;
+}
+.cm-article-shops__head {
+
+}
+.cm-article-shops__list {
+	padding-top: var(--padding-block);
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding-section);
+}
+.cm-article-shop {
+	display: flex;
+	flex-direction: column;
+	gap: 30/16+rem;
+	@include pc {}
+}
+.cm-article-shop__title {
+	@extend .c-heading-line;
+	@include pc {}
+}
+.cm-article-shop__pic {
+	@include pc {}
+}
+.cm-article-shop__desc {
+	@extend .c-paragraph;
+	@include pc {}
+}
+.cm-article-shop__spec {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 22/16+rem;
+	text-align: center;
+	figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8/16+rem;
+
+	}
+	figcaption {
+		font-size: 12/16+rem;
+	}
+	@include pc {
+		grid-template-columns: repeat(6, 1fr);
+		figure {
+			img {
+				width: 75/16+rem;
+			}
+		}
+	}
+}
+.cm-article-shop__info {
+	display: flex;
+	flex-direction: column;
+	gap: 8/16+rem;
+
+	@extend .c-paragraph;
+	dl {
+		display: flex;
+		flex-direction: column;
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		color: $color-light;
+		flex: 1;
+	}
+	@include pc {
+		dl {
+			flex-direction: row;
+		}
+		dt {
+			width: 130/16+rem;
+		}
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-list__body {
+	padding-top: var(--padding-block);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 28/16+rem;
+	@include pc {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-hikaku {
+	max-width: 720/16+rem;
+	margin-inline: auto;
+	@include pc {}
+}
+.cm-article-hikaku__head {
+	@include pc {}
+}
+.cm-article-hikaku__body {
+	padding-top: var(--padding-block);
+	overflow: auto;
+	@include pc {}
+}
+.cm-article-hikaku-table {
+	width: 800/16+rem;
+	@include pc {
+		width: 915/16+rem;
+	}
+}
+.cm-article-hikaku-table__head {
+	font-size: 13/16+rem;
+	font-weight: bold;
+	th {
+		position: sticky;
+		left: 0;
+	}
+	th, td {
+		padding: 8/16+rem;
+		border: 1/16+rem solid #fff;
+		vertical-align: middle;
+		text-align: center;
+		color: #fff;
+	}
+	th {
+		background: #ada273;
+	}
+	td {
+		background: #61c07b;
+	}
+
+	@include pc {
+		font-size: 15/16+rem;
+	}
+}
+.cm-article-hikaku-table__body {
+	font-size: 12/16+rem;
+	th {
+		position: sticky;
+		left: 0;
+		&:before{
+			content: "";
+			position: absolute;
+			top: -1/16+rem;
+			left: -1/16+rem;
+			width: 100%;
+			height: 100%;
+			border-left: 1/16+rem solid #ccc;
+		}
+	}
+	th, td {
+		background: #fff;
+		padding: 8/16+rem;
+		vertical-align: middle;
+		text-align: center;
+		border: 1/16+rem solid #ccc;
+	}
+	figure {
+		font-weight: bold;
+		img {
+			width: 120/16+rem;
+		}
+	}
+	@include pc {
+		font-size: 13/16+rem;
+		figure {
+			img {
+				width: 179/16+rem;
+			}
+		}
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/

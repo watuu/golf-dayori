@@ -1,0 +1,45 @@
+
+/*----------------------------------------------------
+	ヘッダー
+----------------------------------------------------*/
+.l-header {
+
+}
+
+.l-header-logo {
+	position: fixed;
+	left: 20/16+rem;
+	top: 20/16+rem;
+	z-index: 500;
+	mix-blend-mode: difference;
+	img {
+		width: 120/16+rem;
+	}
+	@include pc {
+		left: 100/16+rem;
+		top: 32/16+rem;
+		img {
+			width: 211.88/16+rem;
+		}
+	}
+}
+.l-header-nav {
+	position: fixed;
+	z-index: 500;
+	mix-blend-mode: difference;
+	font-size: 15/16+rem;
+	right: 100/16+rem;
+	top: 45/16+rem;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		gap: 40/16+rem;
+	}
+	a {
+		color: #fff;
+	}
+	@include sp-tab {
+		display: none;
+	}
+}
+

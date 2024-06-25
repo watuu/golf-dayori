@@ -1,0 +1,92 @@
+extends ./_default
+block vars
+    - var path = "./"
+    - var title = ""
+    - var pageClass = ""
+
+block content
+
+    .p-top
+        section.p-top-mv
+            img(src=img+"p-top-mv.webp")
+        section(style="margin: 100px 0;")
+            .l-container
+                .cm-article-list
+                    .cm-article-list__head
+                        .c-heading.c-heading--center.c-heading--sub
+                            p.c-heading__sub アウトドアゴルフ練習場
+                            h2.c-heading__main Outdoor Driving Range
+                    .cm-article-list__body
+                        - for (var x = 1; x <= 3; x++)
+                            .c-card-article
+                                a(href=path+"outdoor/").c-card-article__link
+                                    figure.c-card-article__pic
+                                        img(src=img + "600x450.webp" alt="")
+                                    .c-card-article__meta
+                                        span.c-card-article__date 2024年5月1日
+                                        h3.c-card-article__title 親譲りの無鉄砲で小供の時から損ばかりしている
+        section(style="margin: 100px 0;")
+            .l-container
+                .cm-article-list
+                    .cm-article-list__head
+                        .c-heading.c-heading--center.c-heading--sub
+                            p.c-heading__sub インドアゴルフ練習場
+                            h2.c-heading__main Indoor Driving Range
+                    .cm-article-list__body
+                        - for (var x = 1; x <= 3; x++)
+                            .c-card-article
+                                a(href=path+"outdoor/").c-card-article__link
+                                    figure.c-card-article__pic
+                                        img(src=img + "600x450.webp" alt="")
+                                    .c-card-article__meta
+                                        span.c-card-article__date 2024年5月1日
+                                        h3.c-card-article__title 親譲りの無鉄砲で小供の時から損ばかりしている
+        section(style="margin: 100px 0;")
+            .l-container
+                .cm-article-list
+                    .cm-article-list__head
+                        .c-heading.c-heading--center
+                            p.c-heading__sub ゴルフスクール
+                            h2.c-heading__main Golf Schools
+                    .cm-article-list__body
+                        - for (var x = 1; x <= 3; x++)
+                            .c-card-btn
+                                a(href="#").c-card-btn__link
+                                    figure.c-card-btn__pic
+                                        img(src=img + "600x180.webp")
+                                    .c-card-btn__wrap
+                                        span.c-card-btn__title 福岡ゴルフスクール
+                                        i.c-card-btn__ico
+                                            svg(width=20 height=20)
+                                                use(href="#ico-arrow-right")
+        section(style="margin: 100px 0;")
+            .l-container
+                .cm-article-list
+                    .cm-article-list__head
+                        .c-heading.c-heading--center
+                            p.c-heading__sub ゴルフグッズ
+                            h2.c-heading__main Golf Goods
+                    .cm-article-list__body
+                        - for (var x = 1; x <= 3; x++)
+                            .c-card-btn
+                                a(href="#").c-card-btn__link
+                                    figure.c-card-btn__pic
+                                        img(src=img + "600x180.webp")
+                                    .c-card-btn__wrap
+                                        span.c-card-btn__title 福岡ゴルフスクール
+                                        i.c-card-btn__ico
+                                            svg(width=20 height=20)
+                                                use(href="#ico-arrow-right")
+
+
+
+
+
+
+
+
+
+
+
+
+

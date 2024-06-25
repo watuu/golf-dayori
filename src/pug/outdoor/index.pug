@@ -1,0 +1,180 @@
+extends ../_default
+block vars
+    - var path = "../"
+    - var title = ""
+    - var pageClass = ""
+
+block content
+
+    .p-article
+        .cm-main-mv
+            figure.cm-main-mv__bg
+                img(src=img+"cm-main-mv-bg.webp")
+            .cm-main-mv__wrap
+                .l-container
+                    .cm-main-mv__inner
+                        p.cm-main-mv__label OUTDOOR
+                        h1.cm-main-mv__title(data-budoux) 新宿にあるインドア・シミュレーションゴルフ練習場の特徴と魅力を徹底比較
+        .l-container
+            ul.cm-main-breadcrumb
+                li
+                    a(href=path+"") ゴルフだより
+                li
+                    a(href=path+"") アウトドアゴルフ練習場
+                li
+                    span 新宿にあるインドア・シミュレーションゴルフ練習場の特徴と魅力を徹底比較
+            .p-article__content
+                .cm-article
+                    .cm-article-editor
+                        p
+                            | 新宿のインドア・シミュレーションゴルフ施設では、ゴルフ愛好者が天候に左右されず、最新のシミュレーション技術を体験できます。練習場では、無料で体験できるレッスンや、予約制の多彩なプランを提供しており、ゴルフスクールも併設されている練習場も多くあります。プロの指導を受けながら技術を磨くことができるため、初心者から経験者まで、各自のスキルに合わせたカリキュラムが整っています。インドア・シミュレーションゴルフ練習場ではゴルフを通じて新しいコミュニティの場となっています。
+                            br
+                            |
+                            br
+                            | 【レッスン・スクールが有る？ない？】【利用できる時間は？】【料金は？】
+                            br
+                            | など気になるポイントは人それぞれです。自分に合った施設でゴルフ練習を楽しみましょう！
+                        //-
+                            figure
+                                img(src=img+"__.jpg")
+                            h2 1. ゴルフスクールの料金相場
+                            p
+                                | ゴルフスクールを選ぶ際、料金は重要な検討事項の一つです。料金相場はスクールの立地、設備、コーチの質などによって異なり、特に初心者向けのクラスや都市部のスクールでは料金が高めに設定される傾向にあります。ここでは、ゴルフスクールの料金相場について詳しく解説します。
+                            h3 1.1 一般的な料金相場
+                            p
+                                | ゴルフスクールの一般的な月額料金は、10,000円から30,000円程度です。この料金には、レッスン料が含まれていますが、レンジ代や球代は別途必要になる場合が多いです。スクールによっては、入会金や年会費を求められることもあります。料金はスクールの設備やコーチの質、提供されるサービスの内容によって変動します。高品質な指導を受けられるプロフェッショナルなスクールほど料金が高くなる傾向にあります。
+                            h3 1.2 初心者向けゴルフスクールの料金相場
+                            p
+                                | 初心者向けのクラスは特に、基本から丁寧に指導してくれるため、料金設定が少し高めになることがあります。月額で20,000円から40,000円程度が相場とされています。初心者クラスでは、ゴルフの基礎知識からスイングの基本、ルールやマナーまで、幅広い内容をカバーするため、その分、料金も高くなります。また、少人数制でのレッスンを行っているスクールでは、より個別の指導に近い形で学べるため、料金が高く設定されていることもあります。
+                    .cm-article-index
+                        .cm-article-index__head
+                            p 目次
+                        .cm-article-index__list
+                            ol
+                                li
+                                    a(href="#h1") 1. 新宿のシミュレーションゴルフ練習場14選
+                                    ol
+                                        li
+                                            a(href="#h1-1") 1.1 SWING24/7新宿店
+                                        li
+                                            a(href="#h1-2") 1.2 SWING24/7新宿店
+
+                                li
+                                    a(href="#h2") 2. 店舗比較一覧
+
+
+                    .cm-article-shops
+                        .cm-article-shops__head#h1
+                            h2.c-heading-bar 1. 新宿のシミュレーションゴルフ練習場14選
+                        .cm-article-shops__list
+                            - for (var x = 1; x <= 2; x++)
+                                .cm-article-shop(id="h1-"+x)
+                                    h3.cm-article-shop__title 1.1 SWING24/7新宿店
+                                    figure.cm-article-shop__pic
+                                        img(src=img + "dummy-shop.jpg")
+                                    p.cm-article-shop__desc
+                                        | 新宿3丁目駅から徒歩3分にあるインドアゴルフ練習場です。 24時間年中無休なのでお好きな時間に最新シミュレーターでゴルフ練習が思う存分行えます。 打ちっぱなし練習や、コース練習を天候に左右される事なくプライベート空間で思う存分楽しめるのが魅力です。初心者の方からプロの方まで使っていただける屋内ゴルフ練習場です。
+                                    ul.cm-article-shop__spec
+                                        li
+                                            figure
+                                                img(src=img + "ico-24h.svg")
+                                                figcaption 24時間営業
+                                        li
+                                            figure
+                                                img(src=img + "ico-visitor.svg")
+                                                figcaption ビジターOK
+                                        li
+                                            figure
+                                                img(src=img + "ico-rental.svg")
+                                                figcaption 無料レンタル
+                                        li
+                                            figure
+                                                img(src=img + "ico-club.svg")
+                                                figcaption クラブ
+                                        li
+                                            figure
+                                                img(src=img + "ico-shoes.svg")
+                                                figcaption レンタルシューズ
+                                    .cm-article-shop__info
+                                        dl
+                                            dt 住所
+                                            dd 東京都新宿区新宿5-10-6 THEKINDAI22SHINJUKU 1F A
+                                        dl
+                                            dt お問合せ番号
+                                            dd 03-6273-1085
+                                        dl
+                                            dt 営業時間
+                                            dd 24時間営業
+                                        dl
+                                            dt 駐車場
+                                            dd 無し　新宿三丁目駅 C7出口　徒歩3分
+                                        dl
+                                            dt 料金
+                                            dd (税込)14.800円～
+                                        dl
+                                            dt 打席数
+                                            dd 4打席
+                                        dl
+                                            dt シミュレーター
+                                            dd 【SWING24/7オリジナル】
+
+                    .cm-article-hikaku
+                        .cm-article-hikaku__head#h2
+                            h2.c-heading-bar 2. 店舗比較一覧
+                        .cm-article-hikaku__body
+                            table.cm-article-hikaku-table
+                                thead.cm-article-hikaku-table__head
+                                    tr
+                                        th 店舗名
+                                        td 営業時間
+                                        td 駐車場
+                                        td 料金
+                                        td 打席タイプ
+                                        td 打席数
+                                        td 左打席
+                                        td 利用時間
+                                tbody.cm-article-hikaku-table__body
+                                    - for (var x = 1; x <= 5; x++)
+                                        tr
+                                            th
+                                                a(href="#")
+                                                    figure
+                                                        figcaption SWING24/7新宿店
+                                                        img(src=img + "dummy-shop.jpg")
+                                            td 24時間
+                                            td 無し
+                                            td 14.800円～(税込)
+                                            td オープン
+                                            td 4打席
+                                            td 無し
+                                            td 60分
+            .p-article__related
+                .cm-article-list
+                    .cm-article-list__head
+                        .c-heading.c-heading--center.c-heading--sub
+                            p.c-heading__sub Related Articles
+                            h2.c-heading__main 他おすすめ記事
+                    .cm-article-list__body
+                        - for (var x = 1; x <= 3; x++)
+                            .c-card-article
+                                a(href="#").c-card-article__link
+                                    figure.c-card-article__pic
+                                        img(src=img + "600x450.webp" alt="")
+                                    .c-card-article__meta
+                                        span.c-card-article__date 2024年5月1日
+                                        h3.c-card-article__title 親譲りの無鉄砲で小供の時から損ばかりしている
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

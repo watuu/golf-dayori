@@ -1,0 +1,131 @@
+
+/*----------------------------------------------------
+	c-heading
+----------------------------------------------------*/
+.c-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 4/16+rem;
+	@include pc {
+		gap: 4/16+rem;
+	}
+}
+.c-heading__sub {
+	display: flex;
+	align-items: center;
+	gap: 12/16+rem;
+	font-size: 12/16+rem;
+	font-weight: bold;
+	color: #61c07b;
+	&:before {
+		pointer-events: none;
+		width: 16/16+rem;
+		height: 0;
+		border: $border-accent;
+	}
+	&:after {
+		content: '';
+		display: block;
+		pointer-events: none;
+		width: 16/16+rem;
+		height: 0;
+		border: $border-accent;
+	}
+	@include pc {
+		gap: 24/16+rem;
+		font-size: 15/16+rem;
+		&:before {
+			width: 32/16+rem;
+		}
+		&:after {
+			width: 32/16+rem;
+		}
+	}
+}
+.c-heading__main {
+	font-size: 24/16+rem;
+	font-weight: bold;
+	line-height: 1.2;
+	@include pc {
+		font-size: 50/16+rem;
+	}
+}
+// .c-heading--center
+.c-heading--center {
+	text-align: center;
+	.c-heading__sub {
+		justify-content: center;
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			border: $border-accent;
+		}
+		@include pc {}
+	}
+}
+.c-heading--right {
+	text-align: right;
+	.c-heading__sub {
+		justify-content: flex-end;
+		&:after {
+			display: none;
+		}
+		&:before {
+			content: '';
+			display: block;
+			border: $border-accent;
+		}
+		@include pc {}
+	}
+}
+
+// .c-heading--sub
+.c-heading--sub {
+	.c-heading__sub {
+		color: $sub;
+		&:before,
+		&:after {
+			border-color: $sub;
+		}
+		@include pc {}
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.c-heading-bar {
+	width: 100%;
+	background: #61c07b;
+
+	font-size: 18/16+rem;
+	font-weight: bold;
+	color: #fff;
+	padding: 0.1em 0.6em;
+	@include pc {
+		font-size: 22/16+rem;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.c-heading-line {
+	position: relative;
+	padding-left: 12/16+rem;
+	font-weight: bold;
+	font-size: 16/16+rem;
+	text-align: left;
+	&:before {
+		content: '';
+		display: block;
+		width: 5/16+rem;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+
+		background: #61c07b;
+
+	}
+	@include pc {
+		font-size: 18/16+rem;
+	}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/

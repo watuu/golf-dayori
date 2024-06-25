@@ -1,0 +1,35 @@
+
+/*----------------------------------------------------
+	リンク
+----------------------------------------------------*/
+a {
+	color: var(--color);
+	text-decoration: none;
+	transition: color $easeDuration $easeInOutSine, background $easeDuration $easeInOutSine, border $easeDuration $easeInOutSine, box-shadow $easeDuration $easeInOutSine ;
+	img {
+		transition: color $easeDuration $easeInOutSine, background $easeDuration $easeInOutSine, border $easeDuration $easeInOutSine, opacity $easeDuration $easeInOutSine, box-shadow $easeDuration $easeInOutSine, transform $easeDuration $easeInOutSine ;
+	}
+	@media (hover: hover) {
+		&:hover {
+		}
+	}
+}
+
+@media (hover: hover) {
+	a[href^='tel:'] {
+		pointer-events: none;
+	}
+}
+@media (hover: none) {
+	a, button {
+		-webkit-touch-callout: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+}
+[data-scroll-target] {
+	content: '';
+	display: block;
+	position: relative;
+	pointer-events: none;
+	top: calc(-1 * var(--header-height));
+}

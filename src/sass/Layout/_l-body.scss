@@ -1,0 +1,30 @@
+
+/*----------------------------------------------------
+	body
+----------------------------------------------------*/
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	height: 100%;
+	&.is-leaving {
+		// animation: bodyLeaving .8s forwards;
+	}
+	@include pc {
+	}
+	@include sp-tab {
+	}
+}
+body.no-scroll {
+	overflow: hidden;
+	height: 100vh;
+}
+.l-body-wrap {
+	width: 100%;
+	min-height: 100%;
+	background: #fff;
+	@include sp-tab {
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,54 @@
+
+/*----------------------------------------------------
+	ヘッダー メニュー
+----------------------------------------------------*/
+.l-header-menu {
+	@include sp-tab {
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 550;
+		width: 60/16+rem;
+		height: 60/16+rem;
+		cursor: pointer;
+		mix-blend-mode: difference;
+		div {
+			position: relative;
+		}
+		span {
+			display: block;
+			position: absolute;
+			height: 1px;
+			width: 24/16+rem;
+			background: #fff;
+			left: 18/16+rem;
+			transition: top .35s $easeTheme, transform 0s $easeTheme;
+		}
+		span:nth-child(1) {
+			top: calc(50% - #{6/16+rem});
+		}
+		span:nth-child(2) {
+			top: calc(50%);
+		}
+		span:nth-child(3) {
+			top: calc(50% + #{6/16+rem});
+		}
+		&.is-nav-open {
+			span {
+				transition: top .2s $easeTheme, transform .3s .2s $easeTheme;
+			}
+			span:nth-child(1) {
+				top: calc(50%);
+				transform: scale(-1, -1) rotate(-35deg);
+			}
+			span:nth-child(2) {
+				width: 0;
+				left: 50%;
+			}
+			span:nth-child(3) {
+				top: calc(50%);
+				transform:  scale(-1, -1) rotate(35deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+$themeColor: #007aff !default;
+$colors: (
+    'white': #ffffff,
+    'black': #000000,
+) !default;
+
+:root {
+  /*
+  --swiper-pagination-color: var(--swiper-theme-color);
+  */
+}
+:root {
+}
+.swiper-button-prev,
+.swiper-button-next {
+  &.swiper-button-disabled {
+  }
+  &:after {
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  &:after {
+  }
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  &:after {
+  }
+}
+
+@each $navColorName, $navColorValue in $colors {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &.swiper-button-#{$navColorName} {
+    }
+  }
+}
+.swiper-button-lock {
+}
+
+
+.swiper-pagination {
+  &.swiper-pagination-hidden {
+  }
+}
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+}
+/* Bullets */
+.swiper-pagination-bullets-dynamic {
+  .swiper-pagination-bullet {
+  }
+  .swiper-pagination-bullet-active {
+  }
+  .swiper-pagination-bullet-active-main {
+  }
+  .swiper-pagination-bullet-active-prev {
+  }
+  .swiper-pagination-bullet-active-prev-prev {
+  }
+  .swiper-pagination-bullet-active-next {
+  }
+  .swiper-pagination-bullet-active-next-next {
+  }
+}
+.swiper-pagination-bullet {
+  @at-root button#{&} {
+  }
+  .swiper-pagination-clickable & {
+  }
+}
+.swiper-pagination-bullet-active {
+}
+
+.swiper-container-vertical {
+  > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+    }
+    &.swiper-pagination-bullets-dynamic {
+      .swiper-pagination-bullet {
+      }
+    }
+  }
+}
+.swiper-container-horizontal {
+  > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+    }
+    &.swiper-pagination-bullets-dynamic {
+      .swiper-pagination-bullet {
+      }
+    }
+  }
+  &.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  }
+}
+/* Progress */
+.swiper-pagination-progressbar {
+  .swiper-pagination-progressbar-fill {
+  }
+  .swiper-container-rtl & .swiper-pagination-progressbar-fill {
+  }
+  .swiper-container-horizontal > &,
+  .swiper-container-vertical > &.swiper-pagination-progressbar-opposite {
+  }
+  .swiper-container-vertical > &,
+  .swiper-container-horizontal > &.swiper-pagination-progressbar-opposite {
+  }
+}
+@each $paginationColorName, $paginationColorValue in $colors {
+  .swiper-pagination-#{$paginationColorName} {
+  }
+}
+.swiper-pagination-lock {
+}
