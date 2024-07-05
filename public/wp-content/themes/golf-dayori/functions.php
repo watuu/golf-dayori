@@ -1,12 +1,14 @@
 <?php
 
-const THEME_SUPPORT_EYTCHATCH = ['post', 'mst_member'];
-const THEME_DISABLED_EDITOR = [];
+const THEME_SUPPORT_EYTCHATCH = ['post', 'indoor', 'outdoor'];
+const THEME_DISABLED_EDITOR = ['mst_shop', 'indoor', 'outdoor'];
 const THEME_DISABLED_BLOCK_EDITOR = ['page', 'mw-wp-form'];
 const THEME_ENABLED_CLASSIC_EDITOR = [];
 const THEME_MEDIA_SIZES = [
-    ['thumbnail', 720, 480, true ],
-    ['medium', 720, 480, true ],
+    ['thumbnail', 400, 400, false ],
+    ['medium', 600, 450, true ],
+    ['shop', 1024, 450, true ],
+    ['large', 1024, 1024, false ],
 ];
 const THEME_COMMON_ARCHIVE_NUM = null;
 const GOOGLE_MAP_KEY = "xxx";

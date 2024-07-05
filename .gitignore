@@ -15,3 +15,12 @@ Thumbs.db
 !/public/wp-content/themes
 /public/wp-content/themes/*
 !/public/wp-content/themes/golf-dayori
+
+/public2/*
+!/public2/.gitignore
+!/public2/wp-content
+/public2/wp-content/*
+!/public2/wp-content/themes
+/public2/wp-content/themes/*
+!/public2/wp-content/themes/putter
+

@@ -204,6 +204,7 @@
 			width: 100%;
 			height: 100%;
 			border-left: 1/16+rem solid #ccc;
+			pointer-events: none;
 		}
 	}
 	th, td {
@@ -229,3 +230,34 @@
 	}
 }
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-matome {
+	max-width: 720/16+rem;
+	margin-inline: auto;
+	width: 100%;
+	@include pc {}
+}
+.cm-article-matome__head {
+	@include pc {}
+}
+.cm-article-matome__body {
+	padding-top: var(--padding-block);
+	overflow: auto;
+	@include pc {}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.cm-article-block {
+	max-width: 720/16+rem;
+	margin-inline: auto;
+	width: 100%;
+	@include pc {}
+}
+.cm-article-block__head {
+	@include pc {}
+}
+.cm-article-block__body {
+	padding-top: var(--padding-block);
+	overflow: auto;
+	@include pc {}
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
