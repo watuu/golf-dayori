@@ -996,9 +996,15 @@ body.no-scroll {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .cm-article-hikaku {
-  max-width: 45rem;
   margin-inline: auto;
+  width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .cm-article-hikaku {
+    max-width: 45rem;
+  }
+}
+
 .cm-article-hikaku__body {
   padding-top: var(--padding-block);
   overflow: auto;
@@ -1274,6 +1280,11 @@ body figure {
 .cm-main-mv {
   position: relative;
 }
+@media screen and (max-width: 1023px) {
+  .cm-main-mv {
+    margin-inline: calc(50% - 50vw);
+  }
+}
 .cm-main-mv__bg {
   position: relative;
 }
@@ -1366,6 +1377,7 @@ body figure {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.2;
+  color: #fff;
 }
 @media screen and (min-width: 1024px) {
   .cm-main-mv__title {

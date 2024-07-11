@@ -148,9 +148,11 @@
 }
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .cm-article-hikaku {
-	max-width: 720/16+rem;
 	margin-inline: auto;
-	@include pc {}
+	width: 100%;
+	@include pc {
+		max-width: 720/16+rem;
+	}
 }
 .cm-article-hikaku__head {
 	@include pc {}

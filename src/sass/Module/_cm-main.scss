@@ -65,10 +65,14 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .cm-main-mv {
 	position: relative;
+	@include sp-tab {
+		margin-inline: calc(50% - 50vw);
+	}
 	@include pc {}
 }
 .cm-main-mv__bg {
 	position: relative;
+	//margin-inline: calc(50% - 50vw);
 	img {
 		aspect-ratio: 375 / 300;
 		object-fit: cover;
@@ -137,6 +141,7 @@
 	font-weight: bold;
 	font-size: 24/16+rem;
 	line-height: (60/50);
+	color: #fff;
 	@include pc {
 		font-size: 50/16+rem;
 	}
