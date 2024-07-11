@@ -54,7 +54,9 @@
                             <li><a href="#h2">2. 店舗比較一覧</a></li>
                             <li><a href="#h3">3. <?= $settings['自由記述']['見出し'] ?></a></li>
                             <li><a href="#h4">4. まとめ</a></li>
+                            <?php if ($settings['記事監修者紹介']): ?>
                             <li><a href="#h5">5. 記事監修者紹介</a></li>
+                            <?php endif; ?>
                         </ol>
                     </div>
                 </div>
@@ -108,6 +110,7 @@
                         <?= get_field('まとめ') ?>
                     </div>
                 </div>
+                <?php if ($settings['記事監修者紹介']): ?>
                 <div class="cm-article-block">
                     <div class="cm-article-block__head" id="h5">
                         <h2 class="c-heading-bar">5. 記事監修者紹介</h2>
@@ -116,6 +119,7 @@
                         <?= get_field('記事監修者紹介') ?>
                     </div>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
         <div class="p-article__related">

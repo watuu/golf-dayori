@@ -113,17 +113,24 @@
 .cm-article-shop__info {
 	display: flex;
 	flex-direction: column;
-	gap: 8/16+rem;
-
 	@extend .c-paragraph;
 	dl {
 		display: flex;
 		flex-direction: column;
+		border: $border-accent;
+		margin-bottom: 0;
+		& + dl {
+			margin-top: -1px;
+		}
 	}
 	dt {
+		padding: 8/16+rem;
 		font-weight: bold;
+		background: var(--color-accent);
+		color: #fff;
 	}
 	dd {
+		padding: 8/16+rem;
 		color: $color-light;
 		flex: 1;
 	}

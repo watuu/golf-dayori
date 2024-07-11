@@ -946,7 +946,6 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.5rem;
 }
 .cm-article-shop__info dl {
   display: -webkit-box;
@@ -956,11 +955,20 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid #61c07b;
+  margin-bottom: 0;
+}
+.cm-article-shop__info dl + dl {
+  margin-top: -1px;
 }
 .cm-article-shop__info dt {
+  padding: 0.5rem;
   font-weight: bold;
+  background: var(--color-accent);
+  color: #fff;
 }
 .cm-article-shop__info dd {
+  padding: 0.5rem;
   color: #73726e;
   -webkit-box-flex: 1;
       -ms-flex: 1;
