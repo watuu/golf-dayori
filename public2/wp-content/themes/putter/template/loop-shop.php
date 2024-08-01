@@ -8,7 +8,7 @@
     // var_dump($settings);
 ?>
 <div class="cm-article-shop" id="h1-<?= $settings['cnt'] ?>">
-    <h3 class="cm-article-shop__title">1.<?= $settings['cnt'] ?> <?= get_the_title($settings['id']) ?></h3>
+    <h3 class="cm-article-shop__title">1-<?= $settings['cnt'] ?> <?= get_the_title($settings['id']) ?></h3>
     <?php if ($settings['pic']): ?>
         <figure class="cm-article-shop__pic"><img src="<?= $settings['pic'] ?>"/></figure>
     <?php endif; ?>

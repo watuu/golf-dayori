@@ -47,7 +47,7 @@
                             <li><a href="#h1">1. <?= $settings['area_middle'] ?>のシミュレーションゴルフ練習場<?= $settings['shops_count'] ?>選</a>
                                 <ol>
                                     <?php foreach ($settings['shops'] as $k => $shop): ?>
-                                        <li><a href="#h1-<?= $k + 1 ?>">1.<?= $k + 1 ?> <?= get_the_title($shop['練習場']) ?></a></li>
+                                        <li><a href="#h1-<?= $k + 1 ?>">1-<?= $k + 1 ?>. <?= get_the_title($shop['練習場']) ?></a></li>
                                     <?php endforeach; ?>
                                 </ol>
                             </li>

@@ -133,6 +133,7 @@
 		padding: 8/16+rem;
 		color: $color-light;
 		flex: 1;
+		word-break: break-all;
 	}
 	@include pc {
 		dl {
