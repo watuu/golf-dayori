@@ -2,7 +2,6 @@
   .post_layout_band .post_title {
     font-size: 24px;
   }
-
   .post_layout_band .post_content_wrap .post_category {
     margin-bottom: 0.7em;
   }
@@ -38,19 +37,20 @@
 @media (max-width: 767px) {
   /* Blog layout: Band */
   .post_layout_band {
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
   .post_layout_band .post_featured {
-    -webkit-flex-basis: 100%;
     -ms-flex-basis: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .post_layout_band .post_featured + .post_content_wrap {
-    -webkit-flex-basis: 100%;
     -ms-flex-basis: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .post_layout_band .post_header .post_price {
     position: static;
@@ -61,33 +61,32 @@
   .post_layout_band .post_content_wrap .post_content_inner {
     line-height: 1.5em;
   }
-
   .post_layout_band.post_format_audio .post_featured {
     width: 100%;
   }
   .post_layout_band.post_format_audio .post_featured.without_thumb .post_audio:not(.with_iframe) {
     padding: 2.5em 2.1em 0;
   }
-
   .post_layout_band.post_format_quote .post_content_wrap {
     padding: 36px 38px !important;
   }
 }
 @media (min-width: 641px) and (max-width: 767px) {
   .post_layout_band {
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
   }
   .post_layout_band .post_featured {
-    -webkit-flex-basis: 48%;
     -ms-flex-basis: 48%;
-    flex-basis: 48%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .post_layout_band .post_featured + .post_content_wrap {
-    -webkit-flex-basis: 52%;
     -ms-flex-basis: 52%;
-    flex-basis: 52%;
+    -ms-flex-preferred-size: 52%;
+        flex-basis: 52%;
   }
   .post_layout_band .post_header .post_price {
     position: static;
@@ -101,23 +100,17 @@
   .post_layout_band .post_content_wrap {
     padding: 1.5em;
   }
-
   .post_layout_band .post_title {
     font-size: 20px;
     line-height: 24px;
   }
-
   .post_layout_band .post_content_wrap .post_category {
     margin-bottom: 0.4em;
   }
-
   .post_layout_band.post_format_audio .post_featured.without_thumb .post_audio:not(.with_iframe) {
     padding: 2.5em 1.5em 0;
   }
-
   .post_layout_band.post_format_quote .post_content_wrap {
     padding: 23px 24px !important;
   }
 }
-
-/*# sourceMappingURL=band-responsive.css.map */

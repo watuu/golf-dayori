@@ -1,4 +1,5 @@
 <?php
+$footer_class = apply_filters('custom_footer_class', '');
 /**
  * The Footer: widgets area, logo, footer menu and socials
  *
@@ -69,6 +70,7 @@
 				<?php
 
 				do_action( 'putter_action_before_footer' );
+				
 
 				// Footer
 				$putter_footer_type = putter_get_theme_option( 'footer_type' );

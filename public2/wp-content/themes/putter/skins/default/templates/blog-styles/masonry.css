@@ -1,12 +1,12 @@
 /* Blog layout: Masonry
 ------------------------- */
-body[class*="blog_style_classic-masonry"] .posts_container {
+body[class*=blog_style_classic-masonry] .posts_container {
   margin-bottom: calc(-1 * (var(--theme-var-grid_gap) + 15px));
 }
 
 .masonry_wrap {
   position: relative;
-  margin-right: calc( -1 * var(--theme-var-grid_gap ) );
+  margin-right: calc(-1 * var(--theme-var-grid_gap));
 }
 
 .masonry_wrap .masonry_item {
@@ -205,5 +205,3 @@ body[class*="blog_style_classic-masonry"] .posts_container {
   display: block;
   background-color: var(--theme-color-text_dark);
 }
-
-/*# sourceMappingURL=masonry.css.map */

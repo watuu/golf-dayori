@@ -20,7 +20,7 @@ Description: Used to style the TinyMCE editor.
  */
 .mce-content-body {
   color: #333333;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -51,7 +51,7 @@ Description: Used to style the TinyMCE editor.
    */
 }
 .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body h5, .mce-content-body h6 {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .mce-content-body h1 {
   font-size: 3.4286rem;
@@ -181,8 +181,6 @@ Description: Used to style the TinyMCE editor.
   letter-spacing: 3px;
 }
 .mce-content-body .trx_addons_dropcap {
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
 }
 .mce-content-body .trx_addons_dropcap_style_2 {
@@ -244,7 +242,7 @@ Description: Used to style the TinyMCE editor.
   bottom: 1ex;
 }
 .mce-content-body sub {
-  top: .5ex;
+  top: 0.5ex;
 }
 .mce-content-body small {
   font-size: 75%;
@@ -370,7 +368,7 @@ Description: Used to style the TinyMCE editor.
 }
 .mce-content-body .wp-caption .wp-caption-text,
 .mce-content-body .wp-caption-dd {
-  font-size: 0.9230em;
+  font-size: 0.923em;
   line-height: 1.5;
   padding: 0.5em 0;
 }
@@ -408,7 +406,7 @@ Description: Used to style the TinyMCE editor.
 .mce-content-body .gallery .gallery-caption {
   color: #858585;
   display: block;
-  font-size: 0.9230em;
+  font-size: 0.923em;
   line-height: 1.5;
   padding: 0.5em 0;
 }
@@ -446,5 +444,3 @@ Description: Used to style the TinyMCE editor.
     width: auto !important;
   }
 }
-
-/*# sourceMappingURL=editor-style.css.map */

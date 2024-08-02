@@ -1,21 +1,20 @@
 /* Essential Grid styles
 ----------------------------------------------------------------- */
-.esg-grid i[class*="eg-icon-"] {
+.esg-grid i[class*=eg-icon-] {
   color: #fff;
   -webkit-transition: color 0.5s ease;
-  -ms-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.esg-grid a:hover i[class*="eg-icon-"] {
+.esg-grid a:hover i[class*=eg-icon-] {
   color: #888;
 }
 
-.esg-navigationbutton i[class*="eg-icon-"] {
+.esg-navigationbutton i[class*=eg-icon-] {
   color: #888;
 }
 
-.esg-navigationbutton:hover i[class*="eg-icon-"] {
+.esg-navigationbutton:hover i[class*=eg-icon-] {
   color: #333;
 }
 
@@ -23,7 +22,7 @@
   margin-right: 0 !important;
 }
 
-.esg-entry-cover .eec > div[class*="-element-1-a"] {
+.esg-entry-cover .eec > div[class*=-element-1-a] {
   margin-left: 10px !important;
 }
 
@@ -80,5 +79,3 @@
 .esgbox-container.esgbox-can-drag .esgbox-toolbar .esgbox-button--thumbs + .esgbox-button--share {
   display: none;
 }
-
-/*# sourceMappingURL=essential-grid.css.map */

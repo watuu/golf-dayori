@@ -934,7 +934,7 @@ body.no-scroll {
     grid-template-columns: repeat(6, 1fr);
   }
   .cm-article-shop__spec figure img {
-    width: 4.6875rem;
+    width: 2.6875rem;
   }
 }
 
@@ -973,7 +973,7 @@ body.no-scroll {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  word-break: break-all;
+	word-break: break-all;
 }
 @media screen and (min-width: 1024px) {
   .cm-article-shop__info dl {
@@ -2021,6 +2021,13 @@ a:hover .c-card-article__pic img {
     height: 32.875rem;
   }
 }
+
+@media screen and (max-width: 1023px) {
+ .cm-article-shop__spec figure img {
+        width: 2.6875rem;
+    }
+}
+
 
 @-webkit-keyframes loopLeft {
   from {

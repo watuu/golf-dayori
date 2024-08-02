@@ -32,17 +32,18 @@
 
 @media (min-width: 480px) {
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_wrap {
-    -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block {
     width: 48% !important;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_inner {
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_image {
     width: 100%;
@@ -62,7 +63,9 @@
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_footer .trx_addons_image_block_link_delete_skin {
     margin-top: 0;
-    order: 5;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
     color: #b33836;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_footer .trx_addons_image_block_link_delete_skin:hover {
@@ -71,18 +74,19 @@
 }
 @media (min-width: 768px) {
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_wrap {
-    -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block {
     width: 50% !important;
     padding: 0 1em 1em 0;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_inner {
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
   }
   #trx_addons_theme_panel_section_skins.trx_addons_section_mode_list .trx_addons_image_block_image {
     width: 130px;
@@ -135,20 +139,19 @@
 }
 
 .putter_upgrade_skins_status_progress:before {
-  content: '\e969';
+  content: "\e969";
   color: #11a0d2;
   -webkit-animation: spin 2s infinite linear;
-  -ms-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
 
 .putter_upgrade_skins_status_success:before {
-  content: '\e986';
+  content: "\e986";
   color: #38bb7a;
 }
 
 .putter_upgrade_skins_status_error:before {
-  content: '\e987';
+  content: "\e987";
   color: #f04c49;
 }
 
@@ -157,5 +160,3 @@
   width: 94px;
   height: 64px;
 }
-
-/*# sourceMappingURL=skins-admin.css.map */

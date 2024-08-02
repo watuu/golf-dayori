@@ -122,7 +122,7 @@
                 <?php endif; ?>
             </div>
         </div>
-        <div class="p-article__related">
+<!--         <div class="p-article__related">
             <div class="cm-article-list">
                 <div class="cm-article-list__head">
                     <div class="c-heading c-heading--center c-heading--sub">
@@ -148,7 +148,7 @@
                             </div></a></div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

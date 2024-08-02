@@ -55,12 +55,12 @@
 }
 
 .post_header_wrap_style_style-5 .post_featured.sc_parallax_wrap {
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 .post_header_wrap_style_style-5 .post_featured.sc_parallax_wrap img {
   position: relative;
@@ -103,9 +103,9 @@
   font-size: inherit;
   line-height: inherit;
   font-weight: 500;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 .post_header_wrap_style_style-5 .post_header .post_meta_categories .post_meta_item:after {
   position: relative;
@@ -136,42 +136,43 @@
 }
 
 .post_header_wrap_style_style-5 .post_header .post_meta_other_part1 {
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .post_header_wrap_style_style-5 .post_header .post_meta_other_part2 {
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-justify-content: flex-end;
+  -webkit-box-align: start;
+          align-items: flex-start;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-wrap: nowrap;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .post_header_wrap_style_style-5 .post_header .post_meta_other_part2 .post_meta_comments {
@@ -189,7 +190,6 @@
 .post_header_wrap_style_style-5 .post_author_name {
   color: var(--theme-color-text_dark);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -254,5 +254,3 @@
   padding: 1.5em;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-/*# sourceMappingURL=style-5.css.map */

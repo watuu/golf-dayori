@@ -133,8 +133,8 @@
   border: none;
 }
 
-.customize-control > label > label > input[type="radio"],
-.customize-control > div > label > input[type="radio"] {
+.customize-control > label > label > input[type=radio],
+.customize-control > div > label > input[type=radio] {
   margin-right: 0;
 }
 
@@ -152,8 +152,8 @@
 }
 
 /* Checkbox and Checklist */
-.customize-control .putter_options_item_checkbox input[type="checkbox"]:checked,
-.customize-control .putter_options_item_checklist input[type="checkbox"]:checked {
+.customize-control .putter_options_item_checkbox input[type=checkbox]:checked,
+.customize-control .putter_options_item_checklist input[type=checkbox]:checked {
   border-color: #1e8cbe;
   background-color: #1e8cbe;
 }
@@ -163,11 +163,11 @@
   padding: 0;
 }
 .customize-control-radio .putter_options_item_radio input:checked + .putter_options_item_holder,
-.customize-control-radio .putter_options input[type="radio"]:checked + .putter_options_item_holder {
+.customize-control-radio .putter_options input[type=radio]:checked + .putter_options_item_holder {
   background-color: #1e8cbe;
 }
 .customize-control-radio .putter_options_item_radio input:checked + .putter_options_item_holder:focus:before,
-.customize-control-radio .putter_options input[type="radio"]:checked + .putter_options_item_holder:focus:before {
+.customize-control-radio .putter_options input[type=radio]:checked + .putter_options_item_holder:focus:before {
   border-color: #1e8cbe;
 }
 
@@ -191,28 +191,31 @@
 
 /* Switch */
 #customize-theme-controls .customize-control-switch > .customize-control-wrap {
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   -ms-flex-pack: space-between;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 #customize-theme-controls .customize-control-switch > .customize-control-wrap .customize-control-title {
-  -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 #customize-theme-controls .customize-control-switch > .customize-control-wrap .customize-control-field-wrap {
-  -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin: 0 0 0 0.5em;
 }
 #customize-theme-controls .customize-control-switch > .customize-control-wrap .putter_options_item_switch .putter_options_item_holder_back {
@@ -280,19 +283,19 @@
   line-height: 30px;
   text-align: center;
 }
-.customize-control .putter_list_icons input[type="text"].putter_list_icons_search:focus {
+.customize-control .putter_list_icons input[type=text].putter_list_icons_search:focus {
   border-color: #1e8cbe;
 }
-.customize-control .putter_list_icons input[type="text"].putter_list_icons_search {
+.customize-control .putter_list_icons input[type=text].putter_list_icons_search {
   font-size: 14px;
   padding: 6px 8px;
 }
 
 /* Media selector */
-.customize-control .widget_field_type_image > input[type="text"],
-.customize-control .widget_field_type_media > input[type="text"],
-.customize-control .widget_field_type_audio > input[type="text"],
-.customize-control .widget_field_type_video > input[type="text"] {
+.customize-control .widget_field_type_image > input[type=text],
+.customize-control .widget_field_type_media > input[type=text],
+.customize-control .widget_field_type_audio > input[type=text],
+.customize-control .widget_field_type_video > input[type=text] {
   width: 60%;
 }
 
@@ -385,7 +388,6 @@
   .customize-control-widget_form.wide-widget-control .widget-inside {
     left: 300px;
   }
-
   .customize-control-widget_form.wide-widget-control .widget-inside .widget-content {
     max-width: 300px !important;
   }
@@ -399,7 +401,6 @@
     border: none;
     overflow: visible;
   }
-
   .customize-control-widget_form.wide-widget-control .widget-inside .widget-content {
     max-width: none !important;
   }
@@ -417,7 +418,6 @@
   font-weight: 300;
   margin-right: 0.25em;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  -ms-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   /* Simple icon */
   font-size: 1.25em;
@@ -430,170 +430,170 @@
   /* Round icon */
 }
 #customize-theme-controls #accordion-section-title_tagline .accordion-section-title:before {
-  content: '\e95e';
+  content: "\e95e";
 }
 #customize-theme-controls #accordion-section-general .accordion-section-title:before {
-  content: '\e961';
+  content: "\e961";
 }
 #customize-theme-controls #accordion-section-header .accordion-section-title:before {
-  content: '\e967';
+  content: "\e967";
 }
 #customize-theme-controls #accordion-section-footer .accordion-section-title:before {
-  content: '\e966';
+  content: "\e966";
 }
 #customize-theme-controls #accordion-section-mobile .accordion-section-title:before {
-  content: '\e962';
+  content: "\e962";
 }
 #customize-theme-controls #accordion-panel-front_page .accordion-section-title:before {
-  content: '\e965';
+  content: "\e965";
 }
 #customize-theme-controls #accordion-panel-blog .accordion-section-title:before {
-  content: '\f511';
+  content: "\f511";
 }
 #customize-theme-controls #accordion-section-blog_general .accordion-section-title:before {
-  content: '\f508';
+  content: "\f508";
 }
 #customize-theme-controls #accordion-section-blog_general_category .accordion-section-title:before {
-  content: '\f503';
+  content: "\f503";
 }
 #customize-theme-controls #accordion-section-blog_general_tag .accordion-section-title:before {
-  content: '\f513';
+  content: "\f513";
 }
 #customize-theme-controls #accordion-section-blog_general_author .accordion-section-title:before {
-  content: '\f509';
+  content: "\f509";
 }
 #customize-theme-controls #accordion-section-blog_general_search .accordion-section-title:before {
-  content: '\f50a';
+  content: "\f50a";
 }
 #customize-theme-controls #accordion-section-blog_single .accordion-section-title:before {
-  content: '\f512';
+  content: "\f512";
 }
 #customize-theme-controls #accordion-panel-woocommerce .accordion-section-title:before {
-  content: '\e96a';
+  content: "\e96a";
 }
 #customize-theme-controls #accordion-panel-shop .accordion-section-title:before {
-  content: '\e96a';
+  content: "\e96a";
 }
 #customize-theme-controls #accordion-section-shop_general .accordion-section-title:before {
-  content: '\e961';
+  content: "\e961";
 }
 #customize-theme-controls #accordion-section-shop_list .accordion-section-title:before {
-  content: '\f511';
+  content: "\f511";
 }
 #customize-theme-controls #accordion-section-shop_single .accordion-section-title:before {
-  content: '\f508';
+  content: "\f508";
 }
 #customize-theme-controls #accordion-section-shop_brand_section .accordion-section-title:before {
-  content: '\e8b9';
+  content: "\e8b9";
 }
 #customize-theme-controls #accordion-section-panel_colors .accordion-section-title:before {
-  content: '\e964';
+  content: "\e964";
 }
 #customize-theme-controls #accordion-panel-fonts .accordion-section-title:before {
-  content: '\e95d';
+  content: "\e95d";
 }
 #customize-theme-controls #accordion-panel-cpt .accordion-section-title:before {
-  content: '\e960';
+  content: "\e960";
 }
 #customize-theme-controls #accordion-section-cars .accordion-section-title:before {
-  content: '\f502';
+  content: "\f502";
 }
 #customize-theme-controls #accordion-section-certificates .accordion-section-title:before {
-  content: '\f504';
+  content: "\f504";
 }
 #customize-theme-controls #accordion-section-courses .accordion-section-title:before {
-  content: '\f505';
+  content: "\f505";
 }
 #customize-theme-controls #accordion-section-dishes .accordion-section-title:before {
-  content: '\f506';
+  content: "\f506";
 }
 #customize-theme-controls #accordion-section-portfolio .accordion-section-title:before {
-  content: '\f507';
+  content: "\f507";
 }
 #customize-theme-controls #accordion-section-properties .accordion-section-title:before {
-  content: '\e971';
+  content: "\e971";
 }
 #customize-theme-controls #accordion-section-resume .accordion-section-title:before {
-  content: '\f509';
+  content: "\f509";
 }
 #customize-theme-controls #accordion-section-services .accordion-section-title:before {
-  content: '\f50b';
+  content: "\f50b";
 }
 #customize-theme-controls #accordion-section-sport .accordion-section-title:before {
-  content: '\f50c';
+  content: "\f50c";
 }
 #customize-theme-controls #accordion-section-team .accordion-section-title:before {
-  content: '\f50d';
+  content: "\f50d";
 }
 #customize-theme-controls #accordion-section-testimonials .accordion-section-title:before {
-  content: '\f50e';
+  content: "\f50e";
 }
 #customize-theme-controls #accordion-section-edd .accordion-section-title:before {
-  content: '\f515';
+  content: "\f515";
 }
 #customize-theme-controls #accordion-section-bbpress .accordion-section-title:before {
-  content: '\f501';
+  content: "\f501";
 }
 #customize-theme-controls #accordion-section-events .accordion-section-title:before {
-  content: '\f516';
+  content: "\f516";
 }
 #customize-theme-controls #accordion-panel-tribe_customizer .accordion-section-title:before {
-  content: '\f516';
+  content: "\f516";
 }
 #customize-theme-controls #accordion-section-give .accordion-section-title:before {
-  content: '\f514';
+  content: "\f514";
 }
 #customize-theme-controls #accordion-section-learnpress .accordion-section-title:before {
-  content: '\f505';
+  content: "\f505";
 }
 #customize-theme-controls #accordion-panel-nav_menus .accordion-section-title:before {
-  content: '\e93c';
+  content: "\e93c";
 }
 #customize-theme-controls #accordion-panel-widgets .accordion-section-title:before {
-  content: '\e977';
+  content: "\e977";
 }
 #customize-theme-controls #accordion-section-static_front_page .accordion-section-title:before {
-  content: '\f510';
+  content: "\f510";
 }
 #customize-theme-controls #accordion-section-background_image .accordion-section-title:before {
-  content: '\e973';
+  content: "\e973";
 }
 #customize-theme-controls #accordion-section-custom_css .accordion-section-title:before {
-  content: '\f50f';
+  content: "\f50f";
 }
 
 /* Decorate panel 'Typography'
 -------------------------------------------- */
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] li:not(.customize-section-description-container):not(.customize-control-info) + li:not(.customize-control-info) > label,
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] li:not(.customize-section-description-container):not(.customize-control-info) + li:not(.customize-control-info) > div {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] li:not(.customize-section-description-container):not(.customize-control-info) + li:not(.customize-control-info) > label,
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] li:not(.customize-section-description-container):not(.customize-control-info) + li:not(.customize-control-info) > div {
   padding-top: 0;
   border: none;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control:not(.customize-control-info) {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control:not(.customize-control-info) {
   margin: 0;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control:not(.customize-control-info) + .customize-control:not(.customize-control-info) {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control:not(.customize-control-info) + .customize-control:not(.customize-control-info) {
   margin-top: 0.5em;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control:not(.customize-control-info) .customize-control-title {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control:not(.customize-control-info) .customize-control-title {
   display: inline-block;
   vertical-align: middle;
   width: 35%;
   margin-top: 0;
   line-height: 1.25em;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control:not(.customize-control-info) .customize-control-title ~ [data-customize-setting-link] {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control:not(.customize-control-info) .customize-control-title ~ [data-customize-setting-link] {
   display: inline-block;
   vertical-align: middle;
   width: 62%;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control:not(.customize-control-info) .customize-control-description {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control:not(.customize-control-info) .customize-control-description {
   margin-bottom: 1em;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control-info {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control-info {
   margin: 1em 0;
 }
-#customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-control-info .customize-control-wrap {
+#customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-control-info .customize-control-wrap {
   margin: 0 !important;
   border: 1px solid #ddd;
 }
@@ -604,9 +604,10 @@ body.putter_decorate_fonts_section #customize-controls .wp-full-overlay-sidebar-
 body.putter_decorate_fonts_section .in-sub-panel.section-open #customize-theme-controls #sub-accordion-panel-fonts.customize-pane-child.current-panel {
   visibility: visible;
   height: auto;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
-body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] {
+body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -618,15 +619,12 @@ body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .cust
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.125);
   -ms-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.125);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.125);
-  -webkit-border-radius: 2px;
-  -ms-border-radius: 2px;
   border-radius: 2px;
   -webkit-transform: translateX(-110%);
-  -ms-transform: translateX(-110%);
   transform: translateX(-110%);
 }
-body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"]:after {
-  content: ' ';
+body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section]:after {
+  content: " ";
   display: block;
   width: 8px;
   height: 8px;
@@ -641,17 +639,13 @@ body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .cust
   top: -6px;
   left: 15px;
   -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"].open {
+body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section].open {
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   overflow: visible;
 }
-body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^="sub-accordion-section-"][id$="_font_section"] .customize-section-description-container {
+body.putter_decorate_fonts_section .in-sub-panel #customize-theme-controls .customize-pane-child[id^=sub-accordion-section-][id$=_font_section] .customize-section-description-container {
   display: none;
 }
-
-/*# sourceMappingURL=theme-customizer.css.map */

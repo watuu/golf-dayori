@@ -14,7 +14,6 @@
   position: relative;
   max-width: 100%;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   left: 0;
   top: 0;
@@ -26,8 +25,6 @@
   -webkit-box-shadow: none !important;
   -ms-box-shadow: none !important;
   box-shadow: none !important;
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   font-size: 14px;
   line-height: 18px;
@@ -57,8 +54,6 @@
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-border-radius: 5px;
-  -ms-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
@@ -73,7 +68,6 @@
   line-height: 18px;
   font-weight: 400;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   -webkit-box-shadow: 0 3px 21px rgba(0, 0, 0, 0.05) !important;
   -ms-box-shadow: 0 3px 21px rgba(0, 0, 0, 0.05) !important;
@@ -110,7 +104,7 @@ div.wpcf7 .ajax-loader {
 }
 div.wpcf7 .wpcf7-spinner:before,
 div.wpcf7 .ajax-loader:before {
-  content: '\e832';
+  content: "\e832";
   font-family: "fontello";
   width: 16px;
   height: 16px;
@@ -123,17 +117,16 @@ div.wpcf7 .ajax-loader:before {
   left: 0;
   background-color: transparent;
   -webkit-animation: spin 2s infinite linear;
-  -ms-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
 
 div.wpcf7 .wpcf7-spinner + .acceptance,
-div.wpcf7 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .ajax-loader + .acceptance {
   margin: 15px 0 0 0;
 }
 
-.wpcf7 .columns_wrap > [class*="column-"] {
+.wpcf7 .columns_wrap > [class*=column-] {
   padding-top: 0 !important;
 }
 .wpcf7 .columns_wrap {
@@ -147,9 +140,10 @@ div.wpcf7 .ajax-loader + .acceptance {
 }
 .wpcf7 .select_container,
 .wpcf7 textarea,
-.wpcf7 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+.wpcf7 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 20px;
 }
 .wpcf7 textarea {
@@ -165,13 +159,13 @@ div.wpcf7 .ajax-loader + .acceptance {
   height: 20.9em;
   min-height: 4em;
 }
-.wpcf7 input[type="text"],
-.wpcf7 input[type="number"],
-.wpcf7 input[type="email"],
-.wpcf7 input[type="url"],
-.wpcf7 input[type="tel"],
-.wpcf7 input[type="search"],
-.wpcf7 input[type="password"],
+.wpcf7 input[type=text],
+.wpcf7 input[type=number],
+.wpcf7 input[type=email],
+.wpcf7 input[type=url],
+.wpcf7 input[type=tel],
+.wpcf7 input[type=search],
+.wpcf7 input[type=password],
 .wpcf7 textarea,
 .wpcf7 select {
   outline: none;
@@ -203,15 +197,12 @@ div.wpcf7 .ajax-loader + .acceptance {
   font-size: 16px;
   background-color: var(--theme-color-text_link);
   color: var(--theme-color-inverse_link);
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .wpcf7 .wpcf7-submit-style .submit-style-in:before {
-  content: '\e9a5';
+  content: "\e9a5";
   font-family: "fontello";
   font-weight: 400;
   display: inline-block;
@@ -268,35 +259,35 @@ div.wpcf7 .ajax-loader + .acceptance {
 .wpcf7 .wpcf7-acceptance span.wpcf7-list-item {
   margin: 0;
 }
-.wpcf7 .wpcf7-form-control-wrap[data-name="acceptance"],
+.wpcf7 .wpcf7-form-control-wrap[data-name=acceptance],
 .wpcf7 .wpcf7-form-control-wrap.acceptance {
   display: block;
   text-align: left;
 }
-.wpcf7 [data-name="acceptance"]:not(:last-child) {
+.wpcf7 [data-name=acceptance]:not(:last-child) {
   margin-bottom: 10px;
 }
-.wpcf7 [data-name="acceptance"]:not(:first-child) {
+.wpcf7 [data-name=acceptance]:not(:first-child) {
   margin-top: 10px;
 }
 
 /* Style 1 */
 div.wpcf7 .form-style-1 .select_container, div.wpcf7 .form-style-1 textarea,
-div.wpcf7 .form-style-1 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-1 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.009);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.009);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.009);
 }
-div.wpcf7 .form-style-1 input[type="text"], div.wpcf7 .form-style-1 input[type="number"], div.wpcf7 .form-style-1 input[type="email"], div.wpcf7 .form-style-1 input[type="url"], div.wpcf7 .form-style-1 input[type="tel"], div.wpcf7 .form-style-1 input[type="password"], div.wpcf7 .form-style-1 input[type="search"], div.wpcf7 .form-style-1 select, div.wpcf7 .form-style-1 textarea, div.wpcf7 .form-style-1 textarea.wp-editor-area {
+div.wpcf7 .form-style-1 input[type=text], div.wpcf7 .form-style-1 input[type=number], div.wpcf7 .form-style-1 input[type=email], div.wpcf7 .form-style-1 input[type=url], div.wpcf7 .form-style-1 input[type=tel], div.wpcf7 .form-style-1 input[type=password], div.wpcf7 .form-style-1 input[type=search], div.wpcf7 .form-style-1 select, div.wpcf7 .form-style-1 textarea, div.wpcf7 .form-style-1 textarea.wp-editor-area {
   padding: 13px 0;
   line-height: 1.5em;
   border-color: transparent;
 }
-div.wpcf7 .form-style-1 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-1 .columns_wrap > [class*=column-] {
   padding-bottom: 37px;
 }
-div.wpcf7 .form-style-1 .columns_wrap.margin-bottom > [class*="column-"] {
+div.wpcf7 .form-style-1 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 60px;
 }
 div.wpcf7 .form-style-1 .style-line .wpcf7-form-control-wrap {
@@ -329,7 +320,6 @@ div.wpcf7 .form-style-1 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -345,10 +335,9 @@ div.wpcf7 .form-style-1 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-1 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-1 .style-line select:focus + .line:before, div.wpcf7 .form-style-1 .style-line select:active + .line:before, div.wpcf7 .form-style-1 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-1 .style-line textarea:active + .line:before, div.wpcf7 .form-style-1 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-1 .style-line textarea.wp-editor-area:active + .line:before {
+div.wpcf7 .form-style-1 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-1 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-1 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-1 .style-line select:focus + .line:before, div.wpcf7 .form-style-1 .style-line select:active + .line:before, div.wpcf7 .form-style-1 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-1 .style-line textarea:active + .line:before, div.wpcf7 .form-style-1 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-1 .style-line textarea.wp-editor-area:active + .line:before {
   width: 100%;
 }
 div.wpcf7 .form-style-1 .style-line:hover .line:before {
@@ -360,12 +349,12 @@ div.wpcf7 .form-style-1 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-1 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-1 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-1 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-1 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-1 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-1 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-1 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-1 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-1 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -377,28 +366,28 @@ div.wpcf7 .form-style-1 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-1 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-1 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 16px;
 }
 div.wpcf7 .form-style-1 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-1 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 22px;
 }
 div.wpcf7 .form-style-1 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
   font-size: 22px;
 }
 div.wpcf7 .form-style-1 + div.wpcf7-response-output {
   margin: 37px 0 0;
 }
 div.wpcf7 .form-style-1 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-1 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-1 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-1 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-1 .wpcf7-spinner,
 div.wpcf7 .form-style-1 .ajax-loader {
@@ -409,11 +398,11 @@ div.wpcf7 .form-style-1 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-1 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-1 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-1 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-1 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-1 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-1 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-1 span.wpcf7-not-valid-tip {
@@ -424,14 +413,14 @@ div.wpcf7 .form-style-1 span.wpcf7-not-valid-tip {
 
 /* Style 2 */
 div.wpcf7 .form-style-2 .select_container, div.wpcf7 .form-style-2 textarea,
-div.wpcf7 .form-style-2 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-2 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
 }
 div.wpcf7 .form-style-2 .hiddendiv,
-div.wpcf7 .form-style-2 input[type="text"], div.wpcf7 .form-style-2 input[type="number"], div.wpcf7 .form-style-2 input[type="email"], div.wpcf7 .form-style-2 input[type="url"], div.wpcf7 .form-style-2 input[type="tel"], div.wpcf7 .form-style-2 input[type="password"], div.wpcf7 .form-style-2 input[type="search"], div.wpcf7 .form-style-2 select, div.wpcf7 .form-style-2 textarea, div.wpcf7 .form-style-2 textarea.wp-editor-area {
+div.wpcf7 .form-style-2 input[type=text], div.wpcf7 .form-style-2 input[type=number], div.wpcf7 .form-style-2 input[type=email], div.wpcf7 .form-style-2 input[type=url], div.wpcf7 .form-style-2 input[type=tel], div.wpcf7 .form-style-2 input[type=password], div.wpcf7 .form-style-2 input[type=search], div.wpcf7 .form-style-2 select, div.wpcf7 .form-style-2 textarea, div.wpcf7 .form-style-2 textarea.wp-editor-area {
   padding: 10px 0;
   line-height: 1.5em;
   font-size: 16px;
@@ -444,7 +433,6 @@ div.wpcf7 .form-style-2 input[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-2 textarea[placeholder]::-webkit-input-placeholder {
@@ -452,7 +440,6 @@ div.wpcf7 .form-style-2 textarea[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-2 input[placeholder]::-moz-placeholder {
@@ -460,7 +447,7 @@ div.wpcf7 .form-style-2 input[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-2 textarea[placeholder]::-moz-placeholder {
@@ -468,7 +455,7 @@ div.wpcf7 .form-style-2 textarea[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-2 input[placeholder]:-ms-input-placeholder {
@@ -487,7 +474,68 @@ div.wpcf7 .form-style-2 textarea[placeholder]:-ms-input-placeholder {
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+div.wpcf7 .form-style-2 input[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 input[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 input[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 input[placeholder]::-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 div.wpcf7 .form-style-2 input[placeholder]::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 textarea[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 textarea[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 textarea[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-2 textarea[placeholder]::-ms-input-placeholder {
   text-overflow: ellipsis;
   opacity: 1;
   color: var(--theme-color-alter_text);
@@ -500,7 +548,6 @@ div.wpcf7 .form-style-2 textarea[placeholder]::placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-2 input[placeholder]:focus::-webkit-input-placeholder {
@@ -527,7 +574,39 @@ div.wpcf7 .form-style-2 textarea[placeholder]:focus:-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
+div.wpcf7 .form-style-2 input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 input[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 input[placeholder]:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
 div.wpcf7 .form-style-2 input[placeholder]:focus::placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 textarea[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 textarea[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 textarea[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-2 textarea[placeholder]:focus::-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
@@ -535,10 +614,10 @@ div.wpcf7 .form-style-2 textarea[placeholder]:focus::placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
-div.wpcf7 .form-style-2 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-2 .columns_wrap > [class*=column-] {
   padding-bottom: 21px;
 }
-div.wpcf7 .form-style-2 .columns_wrap.margin-bottom > [class*="column-"] {
+div.wpcf7 .form-style-2 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 44px;
 }
 div.wpcf7 .form-style-2 .style-line .wpcf7-form-control-wrap {
@@ -589,7 +668,6 @@ div.wpcf7 .form-style-2 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -605,24 +683,23 @@ div.wpcf7 .form-style-2 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-2 .style-line input[type="text"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="text"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="number"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="number"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="email"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="email"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="url"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="url"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="tel"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="tel"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="password"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="password"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type="search"]:focus + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type="search"]:active + * + .line:before,
-div.wpcf7 .form-style-2 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-2 .style-line select:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=text]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=text]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=number]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=number]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=email]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=email]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=url]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=url]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=tel]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=tel]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=password]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=password]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-2 .style-line input[type=search]:focus + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-2 .style-line input[type=search]:active + * + .line:before,
+div.wpcf7 .form-style-2 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-2 .style-line select:focus + * + .line:before,
 div.wpcf7 .form-style-2 .style-line select:focus + .line:before, div.wpcf7 .form-style-2 .style-line select:active + * + .line:before,
 div.wpcf7 .form-style-2 .style-line select:active + .line:before, div.wpcf7 .form-style-2 .style-line textarea:focus + * + .line:before,
 div.wpcf7 .form-style-2 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-2 .style-line textarea:active + * + .line:before,
@@ -640,12 +717,12 @@ div.wpcf7 .form-style-2 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-2 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-2 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-2 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-2 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-2 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-2 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-2 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-2 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-2 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -657,28 +734,28 @@ div.wpcf7 .form-style-2 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-2 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-2 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 16px;
 }
 div.wpcf7 .form-style-2 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-2 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 22px;
 }
 div.wpcf7 .form-style-2 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
   font-size: 22px;
 }
 div.wpcf7 .form-style-2 + div.wpcf7-response-output {
   margin: 35px 0 0;
 }
 div.wpcf7 .form-style-2 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-2 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-2 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-2 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-2 .wpcf7-spinner,
 div.wpcf7 .form-style-2 .ajax-loader {
@@ -689,11 +766,11 @@ div.wpcf7 .form-style-2 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-2 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-2 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-2 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-2 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-2 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-2 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-2 span.wpcf7-not-valid-tip {
@@ -704,10 +781,10 @@ div.wpcf7 .form-style-2 span.wpcf7-not-valid-tip {
 
 /* Style 3 */
 div.wpcf7 .form-style-3 .select_container, div.wpcf7 .form-style-3 textarea,
-div.wpcf7 .form-style-3 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-3 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
 }
-div.wpcf7 .form-style-3 input[type="text"], div.wpcf7 .form-style-3 input[type="number"], div.wpcf7 .form-style-3 input[type="email"], div.wpcf7 .form-style-3 input[type="url"], div.wpcf7 .form-style-3 input[type="tel"], div.wpcf7 .form-style-3 input[type="password"], div.wpcf7 .form-style-3 input[type="search"], div.wpcf7 .form-style-3 select, div.wpcf7 .form-style-3 textarea, div.wpcf7 .form-style-3 textarea.wp-editor-area {
+div.wpcf7 .form-style-3 input[type=text], div.wpcf7 .form-style-3 input[type=number], div.wpcf7 .form-style-3 input[type=email], div.wpcf7 .form-style-3 input[type=url], div.wpcf7 .form-style-3 input[type=tel], div.wpcf7 .form-style-3 input[type=password], div.wpcf7 .form-style-3 input[type=search], div.wpcf7 .form-style-3 select, div.wpcf7 .form-style-3 textarea, div.wpcf7 .form-style-3 textarea.wp-editor-area {
   padding: 13px 0;
   line-height: 1.5em;
   border-color: transparent;
@@ -723,7 +800,6 @@ div.wpcf7 .form-style-3 input[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-inverse_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-3 textarea[placeholder]::-webkit-input-placeholder {
@@ -731,7 +807,6 @@ div.wpcf7 .form-style-3 textarea[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-inverse_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-3 input[placeholder]::-moz-placeholder {
@@ -739,7 +814,7 @@ div.wpcf7 .form-style-3 input[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-inverse_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-3 textarea[placeholder]::-moz-placeholder {
@@ -747,7 +822,7 @@ div.wpcf7 .form-style-3 textarea[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-inverse_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-3 input[placeholder]:-ms-input-placeholder {
@@ -766,7 +841,68 @@ div.wpcf7 .form-style-3 textarea[placeholder]:-ms-input-placeholder {
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+div.wpcf7 .form-style-3 input[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 input[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 input[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 input[placeholder]::-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 div.wpcf7 .form-style-3 input[placeholder]::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 textarea[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 textarea[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 textarea[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-inverse_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-3 textarea[placeholder]::-ms-input-placeholder {
   text-overflow: ellipsis;
   opacity: 1;
   color: var(--theme-color-inverse_text);
@@ -779,7 +915,6 @@ div.wpcf7 .form-style-3 textarea[placeholder]::placeholder {
   opacity: 1;
   color: var(--theme-color-inverse_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-3 input[placeholder]:focus::-webkit-input-placeholder {
@@ -806,7 +941,39 @@ div.wpcf7 .form-style-3 textarea[placeholder]:focus:-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
+div.wpcf7 .form-style-3 input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 input[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 input[placeholder]:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
 div.wpcf7 .form-style-3 input[placeholder]:focus::placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 textarea[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 textarea[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 textarea[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-3 textarea[placeholder]:focus::-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
@@ -814,10 +981,10 @@ div.wpcf7 .form-style-3 textarea[placeholder]:focus::placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
-div.wpcf7 .form-style-3 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-3 .columns_wrap > [class*=column-] {
   padding-bottom: 37px;
 }
-div.wpcf7 .form-style-3 .columns_wrap.margin-bottom > [class*="column-"] {
+div.wpcf7 .form-style-3 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 60px;
 }
 div.wpcf7 .form-style-3 .style-line .wpcf7-form-control-wrap {
@@ -850,7 +1017,6 @@ div.wpcf7 .form-style-3 .style-line .line {
   position: relative;
   background-color: var(--theme-color-text_dark_02);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -866,10 +1032,9 @@ div.wpcf7 .form-style-3 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-3 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-3 .style-line select:focus + .line:before, div.wpcf7 .form-style-3 .style-line select:active + .line:before, div.wpcf7 .form-style-3 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-3 .style-line textarea:active + .line:before, div.wpcf7 .form-style-3 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-3 .style-line textarea.wp-editor-area:active + .line:before {
+div.wpcf7 .form-style-3 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-3 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-3 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-3 .style-line select:focus + .line:before, div.wpcf7 .form-style-3 .style-line select:active + .line:before, div.wpcf7 .form-style-3 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-3 .style-line textarea:active + .line:before, div.wpcf7 .form-style-3 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-3 .style-line textarea.wp-editor-area:active + .line:before {
   width: 100%;
 }
 div.wpcf7 .form-style-3 .style-line:hover .line:before {
@@ -881,12 +1046,12 @@ div.wpcf7 .form-style-3 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-3 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-3 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-3 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-3 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-3 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-3 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-3 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-3 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-3 .style-line[class*=icon-]:before {
   color: var(--theme-color-inverse_text);
   display: block;
   font-family: "fontello";
@@ -898,22 +1063,22 @@ div.wpcf7 .form-style-3 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-3 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-3 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 16px;
   margin-top: 1px;
 }
 div.wpcf7 .form-style-3 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-3 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 22px;
 }
 div.wpcf7 .form-style-3 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
   font-size: 22px;
 }
 div.wpcf7 .form-style-3 + div.wpcf7-response-output {
@@ -924,7 +1089,7 @@ div.wpcf7 .form-style-3 .wpcf7-list-item-label {
   color: var(--theme-color-text);
 }
 div.wpcf7 .form-style-3 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-3 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-3 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-3 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-3 .wpcf7-spinner,
 div.wpcf7 .form-style-3 .ajax-loader {
@@ -935,15 +1100,15 @@ div.wpcf7 .form-style-3 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-3 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-3 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-3 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-3 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-3 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-3 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
   border-color: var(--theme-color-text_dark_07);
 }
-div.wpcf7 .form-style-3 input[type="checkbox"] + .wpcf7-list-item-label:hover:before {
+div.wpcf7 .form-style-3 input[type=checkbox] + .wpcf7-list-item-label:hover:before {
   border-color: var(--theme-color-text_dark);
 }
 div.wpcf7 .form-style-3 span.wpcf7-not-valid-tip {
@@ -951,21 +1116,19 @@ div.wpcf7 .form-style-3 span.wpcf7-not-valid-tip {
   position: relative;
   bottom: -12px;
 }
-.ua_firefox div.wpcf7 .form-style-3 input[type="checkbox"] + .wpcf7-list-item-label:before {
+.ua_firefox div.wpcf7 .form-style-3 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.37em;
 }
 
 /* Style 4 */
 div.wpcf7 .form-style-4 .select_container, div.wpcf7 .form-style-4 textarea,
-div.wpcf7 .form-style-4 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-4 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
 }
-div.wpcf7 .form-style-4 input[type="text"], div.wpcf7 .form-style-4 input[type="number"], div.wpcf7 .form-style-4 input[type="email"], div.wpcf7 .form-style-4 input[type="url"], div.wpcf7 .form-style-4 input[type="tel"], div.wpcf7 .form-style-4 input[type="password"], div.wpcf7 .form-style-4 input[type="search"], div.wpcf7 .form-style-4 select, div.wpcf7 .form-style-4 textarea, div.wpcf7 .form-style-4 textarea.wp-editor-area {
+div.wpcf7 .form-style-4 input[type=text], div.wpcf7 .form-style-4 input[type=number], div.wpcf7 .form-style-4 input[type=email], div.wpcf7 .form-style-4 input[type=url], div.wpcf7 .form-style-4 input[type=tel], div.wpcf7 .form-style-4 input[type=password], div.wpcf7 .form-style-4 input[type=search], div.wpcf7 .form-style-4 select, div.wpcf7 .form-style-4 textarea, div.wpcf7 .form-style-4 textarea.wp-editor-area {
   padding: 12px 47px;
   line-height: 1.5em;
   border: 1px solid var(--theme-color-input_bd_color);
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
 }
 div.wpcf7 .form-style-4 .select_container:after {
@@ -976,7 +1139,6 @@ div.wpcf7 .form-style-4 input[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-text_light);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-4 textarea[placeholder]::-webkit-input-placeholder {
@@ -984,7 +1146,6 @@ div.wpcf7 .form-style-4 textarea[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-text_light);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-4 input[placeholder]::-moz-placeholder {
@@ -992,7 +1153,7 @@ div.wpcf7 .form-style-4 input[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-text_light);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-4 textarea[placeholder]::-moz-placeholder {
@@ -1000,7 +1161,7 @@ div.wpcf7 .form-style-4 textarea[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-text_light);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-4 input[placeholder]:-ms-input-placeholder {
@@ -1019,7 +1180,68 @@ div.wpcf7 .form-style-4 textarea[placeholder]:-ms-input-placeholder {
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+div.wpcf7 .form-style-4 input[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 input[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 input[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 input[placeholder]::-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 div.wpcf7 .form-style-4 input[placeholder]::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 textarea[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 textarea[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 textarea[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-text_light);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-4 textarea[placeholder]::-ms-input-placeholder {
   text-overflow: ellipsis;
   opacity: 1;
   color: var(--theme-color-text_light);
@@ -1032,7 +1254,6 @@ div.wpcf7 .form-style-4 textarea[placeholder]::placeholder {
   opacity: 1;
   color: var(--theme-color-text_light);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-4 input[placeholder]:focus::-webkit-input-placeholder {
@@ -1059,7 +1280,39 @@ div.wpcf7 .form-style-4 textarea[placeholder]:focus:-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
+div.wpcf7 .form-style-4 input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 input[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 input[placeholder]:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
 div.wpcf7 .form-style-4 input[placeholder]:focus::placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 textarea[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 textarea[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 textarea[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-4 textarea[placeholder]:focus::-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
@@ -1070,11 +1323,11 @@ div.wpcf7 .form-style-4 textarea[placeholder]:focus::placeholder {
 div.wpcf7 .form-style-4 .columns_wrap {
   margin-right: -20px;
 }
-div.wpcf7 .form-style-4 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-4 .columns_wrap > [class*=column-] {
   padding-bottom: 30px;
   padding-right: 20px;
 }
-div.wpcf7 .form-style-4 .columns_wrap.margin-bottom > [class*="column-"] {
+div.wpcf7 .form-style-4 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 26px;
 }
 div.wpcf7 .form-style-4 .style-icon .wpcf7-form-control-wrap {
@@ -1100,7 +1353,7 @@ div.wpcf7 .form-style-4 .style-icon {
   display: inline-block;
   width: 100%;
 }
-div.wpcf7 .form-style-4 .style-icon[class*="icon-"]:before {
+div.wpcf7 .form-style-4 .style-icon[class*=icon-]:before {
   color: var(--theme-color-text_light);
   display: block;
   font-family: "fontello";
@@ -1112,22 +1365,22 @@ div.wpcf7 .form-style-4 .style-icon[class*="icon-"]:before {
   left: 20px;
 }
 div.wpcf7 .form-style-4 .style-icon.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-4 .style-icon.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 14px;
 }
 div.wpcf7 .form-style-4 .style-icon.icon-phone:before {
   margin-top: 1px;
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-4 .style-icon.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 19px;
 }
 div.wpcf7 .form-style-4 .style-icon.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
 }
 div.wpcf7 .form-style-4 + div.wpcf7-response-output {
   margin: 37px 0 0;
@@ -1135,11 +1388,11 @@ div.wpcf7 .form-style-4 + div.wpcf7-response-output {
 div.wpcf7 .form-style-4 .wpcf7-form-control-wrap + .wpcf7-submit-style {
   margin-top: 20px;
 }
-div.wpcf7 .form-style-4 [data-name="acceptance"] {
+div.wpcf7 .form-style-4 [data-name=acceptance] {
   margin-bottom: 0;
 }
 div.wpcf7 .form-style-4 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-4 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-4 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-4 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-4 .wpcf7-spinner,
 div.wpcf7 .form-style-4 .ajax-loader {
@@ -1150,11 +1403,11 @@ div.wpcf7 .form-style-4 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-4 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-4 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-4 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-4 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-4 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-4 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
   line-height: 15px;
 }
@@ -1166,18 +1419,18 @@ div.wpcf7 .form-style-4 span.wpcf7-not-valid-tip {
 
 /* Style 5 */
 div.wpcf7 .form-style-5 .select_container, div.wpcf7 .form-style-5 textarea,
-div.wpcf7 .form-style-5 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-5 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.015);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.015);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.015);
 }
-div.wpcf7 .form-style-5 input[type="text"], div.wpcf7 .form-style-5 input[type="number"], div.wpcf7 .form-style-5 input[type="email"], div.wpcf7 .form-style-5 input[type="url"], div.wpcf7 .form-style-5 input[type="tel"], div.wpcf7 .form-style-5 input[type="password"], div.wpcf7 .form-style-5 input[type="search"], div.wpcf7 .form-style-5 select, div.wpcf7 .form-style-5 textarea, div.wpcf7 .form-style-5 textarea.wp-editor-area {
+div.wpcf7 .form-style-5 input[type=text], div.wpcf7 .form-style-5 input[type=number], div.wpcf7 .form-style-5 input[type=email], div.wpcf7 .form-style-5 input[type=url], div.wpcf7 .form-style-5 input[type=tel], div.wpcf7 .form-style-5 input[type=password], div.wpcf7 .form-style-5 input[type=search], div.wpcf7 .form-style-5 select, div.wpcf7 .form-style-5 textarea, div.wpcf7 .form-style-5 textarea.wp-editor-area {
   padding: 13px 0;
   line-height: 1.5em;
   border-color: transparent;
 }
-div.wpcf7 .form-style-5 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-5 .columns_wrap > [class*=column-] {
   padding-bottom: 25px;
 }
 div.wpcf7 .form-style-5 .style-line .wpcf7-form-control-wrap {
@@ -1211,7 +1464,6 @@ div.wpcf7 .form-style-5 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -1227,10 +1479,9 @@ div.wpcf7 .form-style-5 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-5 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-5 .style-line select:focus + .line:before, div.wpcf7 .form-style-5 .style-line select:active + .line:before, div.wpcf7 .form-style-5 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-5 .style-line textarea:active + .line:before, div.wpcf7 .form-style-5 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-5 .style-line textarea.wp-editor-area:active + .line:before {
+div.wpcf7 .form-style-5 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-5 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-5 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-5 .style-line select:focus + .line:before, div.wpcf7 .form-style-5 .style-line select:active + .line:before, div.wpcf7 .form-style-5 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-5 .style-line textarea:active + .line:before, div.wpcf7 .form-style-5 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-5 .style-line textarea.wp-editor-area:active + .line:before {
   width: 100%;
 }
 div.wpcf7 .form-style-5 .style-line:hover .line:before {
@@ -1242,12 +1493,12 @@ div.wpcf7 .form-style-5 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-5 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-5 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-5 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-5 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-5 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-5 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-5 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-5 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-5 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -1259,20 +1510,20 @@ div.wpcf7 .form-style-5 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-5 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-5 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 15px;
 }
 div.wpcf7 .form-style-5 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-5 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
 }
 div.wpcf7 .form-style-5 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
 }
 div.wpcf7 .form-style-5 + div.wpcf7-response-output {
   margin: 37px 0 0;
@@ -1283,12 +1534,12 @@ div.wpcf7 .form-style-5 .wpcf7-submit-style {
 div.wpcf7 .form-style-5 .wpcf7-form-control-wrap + .wpcf7-submit-style {
   margin-top: 0 !important;
 }
-div.wpcf7 .form-style-5 [data-name="acceptance"],
+div.wpcf7 .form-style-5 [data-name=acceptance],
 div.wpcf7 .form-style-5 .acceptance {
   margin-bottom: 30px;
 }
 div.wpcf7 .form-style-5 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-5 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-5 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-5 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-5 .wpcf7-spinner,
 div.wpcf7 .form-style-5 .ajax-loader {
@@ -1299,11 +1550,11 @@ div.wpcf7 .form-style-5 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-5 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-5 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-5 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-5 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-5 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-5 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-5 span.wpcf7-not-valid-tip {
@@ -1314,14 +1565,14 @@ div.wpcf7 .form-style-5 span.wpcf7-not-valid-tip {
 
 /* Style 6 */
 div.wpcf7 .form-style-6 .select_container, div.wpcf7 .form-style-6 textarea,
-div.wpcf7 .form-style-6 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-6 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
 }
 div.wpcf7 .form-style-6 .hiddendiv,
-div.wpcf7 .form-style-6 input[type="text"], div.wpcf7 .form-style-6 input[type="number"], div.wpcf7 .form-style-6 input[type="email"], div.wpcf7 .form-style-6 input[type="url"], div.wpcf7 .form-style-6 input[type="tel"], div.wpcf7 .form-style-6 input[type="password"], div.wpcf7 .form-style-6 input[type="search"], div.wpcf7 .form-style-6 select, div.wpcf7 .form-style-6 textarea, div.wpcf7 .form-style-6 textarea.wp-editor-area {
+div.wpcf7 .form-style-6 input[type=text], div.wpcf7 .form-style-6 input[type=number], div.wpcf7 .form-style-6 input[type=email], div.wpcf7 .form-style-6 input[type=url], div.wpcf7 .form-style-6 input[type=tel], div.wpcf7 .form-style-6 input[type=password], div.wpcf7 .form-style-6 input[type=search], div.wpcf7 .form-style-6 select, div.wpcf7 .form-style-6 textarea, div.wpcf7 .form-style-6 textarea.wp-editor-area {
   padding: 10px 0;
   line-height: 1.5em;
   font-size: 16px;
@@ -1329,11 +1580,11 @@ div.wpcf7 .form-style-6 input[type="text"], div.wpcf7 .form-style-6 input[type="
   letter-spacing: 0.1px;
   border-color: transparent;
 }
-div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]) {
+div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*=trx_addons_attrib_]) {
   color: var(--theme-color-alter_text);
   border-color: transparent;
 }
-div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]):active, div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]):hover, div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*="trx_addons_attrib_"]):focus {
+div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*=trx_addons_attrib_]):active, div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*=trx_addons_attrib_]):hover, div.wpcf7 .form-style-6 .select_container select:not(.esg-sorting-select):not([class*=trx_addons_attrib_]):focus {
   color: var(--theme-color-input_dark);
 }
 div.wpcf7 .form-style-6 .select_container select {
@@ -1348,7 +1599,6 @@ div.wpcf7 .form-style-6 input[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-6 textarea[placeholder]::-webkit-input-placeholder {
@@ -1356,7 +1606,6 @@ div.wpcf7 .form-style-6 textarea[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-6 input[placeholder]::-moz-placeholder {
@@ -1364,7 +1613,7 @@ div.wpcf7 .form-style-6 input[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-6 textarea[placeholder]::-moz-placeholder {
@@ -1372,7 +1621,7 @@ div.wpcf7 .form-style-6 textarea[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-6 input[placeholder]:-ms-input-placeholder {
@@ -1391,7 +1640,68 @@ div.wpcf7 .form-style-6 textarea[placeholder]:-ms-input-placeholder {
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+div.wpcf7 .form-style-6 input[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 input[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 input[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 input[placeholder]::-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 div.wpcf7 .form-style-6 input[placeholder]::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 textarea[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 textarea[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 textarea[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-6 textarea[placeholder]::-ms-input-placeholder {
   text-overflow: ellipsis;
   opacity: 1;
   color: var(--theme-color-alter_text);
@@ -1404,7 +1714,6 @@ div.wpcf7 .form-style-6 textarea[placeholder]::placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-6 input[placeholder]:focus::-webkit-input-placeholder {
@@ -1431,7 +1740,39 @@ div.wpcf7 .form-style-6 textarea[placeholder]:focus:-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
+div.wpcf7 .form-style-6 input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 input[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 input[placeholder]:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
 div.wpcf7 .form-style-6 input[placeholder]:focus::placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 textarea[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 textarea[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 textarea[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-6 textarea[placeholder]:focus::-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
@@ -1439,7 +1780,7 @@ div.wpcf7 .form-style-6 textarea[placeholder]:focus::placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
-div.wpcf7 .form-style-6 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-6 .columns_wrap > [class*=column-] {
   padding-bottom: 20px;
 }
 div.wpcf7 .form-style-6 .columns_wrap.margin-bottom {
@@ -1492,7 +1833,6 @@ div.wpcf7 .form-style-6 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -1508,24 +1848,23 @@ div.wpcf7 .form-style-6 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-6 .style-line input[type="text"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="text"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="number"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="number"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="email"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="email"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="url"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="url"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="tel"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="tel"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="password"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="password"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type="search"]:focus + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type="search"]:active + div + .line:before,
-div.wpcf7 .form-style-6 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-6 .style-line select:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=text]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=text]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=number]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=number]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=email]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=email]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=url]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=url]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=tel]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=tel]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=password]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=password]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-6 .style-line input[type=search]:focus + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-6 .style-line input[type=search]:active + div + .line:before,
+div.wpcf7 .form-style-6 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-6 .style-line select:focus + div + .line:before,
 div.wpcf7 .form-style-6 .style-line select:focus + .line:before, div.wpcf7 .form-style-6 .style-line select:active + div + .line:before,
 div.wpcf7 .form-style-6 .style-line select:active + .line:before, div.wpcf7 .form-style-6 .style-line textarea:focus + div + .line:before,
 div.wpcf7 .form-style-6 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-6 .style-line textarea:active + div + .line:before,
@@ -1543,12 +1882,12 @@ div.wpcf7 .form-style-6 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-6 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-6 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-6 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-6 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-6 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-6 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-6 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-6 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-6 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -1560,28 +1899,28 @@ div.wpcf7 .form-style-6 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-6 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-6 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 16px;
 }
 div.wpcf7 .form-style-6 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-6 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 22px;
 }
 div.wpcf7 .form-style-6 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
   font-size: 22px;
 }
 div.wpcf7 .form-style-6 + div.wpcf7-response-output {
   margin: 25px 0 0;
 }
 div.wpcf7 .form-style-6 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-6 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-6 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-6 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-6 .wpcf7-spinner,
 div.wpcf7 .form-style-6 .ajax-loader {
@@ -1592,11 +1931,11 @@ div.wpcf7 .form-style-6 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-6 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-6 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-6 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-6 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-6 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-6 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-6 span.wpcf7-not-valid-tip {
@@ -1607,18 +1946,18 @@ div.wpcf7 .form-style-6 span.wpcf7-not-valid-tip {
 
 /* Style 7 */
 div.wpcf7 .form-style-7 .select_container, div.wpcf7 .form-style-7 textarea,
-div.wpcf7 .form-style-7 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-7 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.025);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.025);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.025);
 }
-div.wpcf7 .form-style-7 input[type="text"], div.wpcf7 .form-style-7 input[type="number"], div.wpcf7 .form-style-7 input[type="email"], div.wpcf7 .form-style-7 input[type="url"], div.wpcf7 .form-style-7 input[type="tel"], div.wpcf7 .form-style-7 input[type="password"], div.wpcf7 .form-style-7 input[type="search"], div.wpcf7 .form-style-7 select, div.wpcf7 .form-style-7 textarea, div.wpcf7 .form-style-7 textarea.wp-editor-area {
+div.wpcf7 .form-style-7 input[type=text], div.wpcf7 .form-style-7 input[type=number], div.wpcf7 .form-style-7 input[type=email], div.wpcf7 .form-style-7 input[type=url], div.wpcf7 .form-style-7 input[type=tel], div.wpcf7 .form-style-7 input[type=password], div.wpcf7 .form-style-7 input[type=search], div.wpcf7 .form-style-7 select, div.wpcf7 .form-style-7 textarea, div.wpcf7 .form-style-7 textarea.wp-editor-area {
   padding: 13px 0;
   line-height: 1.5em;
   border-color: transparent;
 }
-div.wpcf7 .form-style-7 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-7 .columns_wrap > [class*=column-] {
   padding-bottom: 36px;
 }
 div.wpcf7 .form-style-7 .columns_wrap.margin-bottom {
@@ -1655,7 +1994,6 @@ div.wpcf7 .form-style-7 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -1671,10 +2009,9 @@ div.wpcf7 .form-style-7 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-7 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-7 .style-line select:focus + .line:before, div.wpcf7 .form-style-7 .style-line select:active + .line:before, div.wpcf7 .form-style-7 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-7 .style-line textarea:active + .line:before, div.wpcf7 .form-style-7 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-7 .style-line textarea.wp-editor-area:active + .line:before {
+div.wpcf7 .form-style-7 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-7 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-7 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-7 .style-line select:focus + .line:before, div.wpcf7 .form-style-7 .style-line select:active + .line:before, div.wpcf7 .form-style-7 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-7 .style-line textarea:active + .line:before, div.wpcf7 .form-style-7 .style-line textarea.wp-editor-area:focus + .line:before, div.wpcf7 .form-style-7 .style-line textarea.wp-editor-area:active + .line:before {
   width: 100%;
 }
 div.wpcf7 .form-style-7 .style-line:hover .line:before {
@@ -1686,12 +2023,12 @@ div.wpcf7 .form-style-7 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-7 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-7 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-7 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-7 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-7 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-7 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-7 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-7 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-7 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -1703,31 +2040,31 @@ div.wpcf7 .form-style-7 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-7 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-7 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 17px !important;
   margin-top: 2px;
 }
 div.wpcf7 .form-style-7 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-7 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
 }
 div.wpcf7 .form-style-7 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
 }
 div.wpcf7 .form-style-7 + div.wpcf7-response-output {
   margin: 37px 0 0;
 }
-div.wpcf7 .form-style-7 [data-name="acceptance"],
+div.wpcf7 .form-style-7 [data-name=acceptance],
 div.wpcf7 .form-style-7 .acceptance {
   margin-bottom: 30px;
 }
 div.wpcf7 .form-style-7 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-7 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-7 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-7 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-7 .wpcf7-spinner,
 div.wpcf7 .form-style-7 .ajax-loader {
@@ -1738,11 +2075,11 @@ div.wpcf7 .form-style-7 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-7 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-7 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-7 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-7 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-7 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-7 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-7 span.wpcf7-not-valid-tip {
@@ -1753,14 +2090,14 @@ div.wpcf7 .form-style-7 span.wpcf7-not-valid-tip {
 
 /* Style 8 */
 div.wpcf7 .form-style-8 .select_container, div.wpcf7 .form-style-8 textarea,
-div.wpcf7 .form-style-8 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+div.wpcf7 .form-style-8 input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
   margin-bottom: 0;
   -webkit-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   -ms-box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
   box-shadow: 0 15px 15px -14px rgba(0, 0, 0, 0.01);
 }
 div.wpcf7 .form-style-8 .hiddendiv,
-div.wpcf7 .form-style-8 input[type="text"], div.wpcf7 .form-style-8 input[type="number"], div.wpcf7 .form-style-8 input[type="email"], div.wpcf7 .form-style-8 input[type="url"], div.wpcf7 .form-style-8 input[type="tel"], div.wpcf7 .form-style-8 input[type="password"], div.wpcf7 .form-style-8 input[type="search"], div.wpcf7 .form-style-8 select, div.wpcf7 .form-style-8 textarea, div.wpcf7 .form-style-8 textarea.wp-editor-area {
+div.wpcf7 .form-style-8 input[type=text], div.wpcf7 .form-style-8 input[type=number], div.wpcf7 .form-style-8 input[type=email], div.wpcf7 .form-style-8 input[type=url], div.wpcf7 .form-style-8 input[type=tel], div.wpcf7 .form-style-8 input[type=password], div.wpcf7 .form-style-8 input[type=search], div.wpcf7 .form-style-8 select, div.wpcf7 .form-style-8 textarea, div.wpcf7 .form-style-8 textarea.wp-editor-area {
   padding: 10px 0;
   line-height: 1.5em;
   font-size: 16px;
@@ -1773,7 +2110,6 @@ div.wpcf7 .form-style-8 input[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-8 textarea[placeholder]::-webkit-input-placeholder {
@@ -1781,7 +2117,6 @@ div.wpcf7 .form-style-8 textarea[placeholder]::-webkit-input-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-8 input[placeholder]::-moz-placeholder {
@@ -1789,7 +2124,7 @@ div.wpcf7 .form-style-8 input[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-8 textarea[placeholder]::-moz-placeholder {
@@ -1797,7 +2132,7 @@ div.wpcf7 .form-style-8 textarea[placeholder]::-moz-placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-8 input[placeholder]:-ms-input-placeholder {
@@ -1816,7 +2151,68 @@ div.wpcf7 .form-style-8 textarea[placeholder]:-ms-input-placeholder {
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+div.wpcf7 .form-style-8 input[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 input[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 input[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 input[placeholder]::-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 div.wpcf7 .form-style-8 input[placeholder]::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 textarea[placeholder]::-webkit-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 textarea[placeholder]::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 textarea[placeholder]:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+  color: var(--theme-color-alter_text);
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+div.wpcf7 .form-style-8 textarea[placeholder]::-ms-input-placeholder {
   text-overflow: ellipsis;
   opacity: 1;
   color: var(--theme-color-alter_text);
@@ -1829,7 +2225,6 @@ div.wpcf7 .form-style-8 textarea[placeholder]::placeholder {
   opacity: 1;
   color: var(--theme-color-alter_text);
   -webkit-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 div.wpcf7 .form-style-8 input[placeholder]:focus::-webkit-input-placeholder {
@@ -1856,7 +2251,39 @@ div.wpcf7 .form-style-8 textarea[placeholder]:focus:-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
+div.wpcf7 .form-style-8 input[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 input[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 input[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 input[placeholder]:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
 div.wpcf7 .form-style-8 input[placeholder]:focus::placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 textarea[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 textarea[placeholder]:focus::-moz-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 textarea[placeholder]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--theme-color-input_dark);
+}
+div.wpcf7 .form-style-8 textarea[placeholder]:focus::-ms-input-placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
@@ -1864,13 +2291,13 @@ div.wpcf7 .form-style-8 textarea[placeholder]:focus::placeholder {
   opacity: 1;
   color: var(--theme-color-input_dark);
 }
-div.wpcf7 .form-style-8 .columns_wrap > [class*="column-"] {
+div.wpcf7 .form-style-8 .columns_wrap > [class*=column-] {
   padding-bottom: 12px;
 }
-div.wpcf7 .form-style-8 .columns_wrap.margin-bottom > [class*="column-"] {
+div.wpcf7 .form-style-8 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 44px;
 }
-.sidebar div.wpcf7 .form-style-8 .columns_wrap.margin-bottom > [class*="column-"] {
+.sidebar div.wpcf7 .form-style-8 .columns_wrap.margin-bottom > [class*=column-] {
   padding-bottom: 34px;
 }
 div.wpcf7 .form-style-8 .style-line .wpcf7-form-control-wrap {
@@ -1922,7 +2349,6 @@ div.wpcf7 .form-style-8 .style-line .line {
   position: relative;
   background-color: var(--theme-color-input_bd_color);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
   margin-top: -1px;
@@ -1938,24 +2364,23 @@ div.wpcf7 .form-style-8 .style-line .line:before {
   z-index: 1;
   background-color: var(--theme-color-text_dark);
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-div.wpcf7 .form-style-8 .style-line input[type="text"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="text"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="text"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="text"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="number"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="number"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="number"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="number"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="email"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="email"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="email"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="email"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="url"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="url"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="url"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="url"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="tel"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="tel"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="tel"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="tel"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="password"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="password"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="password"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="password"]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type="search"]:focus + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="search"]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type="search"]:active + * + .line:before,
-div.wpcf7 .form-style-8 .style-line input[type="search"]:active + .line:before, div.wpcf7 .form-style-8 .style-line select:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=text]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=text]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=text]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=text]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=number]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=number]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=number]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=number]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=email]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=email]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=email]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=email]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=url]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=url]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=url]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=url]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=tel]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=tel]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=tel]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=tel]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=password]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=password]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=password]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=password]:active + .line:before, div.wpcf7 .form-style-8 .style-line input[type=search]:focus + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=search]:focus + .line:before, div.wpcf7 .form-style-8 .style-line input[type=search]:active + * + .line:before,
+div.wpcf7 .form-style-8 .style-line input[type=search]:active + .line:before, div.wpcf7 .form-style-8 .style-line select:focus + * + .line:before,
 div.wpcf7 .form-style-8 .style-line select:focus + .line:before, div.wpcf7 .form-style-8 .style-line select:active + * + .line:before,
 div.wpcf7 .form-style-8 .style-line select:active + .line:before, div.wpcf7 .form-style-8 .style-line textarea:focus + * + .line:before,
 div.wpcf7 .form-style-8 .style-line textarea:focus + .line:before, div.wpcf7 .form-style-8 .style-line textarea:active + * + .line:before,
@@ -1973,12 +2398,12 @@ div.wpcf7 .form-style-8 .style-line .wpcf7-not-valid ~ .line {
 div.wpcf7 .form-style-8 .style-line .wpcf7-not-valid + .line + span.wpcf7-not-valid-tip {
   display: block;
 }
-div.wpcf7 .form-style-8 .style-line[class*="icon-"] textarea,
-div.wpcf7 .form-style-8 .style-line[class*="icon-"] select,
-div.wpcf7 .form-style-8 .style-line[class*="icon-"] input {
+div.wpcf7 .form-style-8 .style-line[class*=icon-] textarea,
+div.wpcf7 .form-style-8 .style-line[class*=icon-] select,
+div.wpcf7 .form-style-8 .style-line[class*=icon-] input {
   padding-left: 36px;
 }
-div.wpcf7 .form-style-8 .style-line[class*="icon-"]:before {
+div.wpcf7 .form-style-8 .style-line[class*=icon-]:before {
   color: var(--theme-color-input_text);
   display: block;
   font-family: "fontello";
@@ -1990,28 +2415,28 @@ div.wpcf7 .form-style-8 .style-line[class*="icon-"]:before {
   left: 0;
 }
 div.wpcf7 .form-style-8 .style-line.icon-name:before {
-  content: '\e9ae';
+  content: "\e9ae";
 }
 div.wpcf7 .form-style-8 .style-line.icon-email:before {
-  content: '\e9a3';
+  content: "\e9a3";
   font-size: 16px;
 }
 div.wpcf7 .form-style-8 .style-line.icon-phone:before {
-  content: '\e9b8';
+  content: "\e9b8";
 }
 div.wpcf7 .form-style-8 .style-line.icon-subject:before {
-  content: '\e9cd';
+  content: "\e9cd";
   font-size: 22px;
 }
 div.wpcf7 .form-style-8 .style-line.icon-textarea:before {
-  content: '\e9e7';
+  content: "\e9e7";
   font-size: 22px;
 }
 div.wpcf7 .form-style-8 + div.wpcf7-response-output {
   margin: 35px 0 0;
 }
 div.wpcf7 .form-style-8 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-8 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-8 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-8 .ajax-loader + .acceptance,
 div.wpcf7 .form-style-8 .wpcf7-spinner,
 div.wpcf7 .form-style-8 .ajax-loader {
@@ -2022,11 +2447,11 @@ div.wpcf7 .form-style-8 .ajax-loader {
   line-height: 1;
 }
 div.wpcf7 .form-style-8 .wpcf7-spinner + .acceptance,
-div.wpcf7 .form-style-8 .wpcf7-spinner + [data-name="acceptance"],
+div.wpcf7 .form-style-8 .wpcf7-spinner + [data-name=acceptance],
 div.wpcf7 .form-style-8 .ajax-loader + .acceptance {
   margin: 10px 0;
 }
-div.wpcf7 .form-style-8 input[type="checkbox"] + .wpcf7-list-item-label:before {
+div.wpcf7 .form-style-8 input[type=checkbox] + .wpcf7-list-item-label:before {
   top: 0.4em;
 }
 div.wpcf7 .form-style-8 span.wpcf7-not-valid-tip {
@@ -2034,5 +2459,3 @@ div.wpcf7 .form-style-8 span.wpcf7-not-valid-tip {
   position: relative;
   bottom: -12px;
 }
-
-/*# sourceMappingURL=contact-form-7.css.map */

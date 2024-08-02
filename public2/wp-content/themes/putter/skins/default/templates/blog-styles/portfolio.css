@@ -1,6 +1,6 @@
 /* Blog layout: Portfolio
 ------------------------- */
-body[class*="blog_style_portfolio"] .posts_container {
+body[class*=blog_style_portfolio] .posts_container {
   margin-bottom: calc(-1 * var(--theme-var-grid_gap));
 }
 
@@ -18,7 +18,7 @@ body[class*="blog_style_portfolio"] .posts_container {
   margin-bottom: 0;
 }
 
-.post_layout_portfolio .post_featured[class*="hover_"] {
+.post_layout_portfolio .post_featured[class*=hover_] {
   display: block;
 }
 
@@ -82,5 +82,3 @@ body[class*="blog_style_portfolio"] .posts_container {
 .post_layout_portfolio_4 .slider_container.slider_pagination_pos_bottom .swiper-pagination-bullets {
   display: none;
 }
-
-/*# sourceMappingURL=portfolio.css.map */

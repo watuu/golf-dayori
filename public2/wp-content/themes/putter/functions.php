@@ -1150,6 +1150,7 @@ if ( is_array( $putter_required_plugins ) ) {
 	}
 }
 
+
 function cptui_register_my_cpts() {
 
 	/**

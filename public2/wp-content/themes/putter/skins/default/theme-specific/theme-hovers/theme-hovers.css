@@ -1,25 +1,22 @@
 /* Buttons hovers
 ------------------------------------------------------------------ */
-body:not(.elementor-editor-active):not(.no-curtains) [class*="trx_addons_image_effects_on_"].post_featured_bg .trx_addons_image_effect_original_image,
-body:not(.elementor-editor-active):not(.no-curtains) [class*="trx_addons_image_effects_on_"].post_featured_bg .trx_addons_secondary_image {
+body:not(.elementor-editor-active):not(.no-curtains) [class*=trx_addons_image_effects_on_].post_featured_bg .trx_addons_image_effect_original_image,
+body:not(.elementor-editor-active):not(.no-curtains) [class*=trx_addons_image_effects_on_].post_featured_bg .trx_addons_secondary_image {
   display: none;
 }
 
-[class*="sc_button_hover_slide"] {
+[class*=sc_button_hover_slide] {
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .sc_button_hover_just_init {
   -webkit-transition: none !important;
-  -ms-transition: none !important;
   transition: none !important;
 }
 
-[class*="sc_button_hover_"]:not(.sc_button_bg_image) {
+[class*=sc_button_hover_]:not(.sc_button_bg_image) {
   -webkit-transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0s linear 0.3s;
-  -ms-transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0s linear 0.3s;
   transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0s linear 0.3s;
 }
 
@@ -32,7 +29,7 @@ body:not(.elementor-editor-active):not(.no-curtains) [class*="trx_addons_image_e
 }
 
 .sc_button_hover_arrow:before {
-  content: '\e8f4';
+  content: "\e8f4";
   font-family: "fontello";
   position: absolute;
   z-index: 1;
@@ -40,10 +37,8 @@ body:not(.elementor-editor-active):not(.no-curtains) [class*="trx_addons_image_e
   left: auto !important;
   top: 50% !important;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: transparent !important;
   color: inherit !important;
@@ -57,162 +52,202 @@ body:not(.elementor-editor-active):not(.no-curtains) [class*="trx_addons_image_e
 
 /* Slide */
 .sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to right, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to left, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to top, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_link2.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_hover2)), color-stop(50%, var(--theme-color-text_link2))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link2) !important;
   background: linear-gradient(to right, var(--theme-color-text_hover2) 50%, var(--theme-color-text_link2) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link2) !important;
 }
 
 .sc_button_hover_style_link2.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_hover2)), color-stop(50%, var(--theme-color-text_link2))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link2) !important;
   background: linear-gradient(to left, var(--theme-color-text_hover2) 50%, var(--theme-color-text_link2) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link2) !important;
 }
 
 .sc_button_hover_style_link2.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_hover2)), color-stop(50%, var(--theme-color-text_link2))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link2) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_hover2) 50%, var(--theme-color-text_link2) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link2) !important;
 }
 
 .sc_button_hover_style_link2.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_hover2)), color-stop(50%, var(--theme-color-text_link2))) no-repeat scroll right top/100% 210% var(--theme-color-text_link2) !important;
   background: linear-gradient(to top, var(--theme-color-text_hover2) 50%, var(--theme-color-text_link2) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_link2) !important;
 }
 
 .sc_button_hover_style_link3.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_hover3)), color-stop(50%, var(--theme-color-text_link3))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link3) !important;
   background: linear-gradient(to right, var(--theme-color-text_hover3) 50%, var(--theme-color-text_link3) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link3) !important;
 }
 
 .sc_button_hover_style_link3.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_hover3)), color-stop(50%, var(--theme-color-text_link3))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link3) !important;
   background: linear-gradient(to left, var(--theme-color-text_hover3) 50%, var(--theme-color-text_link3) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link3) !important;
 }
 
 .sc_button_hover_style_link3.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_hover3)), color-stop(50%, var(--theme-color-text_link3))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link3) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_hover3) 50%, var(--theme-color-text_link3) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link3) !important;
 }
 
 .sc_button_hover_style_link3.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_hover3)), color-stop(50%, var(--theme-color-text_link3))) no-repeat scroll right top/100% 210% var(--theme-color-text_link3) !important;
   background: linear-gradient(to top, var(--theme-color-text_hover3) 50%, var(--theme-color-text_link3) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_link3) !important;
 }
 
 .sc_button_hover_style_dark.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_dark))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_dark) !important;
   background: linear-gradient(to right, var(--theme-color-text_link) 50%, var(--theme-color-text_dark) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_dark) !important;
 }
 
 .sc_button_hover_style_dark.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_dark))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_dark) !important;
   background: linear-gradient(to left, var(--theme-color-text_link) 50%, var(--theme-color-text_dark) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_dark) !important;
 }
 
 .sc_button_hover_style_dark.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_dark))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_dark) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_link) 50%, var(--theme-color-text_dark) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_dark) !important;
 }
 
 .sc_button_hover_style_dark.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_dark))) no-repeat scroll right top/100% 210% var(--theme-color-text_dark) !important;
   background: linear-gradient(to top, var(--theme-color-text_link) 50%, var(--theme-color-text_dark) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_dark) !important;
 }
 
 .sc_button_hover_style_light.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_light))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_light) !important;
   background: linear-gradient(to right, var(--theme-color-text_link) 50%, var(--theme-color-text_light) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_light) !important;
 }
 
 .sc_button_hover_style_light.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_light))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_light) !important;
   background: linear-gradient(to left, var(--theme-color-text_link) 50%, var(--theme-color-text_light) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_light) !important;
 }
 
 .sc_button_hover_style_light.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_light))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_light) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_link) 50%, var(--theme-color-text_light) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_light) !important;
 }
 
 .sc_button_hover_style_light.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_link)), color-stop(50%, var(--theme-color-text_light))) no-repeat scroll right top/100% 210% var(--theme-color-text_light) !important;
   background: linear-gradient(to top, var(--theme-color-text_link) 50%, var(--theme-color-text_light) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_light) !important;
 }
 
 .sc_button_hover_style_inverse.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-inverse_link)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to right, var(--theme-color-inverse_link) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_inverse.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-inverse_link)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to left, var(--theme-color-inverse_link) 50%, var(--theme-color-text_link) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_inverse.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-inverse_link)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to bottom, var(--theme-color-inverse_link) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_inverse.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-inverse_link)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to top, var(--theme-color-inverse_link) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_hover.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to right, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_hover.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
   background: linear-gradient(to left, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_hover.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to bottom, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_hover.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-text_hover)), color-stop(50%, var(--theme-color-text_link))) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
   background: linear-gradient(to top, var(--theme-color-text_hover) 50%, var(--theme-color-text_link) 50%) no-repeat scroll right top/100% 210% var(--theme-color-text_link) !important;
 }
 
 .sc_button_hover_style_alter.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-alter_dark)), color-stop(50%, var(--theme-color-alter_link))) no-repeat scroll right bottom/210% 100% var(--theme-color-alter_link) !important;
   background: linear-gradient(to right, var(--theme-color-alter_dark) 50%, var(--theme-color-alter_link) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-alter_link) !important;
 }
 
 .sc_button_hover_style_alter.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-alter_dark)), color-stop(50%, var(--theme-color-alter_link))) no-repeat scroll left bottom/210% 100% var(--theme-color-alter_link) !important;
   background: linear-gradient(to left, var(--theme-color-alter_dark) 50%, var(--theme-color-alter_link) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-alter_link) !important;
 }
 
 .sc_button_hover_style_alter.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-alter_dark)), color-stop(50%, var(--theme-color-alter_link))) no-repeat scroll right bottom/100% 210% var(--theme-color-alter_link) !important;
   background: linear-gradient(to bottom, var(--theme-color-alter_dark) 50%, var(--theme-color-alter_link) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-alter_link) !important;
 }
 
 .sc_button_hover_style_alter.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-alter_dark)), color-stop(50%, var(--theme-color-alter_link))) no-repeat scroll right top/100% 210% var(--theme-color-alter_link) !important;
   background: linear-gradient(to top, var(--theme-color-alter_dark) 50%, var(--theme-color-alter_link) 50%) no-repeat scroll right top/100% 210% var(--theme-color-alter_link) !important;
 }
 
 .sc_button_hover_style_alterbd.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-alter_link)), color-stop(50%, var(--theme-color-alter_bd_color))) no-repeat scroll right bottom/210% 100% var(--theme-color-alter_bd_color) !important;
   background: linear-gradient(to right, var(--theme-color-alter_link) 50%, var(--theme-color-alter_bd_color) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-alter_bd_color) !important;
 }
 
 .sc_button_hover_style_alterbd.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-alter_link)), color-stop(50%, var(--theme-color-alter_bd_color))) no-repeat scroll left bottom/210% 100% var(--theme-color-alter_bd_color) !important;
   background: linear-gradient(to left, var(--theme-color-alter_link) 50%, var(--theme-color-alter_bd_color) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-alter_bd_color) !important;
 }
 
 .sc_button_hover_style_alterbd.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-alter_link)), color-stop(50%, var(--theme-color-alter_bd_color))) no-repeat scroll right bottom/100% 210% var(--theme-color-alter_bd_color) !important;
   background: linear-gradient(to bottom, var(--theme-color-alter_link) 50%, var(--theme-color-alter_bd_color) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-alter_bd_color) !important;
 }
 
 .sc_button_hover_style_alterbd.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-alter_link)), color-stop(50%, var(--theme-color-alter_bd_color))) no-repeat scroll right top/100% 210% var(--theme-color-alter_bd_color) !important;
   background: linear-gradient(to top, var(--theme-color-alter_link) 50%, var(--theme-color-alter_bd_color) 50%) no-repeat scroll right top/100% 210% var(--theme-color-alter_bd_color) !important;
 }
 
 .sc_button_hover_style_extra.sc_button_hover_slide_left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--theme-color-extra_link)), color-stop(50%, var(--theme-color-extra_bg_color))) no-repeat scroll right bottom/210% 100% var(--theme-color-extra_bg_color) !important;
   background: linear-gradient(to right, var(--theme-color-extra_link) 50%, var(--theme-color-extra_bg_color) 50%) no-repeat scroll right bottom/210% 100% var(--theme-color-extra_bg_color) !important;
 }
 
 .sc_button_hover_style_extra.sc_button_hover_slide_right {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--theme-color-extra_link)), color-stop(50%, var(--theme-color-extra_bg_color))) no-repeat scroll left bottom/210% 100% var(--theme-color-extra_bg_color) !important;
   background: linear-gradient(to left, var(--theme-color-extra_link) 50%, var(--theme-color-extra_bg_color) 50%) no-repeat scroll left bottom/210% 100% var(--theme-color-extra_bg_color) !important;
 }
 
 .sc_button_hover_style_extra.sc_button_hover_slide_top {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--theme-color-extra_link)), color-stop(50%, var(--theme-color-extra_bg_color))) no-repeat scroll right bottom/100% 210% var(--theme-color-extra_bg_color) !important;
   background: linear-gradient(to bottom, var(--theme-color-extra_link) 50%, var(--theme-color-extra_bg_color) 50%) no-repeat scroll right bottom/100% 210% var(--theme-color-extra_bg_color) !important;
 }
 
 .sc_button_hover_style_extra.sc_button_hover_slide_bottom {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--theme-color-extra_link)), color-stop(50%, var(--theme-color-extra_bg_color))) no-repeat scroll right top/100% 210% var(--theme-color-extra_bg_color) !important;
   background: linear-gradient(to top, var(--theme-color-extra_link) 50%, var(--theme-color-extra_bg_color) 50%) no-repeat scroll right top/100% 210% var(--theme-color-extra_bg_color) !important;
 }
 
@@ -272,14 +307,13 @@ li.active .sc_button_hover_slide_bottom {
 
 /* Images (post featured) hovers
 ----------------------------------------------------- */
-.post_featured[class*="hover_"] {
+.post_featured[class*=hover_] {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
-  -ms-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
-.post_featured:not(.post_featured_bg)[class*="hover_"] {
+.post_featured:not(.post_featured_bg)[class*=hover_] {
   display: inline-block;
   vertical-align: top;
 }
@@ -288,8 +322,8 @@ li.active .sc_button_hover_slide_bottom {
   width: 100%;
 }
 
-.post_featured[class*="hover_"],
-.post_featured[class*="hover_"] * {
+.post_featured[class*=hover_],
+.post_featured[class*=hover_] * {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -297,12 +331,11 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured:hover .trx_addons_secondary_image + img {
   -webkit-transform: scale(1, 1) !important;
-  -ms-transform: scale(1, 1) !important;
   transform: scale(1, 1) !important;
 }
 
 .post_featured .mask {
-  content: ' ';
+  content: " ";
   position: absolute;
   z-index: 4;
   top: 0;
@@ -312,10 +345,8 @@ li.active .sc_button_hover_slide_bottom {
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: translateZ(0) scale(1.005, 1.005);
-  -ms-transform: translateZ(0) scale(1.005, 1.005);
   transform: translateZ(0) scale(1.005, 1.005);
 }
 
@@ -325,10 +356,8 @@ li.active .sc_button_hover_slide_bottom {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5, 0.5);
-  -ms-transform: translate(-50%, -50%) scale(0.5, 0.5);
   transform: translate(-50%, -50%) scale(0.5, 0.5);
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: none;
   font-size: 1.1429em;
@@ -384,14 +413,14 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_icon img,
 .post_featured.hover_icons img {
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .post_featured.hover_icon:hover img,
 .post_featured.hover_icons:hover img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -417,17 +446,16 @@ li.active .sc_button_hover_slide_bottom {
   top: 50%;
   left: 50%;
   -webkit-transform: scale(0.3, 0.3);
-  -ms-transform: scale(0.3, 0.3);
   transform: scale(0.3, 0.3);
   -webkit-transition: all 0.5s ease, transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
-  -ms-transition: all 0.5s ease, transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+  -webkit-transition: all 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+  transition: all 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
   transition: all 0.5s ease, transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
+  transition: all 0.5s ease, transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s, -webkit-transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s;
   width: 2em;
   height: 2em;
   line-height: 2em;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -454,7 +482,6 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_icons .icons a + a {
   margin-left: 0.25em;
   -webkit-transition-delay: 0.15s;
-  -ms-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
 
@@ -466,22 +493,22 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_icons:hover .icons a {
   opacity: 1;
   -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transition: all 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-  -ms-transition: all 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  -webkit-transition: all 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  transition: all 0.5s ease, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   transition: all 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  transition: all 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
 .post_featured.hover_icons:hover .icons a + a {
   -webkit-transition-delay: 0.15s;
-  -ms-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
 
 /* Hover: Zoom (icons 'link' and 'zoom') */
 .post_featured_bg.hover_zoom:after {
-  content: ' ';
+  content: " ";
   width: 0;
   height: 0;
   padding-top: 56.25%;
@@ -496,7 +523,6 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured.hover_zoom:hover:before {
   -webkit-transform: scale(1, 1) rotate(45deg);
-  -ms-transform: scale(1, 1) rotate(45deg);
   transform: scale(1, 1) rotate(45deg);
 }
 
@@ -511,14 +537,14 @@ li.active .sc_button_hover_slide_bottom {
 .post_thumb.hover_zoom img,
 .post_featured.hover_zoom img {
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .post_thumb.hover_zoom:hover img,
 .post_featured.hover_zoom:hover img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -528,7 +554,6 @@ li.active .sc_button_hover_slide_bottom {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: inline-block;
 }
@@ -544,14 +569,10 @@ li.active .sc_button_hover_slide_bottom {
   position: relative;
   left: -50px;
   opacity: 0;
-  -webkit-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   -webkit-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
   transform: scale(0, 0);
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -569,7 +590,6 @@ li.active .sc_button_hover_slide_bottom {
   left: 0;
   opacity: 1;
   -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
 
@@ -580,13 +600,13 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured.hover_dots img {
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .post_featured.hover_dots:hover img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -607,15 +627,11 @@ li.active .sc_button_hover_slide_bottom {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: var(--theme-color-text_link);
 }
@@ -649,7 +665,6 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured.hover_dots:hover .post_info {
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
-  -ms-transform: translate(-50%, -50%) scale(1, 1);
   transform: translate(-50%, -50%) scale(1, 1);
   opacity: 1;
 }
@@ -669,20 +684,18 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_link img {
   will-change: transform;
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: scale(1.01, 1.01);
-  -ms-transform: scale(1.01, 1.01);
   transform: scale(1.01, 1.01);
 }
 
 .post_featured.hover_link.with_thumb:hover > .bg_in,
 .post_featured.hover_link:hover img {
   -webkit-transform: scale(1.07, 1.07);
-  -ms-transform: scale(1.07, 1.07);
   transform: scale(1.07, 1.07);
 }
 
@@ -707,7 +720,6 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured.hover_link:hover .post_info {
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
-  -ms-transform: translate(-50%, -50%) scale(1, 1);
   transform: translate(-50%, -50%) scale(1, 1);
   opacity: 1;
 }
@@ -750,13 +762,10 @@ li.active .sc_button_hover_slide_bottom {
   opacity: 1;
   font-size: 1em;
   -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: none;
-  -ms-transition: none;
   transition: none;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
 }
 
@@ -830,8 +839,10 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_border .post_info .post_title,
 .post_featured.hover_border .post_info .post_descr {
   -webkit-transition: -webkit-transform 0.3s ease, color 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease, color 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease, margin 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease, margin 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease, margin 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 /* Hover Fade */
@@ -841,13 +852,13 @@ li.active .sc_button_hover_slide_bottom {
 
 .post_featured.hover_fade img {
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .post_featured.hover_fade:hover img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -856,7 +867,6 @@ li.active .sc_button_hover_slide_bottom {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -902,19 +912,17 @@ li.active .sc_button_hover_slide_bottom {
 .post_featured.hover_info.with_thumb > .bg_in {
   will-change: transform;
   -webkit-transition: -webkit-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: scale(1.005, 1.005);
-  -ms-transform: scale(1.005, 1.005);
   transform: scale(1.005, 1.005);
 }
 
 .post_featured.hover_info.with_thumb:hover > .bg_in {
   -webkit-transform: scale(1.07, 1.07);
-  -ms-transform: scale(1.07, 1.07);
   transform: scale(1.07, 1.07);
 }
 
@@ -938,23 +946,21 @@ li.active .sc_button_hover_slide_bottom {
   font-size: 1em;
   padding: 1.5em;
   -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: none;
-  -ms-transition: none;
   transition: none;
   -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
   transform: translateZ(0);
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
 }
 
 .post_featured.hover_info .post_info .post_category {
@@ -968,13 +974,10 @@ li.active .sc_button_hover_slide_bottom {
   vertical-align: top;
   padding: 4px 1em;
   margin: 0 0.3em 0.3em 0;
-  -webkit-border-radius: 2em;
-  -ms-border-radius: 2em;
   border-radius: 2em;
 }
 .post_featured.hover_info .post_info .post_category a, .post_featured.hover_info .post_info .post_category a .trx_addons_extended_taxonomy {
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  -ms-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1001,7 +1004,6 @@ li.active .sc_button_hover_slide_bottom {
   overflow: hidden;
   position: relative;
   -webkit-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   will-change: transform;
 }
@@ -1015,7 +1017,7 @@ li.active .sc_button_hover_slide_bottom {
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
-  content: '\e9e2';
+  content: "\e9e2";
 }
 
 .post_featured.hover_info .post_info:hover .hover-arrow {
@@ -1044,9 +1046,9 @@ li.active .sc_button_hover_slide_bottom {
   color: #ffffff;
 }
 
-body.sidebar_show [class*="column-1_3"] .post_featured.hover_info .post_info .post_descr,
-body.sidebar_show [class*="column-1_4"] .post_featured.hover_info .post_info .post_descr,
-body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_info .post_descr {
+body.sidebar_show [class*=column-1_3] .post_featured.hover_info .post_info .post_descr,
+body.sidebar_show [class*=column-1_4] .post_featured.hover_info .post_info .post_descr,
+body.sidebar_show [class*=masonry_item-1_3] .post_featured.hover_info .post_info .post_descr {
   display: none;
 }
 
@@ -1055,14 +1057,15 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_info .post_info .post_title,
 .post_featured.hover_info .post_info .post_descr {
   -webkit-transition: -webkit-transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .post_featured.hover_info .mask {
   opacity: 0.9;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(0%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
@@ -1072,7 +1075,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 
 .post_featured.hover_info:hover img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -1137,7 +1139,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_slide .post_info .post_title,
 .post_featured.hover_slide .post_info .post_descr {
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1163,17 +1164,14 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   width: 100%;
   height: 2px;
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   background-color: var(--theme-color-inverse_link);
 }
 
 .post_featured.hover_slide:hover .post_info .post_title:after {
   -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -1181,13 +1179,11 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   max-width: none;
   width: calc(100% + 20px);
   -webkit-transform: translateX(-10px);
-  -ms-transform: translateX(-10px);
   transform: translateX(-10px);
 }
 
 .post_featured.hover_slide:hover > img {
   -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -1201,14 +1197,12 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   padding: 0 30px 30px;
   opacity: 0;
   -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
 .post_featured.hover_slide:hover .post_info .post_descr {
   opacity: 1;
   -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -1253,7 +1247,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 
 .post_featured.hover_pull:hover > img {
   -webkit-transform: translateY(-70px);
-  -ms-transform: translateY(-70px);
   transform: translateY(-70px);
 }
 
@@ -1263,20 +1256,17 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 
 .post_featured.hover_pull:hover .post_info .post_title {
   -webkit-transform: translateY(-70px);
-  -ms-transform: translateY(-70px);
   transform: translateY(-70px);
 }
 
 .post_featured.hover_pull .post_info .post_descr {
   height: 70px;
   -webkit-transform: translateY(70px);
-  -ms-transform: translateY(70px);
   transform: translateY(70px);
 }
 
 .post_featured.hover_pull:hover .post_info .post_descr {
   -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
@@ -1286,7 +1276,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0;
   padding: 0 10px 0 20px;
@@ -1334,32 +1323,27 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 
 .post_featured.hover_excerpt:hover > img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
 .post_featured.hover_excerpt .post_info .post_title {
   -webkit-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
 }
 
 .post_featured.hover_excerpt:hover .post_info .post_title {
   -webkit-transform: translateY(-105px);
-  -ms-transform: translateY(-105px);
   transform: translateY(-105px);
 }
 
 .post_featured.hover_excerpt .post_info .post_descr {
   -webkit-transform: translateY(110%);
-  -ms-transform: translateY(110%);
   transform: translateY(110%);
   opacity: 0;
 }
 
 .post_featured.hover_excerpt:hover .post_info .post_descr {
   -webkit-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
   opacity: 1;
 }
@@ -1377,7 +1361,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   -webkit-box-orient: vertical;
   display: -moz-box;
   -moz-line-clamp: 3;
-  -moz-box-orient: vertical;
   line-clamp: 3;
   box-orient: vertical;
 }
@@ -1389,14 +1372,13 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 
 .post_featured.hover_border .post_info:before,
 .post_featured.hover_border .post_info:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 30px;
   right: 30px;
   bottom: 30px;
   left: 30px;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
   pointer-events: none;
 }
@@ -1405,13 +1387,11 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   border-top: 1px solid var(--theme-color-inverse_link);
   border-bottom: 1px solid var(--theme-color-inverse_link);
   -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
 }
 
 .post_featured.hover_border:hover .post_info:before {
   -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -1419,13 +1399,11 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   border-left: 1px solid var(--theme-color-inverse_link);
   border-right: 1px solid var(--theme-color-inverse_link);
   -webkit-transform: scaleY(0);
-  -ms-transform: scaleY(0);
   transform: scaleY(0);
 }
 
 .post_featured.hover_border:hover .post_info:after {
   -webkit-transform: scaleY(1);
-  -ms-transform: scaleY(1);
   transform: scaleY(1);
 }
 
@@ -1434,7 +1412,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -1456,13 +1433,11 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_border .post_info .post_title,
 .post_featured.hover_border .post_info .post_descr {
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .post_featured.hover_border:hover > img {
   -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -1477,33 +1452,29 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_border .post_info .post_title {
   padding: 0 0 15px;
   -webkit-transform: translateY(-1em);
-  -ms-transform: translateY(-1em);
   transform: translateY(-1em);
 }
 
 .post_featured.hover_border:hover .post_info .post_title {
   opacity: 1;
   -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .post_featured.hover_border .post_info .post_descr {
   padding: 0;
   -webkit-transform: translateY(1em);
-  -ms-transform: translateY(1em);
   transform: translateY(1em);
 }
 
 .post_featured.hover_border:hover .post_info .post_descr {
   opacity: 1;
   -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .post_featured.hover_border .post_info .post_info_item + .post_info_item:before {
-  content: ' ';
+  content: " ";
   display: block;
   margin: 0.5em 0 0 0;
 }
@@ -1511,22 +1482,22 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 /* Hover Shop (icons) */
 .post_featured.hover_shop:hover .icons > *:nth-child(1) {
   -webkit-transition-delay: 0.05s !important;
-  -ms-transition-delay: 0.05s !important;
   transition-delay: 0.05s !important;
+  -webkit-transition-property: opacity !important;
   transition-property: opacity !important;
   opacity: 1 !important;
 }
 .post_featured.hover_shop:hover .icons > *:nth-child(2) {
   -webkit-transition-delay: 0.1s !important;
-  -ms-transition-delay: 0.1s !important;
   transition-delay: 0.1s !important;
+  -webkit-transition-property: opacity !important;
   transition-property: opacity !important;
   opacity: 1 !important;
 }
 .post_featured.hover_shop:hover .icons > *:nth-child(3) {
   -webkit-transition-delay: 0.15s !important;
-  -ms-transition-delay: 0.15s !important;
   transition-delay: 0.15s !important;
+  -webkit-transition-property: opacity !important;
   transition-property: opacity !important;
   opacity: 1 !important;
 }
@@ -1534,8 +1505,8 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_shop:hover .icons > *:nth-child(5),
 .post_featured.hover_shop:hover .icons > *:nth-child(6) {
   -webkit-transition-delay: 0.2s !important;
-  -ms-transition-delay: 0.2s !important;
   transition-delay: 0.2s !important;
+  -webkit-transition-property: opacity !important;
   transition-property: opacity !important;
   opacity: 1 !important;
 }
@@ -1543,7 +1514,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 /* wishlist */
 .post_featured.hover_shop .icons .tinv-wraper {
   -webkit-transition: all 0.4s ease-in-out !important;
-  -ms-transition: all 0.4s ease-in-out !important;
   transition: all 0.4s ease-in-out !important;
   opacity: 0 !important;
   display: inline-block;
@@ -1569,11 +1539,8 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   width: 47px;
   height: 47px;
   line-height: 48px !important;
-  -webkit-border-radius: 50% !important;
-  -ms-border-radius: 50% !important;
   border-radius: 50% !important;
   -webkit-transition: all 0.2s ease !important;
-  -ms-transition: all 0.2s ease !important;
   transition: all 0.2s ease !important;
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
   -ms-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
@@ -1589,7 +1556,7 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 }
 .post_featured.hover_shop .icons .tinv-wraper > .tinvwl_add_to_wishlist_button:before {
   display: block !important;
-  content: '\e9cc' !important;
+  content: "\e9cc" !important;
   font-family: "fontello" !important;
   margin: 0 !important;
   font-size: 14px !important;
@@ -1601,7 +1568,7 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   text-align: center !important;
 }
 .post_featured.hover_shop .icons .tinv-wraper > .tinvwl_add_to_wishlist_button.tinvwl-product-in-list:before {
-  content: '\ea05' !important;
+  content: "\ea05" !important;
 }
 .post_featured.hover_shop .icons .tinv-wraper > .tinvwl_add_to_wishlist_button:hover {
   color: var(--theme-color-text_link) !important;
@@ -1624,13 +1591,21 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   right: 0;
   bottom: 0;
   pointer-events: none;
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .post_featured.hover_shop .icons > a {
@@ -1647,7 +1622,6 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   line-height: 0 !important;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out !important;
-  -ms-transition: all 0.4s ease-in-out !important;
   transition: all 0.4s ease-in-out !important;
   -webkit-box-shadow: none !important;
   -ms-box-shadow: none !important;
@@ -1661,11 +1635,8 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   width: 47px;
   height: 47px;
   line-height: 47px;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
   -ms-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
@@ -1693,7 +1664,7 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_shop .icons > a.shop_link .icon-anim:before {
   font-family: "fontello" !important;
   font-weight: 400 !important;
-  content: '\e9df' !important;
+  content: "\e9df" !important;
 }
 
 .post_featured.hover_shop .icons > a.added_to_cart {
@@ -1710,10 +1681,10 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 .post_featured.hover_shop .icons > a.shop_cart .icon-anim:before {
   font-family: "fontello" !important;
   font-weight: 400 !important;
-  content: '\e9f5' !important;
+  content: "\e9f5" !important;
 }
 .post_featured.hover_shop .icons > a.shop_cart.button.added .icon-anim:before {
-  content: '\ea06' !important;
+  content: "\ea06" !important;
   position: relative;
   top: 1px;
   right: -1px;
@@ -1728,7 +1699,7 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 }
 
 .underline_hover:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -1737,23 +1708,20 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   height: 2px;
   background: currentColor;
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
   transform-origin: center center;
   -webkit-transform: scale3d(0, 1, 1);
-  -ms-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-  -ms-transition: -ms-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   will-change: transform;
 }
 
 .underline_hover:hover:after {
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
   transform-origin: center center;
   -webkit-transform: scale3d(1, 1, 1);
-  -ms-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
 
@@ -1766,7 +1734,7 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 }
 
 .underline_hover_reverse:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -1775,23 +1743,20 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   height: 2px;
   background: currentColor;
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
   transform-origin: center center;
   -webkit-transform: scale3d(1, 1, 1);
-  -ms-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-  -ms-transition: -ms-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   will-change: transform;
 }
 
 .underline_hover_reverse:hover:after {
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
   transform-origin: center center;
   -webkit-transform: scale3d(0, 1, 1);
-  -ms-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
 }
 
@@ -1801,10 +1766,10 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
   display: inline;
   padding: 0;
   padding-bottom: 0.2em;
+  background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  -webkit-background-size: 0 2px;
   background-size: 0 2px;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1812,52 +1777,44 @@ body.sidebar_show [class*="masonry_item-1_3"] .post_featured.hover_info .post_in
 }
 
 .underline_anim.underline_do_hover {
-  animation: underline_hover_on 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+  -webkit-animation: underline_hover_on 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+          animation: underline_hover_on 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
 
 @-webkit-keyframes underline_hover_on {
   0% {
-    -webkit-background-size: 0 2px;
     background-size: 0 2px;
   }
   100% {
-    -webkit-background-size: 100% 2px;
     background-size: 100% 2px;
   }
 }
 @keyframes underline_hover_on {
   0% {
-    -webkit-background-size: 0 2px;
     background-size: 0 2px;
   }
   100% {
-    -webkit-background-size: 100% 2px;
     background-size: 100% 2px;
   }
 }
 .underline_anim.underline_do_hover:hover {
-  animation: underline_hover_off 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+  -webkit-animation: underline_hover_off 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+          animation: underline_hover_off 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
 
 @-webkit-keyframes underline_hover_off {
   0% {
-    -webkit-background-size: 100% 2px;
     background-size: 100% 2px;
   }
   100% {
-    -webkit-background-size: 0 2px;
     background-size: 0 2px;
   }
 }
 @keyframes underline_hover_off {
   0% {
-    -webkit-background-size: 100% 2px;
     background-size: 100% 2px;
   }
   100% {
-    -webkit-background-size: 0 2px;
     background-size: 0 2px;
   }
 }
-
-/*# sourceMappingURL=theme-hovers.css.map */

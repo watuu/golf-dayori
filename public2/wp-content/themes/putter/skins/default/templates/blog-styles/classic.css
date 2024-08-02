@@ -1,14 +1,15 @@
 /* Blog layout: Classic 
 ------------------------- */
-body[class*="blog_style_classic"] .posts_container.columns_wrap {
+body[class*=blog_style_classic] .posts_container.columns_wrap {
   margin-bottom: calc(-1 * (var(--theme-var-grid_gap) + 15px));
 }
 
 .posts_container.columns_wrap {
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .posts_container.columns_wrap .post_layout_classic {
@@ -36,7 +37,7 @@ body[class*="blog_style_classic"] .posts_container.columns_wrap {
   margin-bottom: 1em;
 }
 
-.post_layout_classic .post_featured[class*="hover_"] {
+.post_layout_classic .post_featured[class*=hover_] {
   display: block;
 }
 
@@ -188,7 +189,6 @@ body[class*="blog_style_classic"] .posts_container.columns_wrap {
   border: 12px solid transparent;
   border-top-color: var(--theme-color-text_link);
   -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
   transform: rotate(225deg);
 }
 .post_layout_classic.post_format_quote .post_content_inner blockquote + p {
@@ -210,5 +210,3 @@ body[class*="blog_style_classic"] .posts_container.columns_wrap {
 .post_layout_classic .post_content_inner > p:last-child {
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=classic.css.map */
