@@ -48,10 +48,11 @@
   color: var(--theme-color-text);
   position: relative;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .mfp-woosq .mfp-arrow.mfp-arrow-left:before {
-  content: "\e92a";
+  content: '\e92a';
   left: 0;
 }
 .mfp-woosq .mfp-arrow.mfp-arrow-left:hover:before {
@@ -59,7 +60,7 @@
   right: auto;
 }
 .mfp-woosq .mfp-arrow.mfp-arrow-right:before {
-  content: "\e92b";
+  content: '\e92b';
   right: 0;
   left: auto;
 }
@@ -82,6 +83,7 @@
   height: 50px;
   line-height: 50px;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: var(--theme-color-text_dark);
   background-color: transparent;
@@ -105,7 +107,7 @@
   padding-right: 0;
 }
 .woosq-product .thumbnails .slick-arrow.slick-next:before {
-  content: "\e92b";
+  content: '\e92b';
 }
 .woosq-product .thumbnails .slick-arrow.slick-prev {
   left: 15px;
@@ -114,7 +116,7 @@
   padding-left: 0;
 }
 .woosq-product .thumbnails .slick-arrow.slick-prev:before {
-  content: "\e92a";
+  content: '\e92a';
 }
 .woosq-product .thumbnails .slick-dots {
   bottom: 28px;
@@ -134,6 +136,7 @@
   height: 10px;
   margin: auto;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #C8C8C8;
   opacity: 0.8;
@@ -199,8 +202,8 @@
   height: 48px;
   margin: 0 5px 0 0;
 }
-.woosq-sidebar .woocommerce div.product form.cart div.quantity input[type=number],
-.woosq-popup .woocommerce div.product form.cart div.quantity input[type=number] {
+.woosq-sidebar .woocommerce div.product form.cart div.quantity input[type="number"],
+.woosq-popup .woocommerce div.product form.cart div.quantity input[type="number"] {
   padding-right: 40px;
 }
 .woosq-sidebar .woocommerce div.product form.cart div.quantity span,
@@ -264,6 +267,8 @@ div > .woosq-btn:first-child {
 button.woosq-btn {
   cursor: pointer;
   padding: 10px 20px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   color: var(--theme-color-inverse_link);
   background-color: var(--theme-color-text_link);
@@ -277,6 +282,7 @@ button.woosq-btn:hover {
   .woosq-product > .product .summary .summary-content {
     padding: 30px;
   }
+
   .woosq-product > .product .thumbnails,
   .woosq-product .thumbnails .slick-track,
   .woosq-product .thumbnails img {
@@ -295,3 +301,5 @@ button.woosq-btn:hover {
     float: none;
   }
 }
+
+/*# sourceMappingURL=woo-smart-quick-view.css.map */

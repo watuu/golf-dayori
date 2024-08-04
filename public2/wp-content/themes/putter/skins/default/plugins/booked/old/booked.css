@@ -1,27 +1,22 @@
-@charset "UTF-8";
 /* Booked Appointments styles
 ----------------------------------------------------------------- */
 /* Buttons */
-body #booked-profile-page input[type=submit],
-body #booked-profile-page input[type=submit].button-primary,
+body #booked-profile-page input[type="submit"],
+body #booked-profile-page input[type="submit"].button-primary,
 body #booked-profile-page button,
-body .booked-list-view input[type=submit],
-body .booked-list-view input[type=submit].button-primary,
+body .booked-list-view input[type="submit"],
+body .booked-list-view input[type="submit"].button-primary,
 body .booked-list-view button,
-body table.booked-calendar input[type=submit],
-body table.booked-calendar input[type=submit].button-primary,
+body table.booked-calendar input[type="submit"],
+body table.booked-calendar input[type="submit"].button-primary,
 body table.booked-calendar button,
-body .booked-modal input[type=submit],
-body .booked-modal input[type=submit].button-primary,
+body .booked-modal input[type="submit"],
+body .booked-modal input[type="submit"].button-primary,
 body .booked-modal button {
   -webkit-appearance: none;
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   vertical-align: top;
   font-size: var(--theme-font-button_font-size);
   line-height: var(--theme-font-button_line-height);
@@ -29,6 +24,8 @@ body .booked-modal button {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   text-transform: var(--theme-font-button_text-transform);
   letter-spacing: var(--theme-font-button_letter-spacing);
@@ -41,65 +38,65 @@ body .booked-modal button {
   padding: 19px 42px;
   border-width: 0 !important;
 }
-body #booked-profile-page input[type=submit].sc_button_shadow,
-body #booked-profile-page input[type=submit].button-primary.sc_button_shadow,
+body #booked-profile-page input[type="submit"].sc_button_shadow,
+body #booked-profile-page input[type="submit"].button-primary.sc_button_shadow,
 body #booked-profile-page button.sc_button_shadow,
-body .booked-list-view input[type=submit].sc_button_shadow,
-body .booked-list-view input[type=submit].button-primary.sc_button_shadow,
+body .booked-list-view input[type="submit"].sc_button_shadow,
+body .booked-list-view input[type="submit"].button-primary.sc_button_shadow,
 body .booked-list-view button.sc_button_shadow,
-body table.booked-calendar input[type=submit].sc_button_shadow,
-body table.booked-calendar input[type=submit].button-primary.sc_button_shadow,
+body table.booked-calendar input[type="submit"].sc_button_shadow,
+body table.booked-calendar input[type="submit"].button-primary.sc_button_shadow,
 body table.booked-calendar button.sc_button_shadow,
-body .booked-modal input[type=submit].sc_button_shadow,
-body .booked-modal input[type=submit].button-primary.sc_button_shadow,
+body .booked-modal input[type="submit"].sc_button_shadow,
+body .booked-modal input[type="submit"].button-primary.sc_button_shadow,
 body .booked-modal button.sc_button_shadow {
   -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link_02);
   -ms-box-shadow: 0 7px 25px var(--theme-color-text_link_02);
   box-shadow: 0 7px 25px var(--theme-color-text_link_02);
 }
-body #booked-profile-page input[type=submit].sc_button_shadow.color_style_dark,
-body #booked-profile-page input[type=submit].button-primary.sc_button_shadow.color_style_dark,
+body #booked-profile-page input[type="submit"].sc_button_shadow.color_style_dark,
+body #booked-profile-page input[type="submit"].button-primary.sc_button_shadow.color_style_dark,
 body #booked-profile-page button.sc_button_shadow.color_style_dark,
-body .booked-list-view input[type=submit].sc_button_shadow.color_style_dark,
-body .booked-list-view input[type=submit].button-primary.sc_button_shadow.color_style_dark,
+body .booked-list-view input[type="submit"].sc_button_shadow.color_style_dark,
+body .booked-list-view input[type="submit"].button-primary.sc_button_shadow.color_style_dark,
 body .booked-list-view button.sc_button_shadow.color_style_dark,
-body table.booked-calendar input[type=submit].sc_button_shadow.color_style_dark,
-body table.booked-calendar input[type=submit].button-primary.sc_button_shadow.color_style_dark,
+body table.booked-calendar input[type="submit"].sc_button_shadow.color_style_dark,
+body table.booked-calendar input[type="submit"].button-primary.sc_button_shadow.color_style_dark,
 body table.booked-calendar button.sc_button_shadow.color_style_dark,
-body .booked-modal input[type=submit].sc_button_shadow.color_style_dark,
-body .booked-modal input[type=submit].button-primary.sc_button_shadow.color_style_dark,
+body .booked-modal input[type="submit"].sc_button_shadow.color_style_dark,
+body .booked-modal input[type="submit"].button-primary.sc_button_shadow.color_style_dark,
 body .booked-modal button.sc_button_shadow.color_style_dark {
   -webkit-box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
   -ms-box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
   box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
 }
-body #booked-profile-page input[type=submit].sc_button_shadow.color_style_link2,
-body #booked-profile-page input[type=submit].button-primary.sc_button_shadow.color_style_link2,
+body #booked-profile-page input[type="submit"].sc_button_shadow.color_style_link2,
+body #booked-profile-page input[type="submit"].button-primary.sc_button_shadow.color_style_link2,
 body #booked-profile-page button.sc_button_shadow.color_style_link2,
-body .booked-list-view input[type=submit].sc_button_shadow.color_style_link2,
-body .booked-list-view input[type=submit].button-primary.sc_button_shadow.color_style_link2,
+body .booked-list-view input[type="submit"].sc_button_shadow.color_style_link2,
+body .booked-list-view input[type="submit"].button-primary.sc_button_shadow.color_style_link2,
 body .booked-list-view button.sc_button_shadow.color_style_link2,
-body table.booked-calendar input[type=submit].sc_button_shadow.color_style_link2,
-body table.booked-calendar input[type=submit].button-primary.sc_button_shadow.color_style_link2,
+body table.booked-calendar input[type="submit"].sc_button_shadow.color_style_link2,
+body table.booked-calendar input[type="submit"].button-primary.sc_button_shadow.color_style_link2,
 body table.booked-calendar button.sc_button_shadow.color_style_link2,
-body .booked-modal input[type=submit].sc_button_shadow.color_style_link2,
-body .booked-modal input[type=submit].button-primary.sc_button_shadow.color_style_link2,
+body .booked-modal input[type="submit"].sc_button_shadow.color_style_link2,
+body .booked-modal input[type="submit"].button-primary.sc_button_shadow.color_style_link2,
 body .booked-modal button.sc_button_shadow.color_style_link2 {
   -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
   -ms-box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
   box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
 }
-body #booked-profile-page input[type=submit].sc_button_shadow.color_style_link3,
-body #booked-profile-page input[type=submit].button-primary.sc_button_shadow.color_style_link3,
+body #booked-profile-page input[type="submit"].sc_button_shadow.color_style_link3,
+body #booked-profile-page input[type="submit"].button-primary.sc_button_shadow.color_style_link3,
 body #booked-profile-page button.sc_button_shadow.color_style_link3,
-body .booked-list-view input[type=submit].sc_button_shadow.color_style_link3,
-body .booked-list-view input[type=submit].button-primary.sc_button_shadow.color_style_link3,
+body .booked-list-view input[type="submit"].sc_button_shadow.color_style_link3,
+body .booked-list-view input[type="submit"].button-primary.sc_button_shadow.color_style_link3,
 body .booked-list-view button.sc_button_shadow.color_style_link3,
-body table.booked-calendar input[type=submit].sc_button_shadow.color_style_link3,
-body table.booked-calendar input[type=submit].button-primary.sc_button_shadow.color_style_link3,
+body table.booked-calendar input[type="submit"].sc_button_shadow.color_style_link3,
+body table.booked-calendar input[type="submit"].button-primary.sc_button_shadow.color_style_link3,
 body table.booked-calendar button.sc_button_shadow.color_style_link3,
-body .booked-modal input[type=submit].sc_button_shadow.color_style_link3,
-body .booked-modal input[type=submit].button-primary.sc_button_shadow.color_style_link3,
+body .booked-modal input[type="submit"].sc_button_shadow.color_style_link3,
+body .booked-modal input[type="submit"].button-primary.sc_button_shadow.color_style_link3,
 body .booked-modal button.sc_button_shadow.color_style_link3 {
   -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link3_02);
   -ms-box-shadow: 0 7px 25px var(--theme-color-text_link3_02);
@@ -111,28 +108,28 @@ body #booked-profile-page .booked-fea-appt-list .appt-block button.button-primar
 .booked-calendar-wrap .booked-calendar .booked-appt-list .timeslot .timeslot-people button:focus,
 #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons .google-cal-button > a:hover,
 #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons .google-cal-button > a:focus,
-#booked-profile-page input[type=submit]:hover,
-#booked-profile-page input[type=submit]:focus,
-#booked-profile-page input[type=submit].button-primary:hover,
-#booked-profile-page input[type=submit].button-primary:focus,
+#booked-profile-page input[type="submit"]:hover,
+#booked-profile-page input[type="submit"]:focus,
+#booked-profile-page input[type="submit"].button-primary:hover,
+#booked-profile-page input[type="submit"].button-primary:focus,
 #booked-profile-page button:hover,
 #booked-profile-page button:focus,
-.booked-list-view input[type=submit]:hover,
-.booked-list-view input[type=submit]:focus,
-.booked-list-view input[type=submit].button-primary:hover,
-.booked-list-view input[type=submit].button-primary:focus,
+.booked-list-view input[type="submit"]:hover,
+.booked-list-view input[type="submit"]:focus,
+.booked-list-view input[type="submit"].button-primary:hover,
+.booked-list-view input[type="submit"].button-primary:focus,
 .booked-list-view button:hover,
 .booked-list-view button:focus,
-table.booked-calendar input[type=submit]:hover,
-table.booked-calendar input[type=submit]:focus,
-table.booked-calendar input[type=submit].button-primary:hover,
-table.booked-calendar input[type=submit].button-primary:focus,
+table.booked-calendar input[type="submit"]:hover,
+table.booked-calendar input[type="submit"]:focus,
+table.booked-calendar input[type="submit"].button-primary:hover,
+table.booked-calendar input[type="submit"].button-primary:focus,
 table.booked-calendar button:hover,
 table.booked-calendar button:focus,
-.booked-modal input[type=submit]:hover,
-.booked-modal input[type=submit]:focus,
-.booked-modal input[type=submit].button-primary:hover,
-.booked-modal input[type=submit].button-primary:focus,
+.booked-modal input[type="submit"]:hover,
+.booked-modal input[type="submit"]:focus,
+.booked-modal input[type="submit"].button-primary:hover,
+.booked-modal input[type="submit"].button-primary:focus,
 .booked-modal button:hover,
 .booked-modal button:focus {
   color: var(--theme-color-inverse_link);
@@ -140,12 +137,12 @@ table.booked-calendar button:focus,
   background-color: var(--theme-color-text_hover);
 }
 
-body #booked-profile-page input[type=submit].button-primary {
+body #booked-profile-page input[type="submit"].button-primary {
   border-color: var(--theme-color-text_link3) !important;
   background: var(--theme-color-text_link3) !important;
 }
 
-body #booked-profile-page input[type=submit].button-primary:hover {
+body #booked-profile-page input[type="submit"].button-primary:hover {
   border-color: var(--theme-color-text_hover3) !important;
   background: var(--theme-color-text_hover3) !important;
 }
@@ -156,6 +153,7 @@ body #booked-profile-page .booked-profile-appt-list .appt-block .cancel {
   border-color: var(--theme-color-text_dark) !important;
   background: var(--theme-color-text_dark) !important;
   -webkit-transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease !important;
+  -ms-transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease !important;
   transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease !important;
 }
 body #booked-profile-page .booked-profile-appt-list .appt-block .cancel:hover {
@@ -164,20 +162,20 @@ body #booked-profile-page .booked-profile-appt-list .appt-block .cancel:hover {
   background: var(--theme-color-text_link3) !important;
 }
 
-body #booked-profile-page input[type=submit],
-body #booked-profile-page input[type=submit].button-primary {
+body #booked-profile-page input[type="submit"],
+body #booked-profile-page input[type="submit"].button-primary {
   font-size: 15px !important;
   line-height: 20px !important;
   padding: 14px 50px !important;
 }
 
 body #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons {
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 body #booked-profile-page .appt-block .booked-cal-buttons .google-cal-button.addeventatc,
@@ -186,6 +184,8 @@ body #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-butt
   font-size: 15px !important;
   line-height: 20px !important;
   padding: 10px 44px !important;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   border: none !important;
   float: none;
@@ -204,6 +204,7 @@ body #booked-profile-page .appt-block .booked-cal-buttons .google-cal-button.add
   border-color: var(--theme-color-text_link3) !important;
   background: var(--theme-color-text_link3) !important;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 body #booked-profile-page .appt-block .booked-cal-buttons .google-cal-button.addeventatc:hover {
@@ -217,6 +218,8 @@ body #booked-profile-page .appt-block .booked-cal-buttons .google-cal-button.add
 body #booked-profile-page .appt-block .booked-cal-buttons .google-cal-button.addeventatc .addeventatc_dropdown {
   margin-top: 0;
   border: none;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   overflow: hidden;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -229,9 +232,9 @@ body #booked-profile-page h4:last-child {
 }
 
 /* Text fields */
-body #booked-page-form input[type=email],
-body #booked-page-form input[type=text],
-body #booked-page-form input[type=password],
+body #booked-page-form input[type="email"],
+body #booked-page-form input[type="text"],
+body #booked-page-form input[type="password"],
 body #booked-page-form textarea,
 .booked-upload-wrap,
 .booked-upload-wrap input {
@@ -240,12 +243,12 @@ body #booked-page-form textarea,
   background-color: var(--theme-color-input_bg_color);
 }
 
-body #booked-page-form input[type=email]:focus,
-body #booked-page-form input[type=email].filled,
-body #booked-page-form input[type=text]:focus,
-body #booked-page-form input[type=text].filled,
-body #booked-page-form input[type=password]:focus,
-body #booked-page-form input[type=password].filled,
+body #booked-page-form input[type="email"]:focus,
+body #booked-page-form input[type="email"].filled,
+body #booked-page-form input[type="text"]:focus,
+body #booked-page-form input[type="text"].filled,
+body #booked-page-form input[type="password"]:focus,
+body #booked-page-form input[type="password"].filled,
 body #booked-page-form textarea:focus,
 body #booked-page-form textarea.filled,
 .booked-upload-wrap:hover,
@@ -283,6 +286,7 @@ body table.booked-calendar tr td {
   border-style: solid !important;
   background-color: transparent !important;
   -webkit-transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -310,8 +314,11 @@ body table.booked-calendar td .date .number {
   width: auto;
   height: auto;
   line-height: normal;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   -webkit-transition: none;
+  -ms-transition: none;
   transition: none;
 }
 
@@ -374,6 +381,7 @@ table.booked-calendar thead tr th {
 table.booked-calendar thead th i {
   color: var(--theme-color-inverse_link) !important;
   -webkit-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -396,7 +404,7 @@ body table.booked-calendar th .page-right:hover {
 
 body table.booked-calendar th .page-left:hover i,
 body table.booked-calendar th .page-right:hover i {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 body table.booked-calendar thead th .page-right i:before,
@@ -405,11 +413,11 @@ body table.booked-calendar thead th .page-left i:before {
 }
 
 body table.booked-calendar thead th .page-left i:before {
-  content: "\ea07";
+  content: '\EA07';
 }
 
 body table.booked-calendar thead th .page-right i:before {
-  content: "\e9df";
+  content: '\E9DF';
 }
 
 body table.booked-calendar th .monthName {
@@ -422,12 +430,13 @@ body table.booked-calendar th .monthName {
 table.booked-calendar thead th .monthName a {
   color: var(--theme-color-inverse_link);
   -webkit-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
 table.booked-calendar thead th .monthName a:hover {
   color: var(--theme-color-inverse_link);
-  opacity: 0.8;
+  opacity: .8;
 }
 
 table.booked-calendar tbody tr {
@@ -448,6 +457,7 @@ table.booked-calendar tbody tr td:not(.prev-date) .date {
   color: var(--theme-color-text_dark) !important;
   background-color: transparent !important;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -481,6 +491,8 @@ body table.booked-calendar .booked-appt-list {
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
   box-shadow: none;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   border: 20px solid var(--theme-color-text_link3);
 }
@@ -520,12 +532,12 @@ body .booked-calendar-wrap {
 }
 body .booked-calendar-wrap .booked-calendar .booked-appt-list .timeslot {
   padding: 16px 0;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   background: var(--theme-color-bg_color);
   border-top: none;
 }
@@ -560,7 +572,7 @@ body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-time i:before {
   font-size: 18px;
   font-weight: 400;
   font-family: "fontello";
-  content: "\ea00";
+  content: '\EA00';
   margin-right: 5px;
 }
 body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-time,
@@ -617,7 +629,7 @@ body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button[d
 .booked-calendar-wrap.large table.booked-calendar tr:not(.entryBlock) td:not(.prev-date):after,
 .booked-calendar-wrap.large table.booked-calendar tr.week td.active:not(.prev-date):after,
 .booked-calendar-wrap.large table.booked-calendar tr td.today:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
@@ -625,6 +637,7 @@ body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button[d
   width: 100%;
   height: 1px;
   -webkit-transition: background-color 0.15s ease-out;
+  -ms-transition: background-color 0.15s ease-out;
   transition: background-color 0.15s ease-out;
 }
 .booked-calendar-wrap.large table.booked-calendar tr:not(.entryBlock) td:not(.prev-date):before,
@@ -650,6 +663,7 @@ body .booked-calendar-wrap .booked-appt-list .timeslot .timeslot-people button[d
 .booked-calendar-wrap.large table.booked-calendar tr:not(.entryBlock) td:not(.prev-date):before,
 .booked-calendar-wrap.large table.booked-calendar tr:not(.entryBlock) td:not(.prev-date):after {
   -webkit-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
@@ -684,16 +698,17 @@ body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people {
   float: none;
 }
 body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button {
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
 }
 body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button .button-timeslot {
@@ -705,7 +720,7 @@ body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people bu
 }
 body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button .button-timeslot:before {
   font-family: "fontello";
-  content: "\ea00";
+  content: '\EA00';
   font-size: 14px;
   font-weight: 400;
   margin-right: 8px;
@@ -719,7 +734,7 @@ body .booked-calendar-wrap.small .booked-appt-list .timeslot.timeslot-unavailabl
 body .booked-calendar-wrap.small .booked-appt-list .timeslot button .spots-available {
   padding: 2px 0 3px;
   color: var(--theme-color-inverse_link);
-  opacity: 0.8;
+  opacity: .8;
 }
 body .booked-calendar-wrap.small table.booked-calendar {
   border: none !important;
@@ -732,7 +747,7 @@ body .booked-calendar-wrap.small table.booked-calendar tbody tr {
 }
 body .booked-calendar-wrap.small table.booked-calendar tbody:before {
   line-height: 1em;
-  content: "‌";
+  content: '\200C';
   display: block;
 }
 body .booked-calendar-wrap.small table.booked-calendar thead .calendarSavingState {
@@ -753,6 +768,7 @@ body .booked-calendar-wrap.small table.booked-calendar td .date {
 body .booked-calendar-wrap.small table.booked-calendar td .date,
 body .booked-calendar-wrap.small table.booked-calendar .date span {
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 body .booked-calendar-wrap.small table.booked-calendar td.booked .date,
@@ -807,19 +823,18 @@ body .booked-calendar-wrap.small table.booked-calendar thead tr th {
   color: var(--theme-color-alter_dark) !important;
 }
 body .booked-calendar-wrap.small table.booked-calendar th .monthName {
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   height: 1.2em;
   font-size: 24px;
   line-height: 1em;
@@ -851,7 +866,7 @@ body .booked-calendar-wrap.small table.booked-calendar thead tr.days th:first-ch
   background-color: var(--theme-color-bg_color) !important;
 }
 body .booked-calendar-wrap.small table.booked-calendar thead tr.days th:first-child:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 0;
   top: 0;
@@ -864,7 +879,7 @@ body .booked-calendar-wrap.small table.booked-calendar thead tr.days th:last-chi
   background-color: var(--theme-color-bg_color) !important;
 }
 body .booked-calendar-wrap.small table.booked-calendar thead tr.days th:last-child:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 0;
   top: 0;
@@ -898,33 +913,35 @@ body .booked-calendar-wrap.small table.booked-calendar thead th .page-right:hove
   right: 20px;
 }
 body .booked-calendar-wrap.small table.booked-calendar thead th .page-right i:before {
-  content: "\e9e6";
+  content: '\E9E6';
 }
 body .booked-calendar-wrap.small table.booked-calendar thead th .page-left i:before {
-  content: "\e9e5";
+  content: '\E9E5';
 }
 body .booked-calendar-wrap.small table.booked-calendar td .date .number {
   font-size: 14px;
   font-weight: 400;
   -webkit-transform: none;
+  -ms-transform: none;
   transform: none;
 }
 body .booked-calendar-wrap.small table.booked-calendar tr.week td.active .date .number {
   -webkit-transform: none;
+  -ms-transform: none;
   transform: none;
 }
 
 /* Calendar Small in Sidebar */
-[class*=scheme_].sidebar .booked-calendar-wrap.small {
+[class*="scheme_"].sidebar .booked-calendar-wrap.small {
   margin-top: -1rem;
   padding: 0 !important;
   background-color: transparent !important;
 }
-[class*=scheme_].sidebar .booked-calendar-wrap.small table.booked-calendar thead tr:not(.days) th {
+[class*="scheme_"].sidebar .booked-calendar-wrap.small table.booked-calendar thead tr:not(.days) th {
   padding: 0 !important;
 }
-[class*=scheme_].sidebar .booked-calendar-wrap.small table.booked-calendar thead th .page-right,
-[class*=scheme_].sidebar .booked-calendar-wrap.small table.booked-calendar thead th .page-left {
+[class*="scheme_"].sidebar .booked-calendar-wrap.small table.booked-calendar thead th .page-right,
+[class*="scheme_"].sidebar .booked-calendar-wrap.small table.booked-calendar thead th .page-left {
   margin-top: -4px;
 }
 
@@ -956,10 +973,10 @@ body .booked-form .field .checkbox-radio-block label:before {
   line-height: 15px;
 }
 body .booked-form .field select,
-body .booked-form .field input[type=text],
-body .booked-form .field input[type=password],
-body .booked-form .field input[type=tel],
-body .booked-form .field input[type=email],
+body .booked-form .field input[type="text"],
+body .booked-form .field input[type="password"],
+body .booked-form .field input[type="tel"],
+body .booked-form .field input[type="email"],
 body .booked-form .field textarea {
   width: 100%;
   float: none;
@@ -969,6 +986,8 @@ body .booked-form .field textarea {
   margin: 0;
   padding: 13px 0;
   border: none;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   color: var(--theme-color-input_text);
   background-color: var(--theme-color-input_bg_color);
@@ -976,14 +995,14 @@ body .booked-form .field textarea {
 }
 body .booked-form .field select:focus,
 body .booked-form .field select.filled,
-body .booked-form .field input[type=text]:focus,
-body .booked-form .field input[type=text].filled,
-body .booked-form .field input[type=password]:focus,
-body .booked-form .field input[type=password].filled,
-body .booked-form .field input[type=tel]:focus,
-body .booked-form .field input[type=tel].filled,
-body .booked-form .field input[type=email]:focus,
-body .booked-form .field input[type=email].filled,
+body .booked-form .field input[type="text"]:focus,
+body .booked-form .field input[type="text"].filled,
+body .booked-form .field input[type="password"]:focus,
+body .booked-form .field input[type="password"].filled,
+body .booked-form .field input[type="tel"]:focus,
+body .booked-form .field input[type="tel"].filled,
+body .booked-form .field input[type="email"]:focus,
+body .booked-form .field input[type="email"].filled,
 body .booked-form .field textarea:focus,
 body .booked-form .field textarea.filled {
   color: var(--theme-color-input_dark);
@@ -1000,6 +1019,8 @@ body .booked-form .cf-block .paid-variations {
 }
 body .booked-form .booked-appointments {
   margin: 0 0 5px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   color: var(--theme-color-text);
   background-color: var(--theme-color-bg_color) !important;
@@ -1016,7 +1037,7 @@ body .booked-form .booked-appointments p.appointment-info i {
 }
 body .booked-form .booked-appointments p.appointment-info i:before {
   font-family: "fontello";
-  content: "\e9b7";
+  content: '\E9B7';
   color: var(--theme-color-text_link3);
 }
 
@@ -1029,6 +1050,8 @@ body .booked-modal .bm-window {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
@@ -1050,6 +1073,8 @@ body .booked-modal .bm-window p.calendar-name {
 }
 body .booked-modal .bm-window p.booked-title-bar {
   margin: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   color: var(--theme-color-alter_dark) !important;
   background-color: var(--theme-color-alter_bg_color) !important;
@@ -1066,12 +1091,12 @@ body .booked-modal .bm-window .close {
   top: 18px;
   right: 14px;
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
+  -ms-transition: -ms-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 body .booked-modal .bm-window .close:hover {
   -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 body .booked-modal .bm-window .close i {
@@ -1080,10 +1105,12 @@ body .booked-modal .bm-window .close i {
 body .booked-modal .bm-window .close i:before {
   font-weight: 400;
   font-family: "fontello";
-  content: "\e9e1";
+  content: '\E9E1';
 }
 body .booked-modal .bm-window .booked-scrollable {
   padding: 25px 30px 25px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   color: var(--theme-color-text);
   background-color: var(--theme-color-bg_color) !important;
@@ -1094,12 +1121,13 @@ body .booked-modal .bm-window .booked-scrollable em {
 }
 body .booked-modal .bm-window .field:last-child {
   width: 100%;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: space-between;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1109,12 +1137,12 @@ body .booked-modal .bm-window .field:last-child:after {
 body .booked-modal .bm-window .button.button-primary,
 body .booked-modal .bm-window .button.booked-forgot-goback,
 body .booked-modal .bm-window .button.cancel {
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   font-size: 15px;
   line-height: 21px;
@@ -1133,7 +1161,7 @@ body .booked-modal .bm-window .button.cancel:hover {
   background: var(--theme-color-text_hover3) !important;
   border-color: var(--theme-color-text_hover3) !important;
 }
-body .booked-modal .bm-window input[type=submit].button:disabled {
+body .booked-modal .bm-window input[type="submit"].button:disabled {
   -webkit-box-shadow: none !important;
   -ms-box-shadow: none !important;
   box-shadow: none !important;
@@ -1146,15 +1174,15 @@ body .booked-modal .bm-window #customerChoices {
   padding: 5px 0 18px;
   margin: 0;
   margin-bottom: 14px;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  -webkit-box-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   background-color: transparent;
   border-color: var(--theme-color-bd_color);
 }
@@ -1250,6 +1278,8 @@ body #booked-profile-page .booked-profile-appt-list .appt-block.approved > i.boo
 }
 body #booked-profile-page .booked-profile-appt-list .appt-block .status-block {
   padding: 6px 16px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   font-size: 15px;
   line-height: 20px;
@@ -1292,15 +1322,17 @@ body #booked-profile-page div.booked-user-avatar {
   height: 50px;
 }
 body #booked-profile-page div.booked-user-avatar img {
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 body #booked-profile-page .booked-user {
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 body #booked-profile-page .booked-user * {
   line-height: 1.3em;
@@ -1345,6 +1377,8 @@ body #booked-profile-page .booked-tabs li:not(.edit-button) + li {
 body #booked-profile-page div.booked-tab-content {
   margin-top: -1px !important;
   border-top: 1px solid;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   background-color: var(--theme-color-alter_bg_color);
   border-color: var(--theme-color-alter_bd_color);
@@ -1363,7 +1397,7 @@ body #booked-profile-page #loginform .login-remember label {
   font-weight: 400 !important;
   color: var(--theme-color-text) !important;
 }
-body #booked-profile-page #loginform .login-remember label input[type=checkbox] {
+body #booked-profile-page #loginform .login-remember label input[type="checkbox"] {
   position: static !important;
   clip: auto;
   width: 0;
@@ -1371,8 +1405,8 @@ body #booked-profile-page #loginform .login-remember label input[type=checkbox] 
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-body #booked-profile-page #loginform .login-remember label input[type=checkbox]:before {
-  content: "";
+body #booked-profile-page #loginform .login-remember label input[type="checkbox"]:before {
+  content: '';
   font-family: "fontello";
   display: block;
   text-align: center;
@@ -1388,26 +1422,29 @@ body #booked-profile-page #loginform .login-remember label input[type=checkbox]:
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   color: var(--theme-color-text_dark);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-body #booked-profile-page #loginform .login-remember label input[type=checkbox]:checked:before {
-  content: "\e9f6";
+body #booked-profile-page #loginform .login-remember label input[type="checkbox"]:checked:before {
+  content: '\e9f6';
 }
-body #booked-profile-page #loginform .login-remember label:hover input[type=checkbox]:before {
+body #booked-profile-page #loginform .login-remember label:hover input[type="checkbox"]:before {
   border-color: var(--theme-color-text_dark) !important;
 }
 
 .ua_ie #booked-profile-page #loginform .login-remember label {
   padding-left: 0;
 }
-.ua_ie #booked-profile-page #loginform .login-remember input[type=checkbox] {
+.ua_ie #booked-profile-page #loginform .login-remember input[type="checkbox"] {
   width: auto;
 }
-.ua_ie #booked-profile-page #loginform .login-remember input[type=checkbox]:before {
+.ua_ie #booked-profile-page #loginform .login-remember input[type="checkbox"]:before {
   display: none;
 }
 
@@ -1423,21 +1460,21 @@ body #booked-profile-page #loginform .login-remember label:hover input[type=chec
 #profile-edit #booked-page-form label {
   font-weight: 500;
 }
-#booked-page-form #profile-register input[type=text],
-#booked-page-form #profile-register input[type=password],
-#booked-page-form #profile-register input[type=email],
+#booked-page-form #profile-register input[type="text"],
+#booked-page-form #profile-register input[type="password"],
+#booked-page-form #profile-register input[type="email"],
 #booked-page-form #profile-register textarea,
-#booked-page-form #profile-login input[type=text],
-#booked-page-form #profile-login input[type=password],
-#booked-page-form #profile-login input[type=email],
+#booked-page-form #profile-login input[type="text"],
+#booked-page-form #profile-login input[type="password"],
+#booked-page-form #profile-login input[type="email"],
 #booked-page-form #profile-login textarea,
-#booked-page-form #profile-forgot input[type=text],
-#booked-page-form #profile-forgot input[type=password],
-#booked-page-form #profile-forgot input[type=email],
+#booked-page-form #profile-forgot input[type="text"],
+#booked-page-form #profile-forgot input[type="password"],
+#booked-page-form #profile-forgot input[type="email"],
 #booked-page-form #profile-forgot textarea,
-#profile-edit #booked-page-form input[type=text],
-#profile-edit #booked-page-form input[type=password],
-#profile-edit #booked-page-form input[type=email],
+#profile-edit #booked-page-form input[type="text"],
+#profile-edit #booked-page-form input[type="password"],
+#profile-edit #booked-page-form input[type="email"],
 #profile-edit #booked-page-form textarea {
   border: none;
   border-bottom: 1px solid;
@@ -1469,8 +1506,11 @@ body .booked-upload-wrap,
 body .booked-upload-wrap input {
   background: var(--theme-color-input_bg_color);
   border-color: var(--theme-color-input_bd_color);
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -1492,6 +1532,8 @@ body #booked-plugin-page p.booked-form-notice,
 body #booked-profile-page p.booked-form-notice {
   border-color: var(--theme-color-text_link3);
   background-color: transparent;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   margin: 0 0 20px;
   padding: 6px 12px;
@@ -1529,6 +1571,8 @@ body .booked-list-view button:hover {
 }
 
 body #ui-datepicker-div.booked_custom_date_picker {
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
 }
 body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header .ui-datepicker-title {
@@ -1537,7 +1581,7 @@ body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header .ui-date
   font-weight: 700;
   padding: 10px 0;
 }
-body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header > a[class*=ui-datepicker] {
+body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header > a[class*="ui-datepicker"] {
   top: 6px;
   font-size: 11px;
 }
@@ -1546,15 +1590,19 @@ body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header > a:befo
   font-weight: 400;
 }
 body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header > a.ui-datepicker-prev:before {
-  content: "\e9e5";
+  content: '\E9E5';
 }
 body #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header > a.ui-datepicker-next:before {
-  content: "\e9e6";
+  content: '\E9E6';
 }
 body #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th {
   background: var(--theme-color-alter_bg_color) !important;
   color: var(--theme-color-alter_dark) !important;
 }
 body #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a {
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
 }
+
+/*# sourceMappingURL=booked.css.map */

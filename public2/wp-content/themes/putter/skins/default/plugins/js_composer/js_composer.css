@@ -5,9 +5,9 @@
   min-height: 0;
 }
 
-.vc_col-sm-12[class*=vc_col-lg-],
-.vc_col-sm-12[class*=vc_col-md-],
-.vc_col-sm-12[class*=vc_col-xs-] {
+.vc_col-sm-12[class*="vc_col-lg-"],
+.vc_col-sm-12[class*="vc_col-md-"],
+.vc_col-sm-12[class*="vc_col-xs-"] {
   min-height: 1px;
 }
 
@@ -34,10 +34,10 @@
   margin: 0;
 }
 
-[class*=scheme_].vc_section,
-[class*=scheme_].wpb_row,
-[class*=scheme_].wpb_column > .vc_column-inner > .wpb_wrapper,
-[class*=scheme_].wpb_text_column {
+[class*="scheme_"].vc_section,
+[class*="scheme_"].wpb_row,
+[class*="scheme_"].wpb_column > .vc_column-inner > .wpb_wrapper,
+[class*="scheme_"].wpb_text_column {
   color: var(--theme-color-text);
 }
 
@@ -137,6 +137,7 @@
   line-height: 2.6667em;
   text-align: center;
   -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: var(--theme-color-inverse_link);
   background-color: var(--theme-color-text_dark);
@@ -148,10 +149,14 @@
 }
 
 .vc_tta.vc_tta-accordion.vc_tta-shape-rounded .vc_tta-panel-heading .vc_tta-controls-icon {
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
 }
 
 .vc_tta.vc_tta-accordion.vc_tta-shape-round .vc_tta-panel-heading .vc_tta-controls-icon {
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -169,6 +174,7 @@
   right: auto;
   width: 9px;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-width: 1px 0 0 0;
 }
@@ -178,6 +184,7 @@
   bottom: auto;
   border-width: 0 0 0 1px;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 9px;
 }
@@ -293,6 +300,7 @@
   left: auto;
   right: 0.6em;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -322,7 +330,7 @@
 }
 
 /* Text block after slider or video */
-.wpb_text_column[class*=scheme_]:not([class*=sc_extra_bg_]) {
+.wpb_text_column[class*="scheme_"]:not([class*="sc_extra_bg_"]) {
   padding: 2rem 2.4rem;
 }
 
@@ -339,3 +347,5 @@
 .wpb_gmaps_widget .wpb_wrapper {
   padding: 0;
 }
+
+/*# sourceMappingURL=js_composer.css.map */
