@@ -74,6 +74,7 @@
 	position: relative;
 	//margin-inline: calc(50% - 50vw);
 	img {
+		width: 100%;
 		aspect-ratio: 375 / 300;
 		object-fit: cover;
 	}
@@ -111,7 +112,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 12/16+rem;
-	max-width: 720/16+rem;
+	max-width: 960/16+rem;
 	margin-inline: auto;
 
 	color: #fff;
@@ -138,12 +139,13 @@
 	}
 }
 .cm-main-mv__title {
+	margin: 0;
 	font-weight: bold;
 	font-size: 24/16+rem;
 	line-height: (60/50);
 	color: #fff;
 	@include pc {
-		font-size: 50/16+rem;
+		font-size: 42/16+rem;
 	}
 }
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/

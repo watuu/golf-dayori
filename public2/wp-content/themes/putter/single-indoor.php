@@ -4,6 +4,8 @@
     <?php
         $settings = [
             'post_type' => get_post_type_object($post->post_type),
+            'eyecatch' => wp_get_attachment_image_src(get_post_thumbnail_id(), 'large'),
+            'eyecatch_src' => get_stylesheet_directory_uri(). '/assets/img/cm-main-mv-bg.webp',
             'area' => get_the_terms(null, 'area'),
             'area_middle' => get_field('中エリア'),
             'shops' => get_field('おすすめ練習場'),
@@ -15,10 +17,11 @@
             '記事監修者紹介' => get_field('記事監修者紹介'),
         ];
         $settings['shops_count'] = count($settings['shops']);
+        $settings['eyecatch_src'] = $settings['eyecatch'] ? array_shift($settings['eyecatch']): $settings['eyecatch_src'];
     ?>
     <div class="p-article">
         <div class="cm-main-mv">
-            <figure class="cm-main-mv__bg"><img src="<?= get_stylesheet_directory_uri() ?>/assets/img/cm-main-mv-bg.webp"/></figure>
+            <figure class="cm-main-mv__bg"><img src="<?= $settings['eyecatch_src'] ?>"/></figure>
             <div class="cm-main-mv__wrap">
                 <div class="l-container">
                     <div class="cm-main-mv__inner">
