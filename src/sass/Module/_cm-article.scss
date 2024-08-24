@@ -96,18 +96,22 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 8/16+rem;
-
+		img {
+			width: 3rem;
+			border: solid 1px black;
+			padding: 7%;
+		}
 	}
 	figcaption {
 		font-size: 12/16+rem;
 	}
 	@include pc {
 		grid-template-columns: repeat(6, 1fr);
-		figure {
-			img {
-				width: 43/16+rem;
-			}
-		}
+		//figure {
+		//	img {
+		//		width: 43/16+rem;
+		//	}
+		//}
 	}
 }
 .cm-article-shop__info {
