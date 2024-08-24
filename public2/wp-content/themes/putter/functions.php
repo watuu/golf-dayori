@@ -6,8 +6,8 @@
  * @since PUTTER 1.0
  */
 
-const THEME_SUPPORT_EYTCHATCH = ['post', 'indoor', 'outdoor'];
-const THEME_DISABLED_EDITOR = ['mst_shop', 'indoor', 'outdoor'];
+const THEME_SUPPORT_EYTCHATCH = ['post', 'indoor', 'outdoor', 'goods', 'other'];
+const THEME_DISABLED_EDITOR = ['mst_shop', 'mst_club', 'indoor', 'outdoor', 'goods', 'other'];
 const THEME_DISABLED_BLOCK_EDITOR = ['page', 'mw-wp-form'];
 const THEME_ENABLED_CLASSIC_EDITOR = [];
 const THEME_MEDIA_SIZES = [

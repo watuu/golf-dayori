@@ -6,17 +6,16 @@
             'post_type' => get_post_type_object($post->post_type),
             'eyecatch' => wp_get_attachment_image_src(get_post_thumbnail_id(), 'large'),
             'eyecatch_src' => get_stylesheet_directory_uri(). '/assets/img/cm-main-mv-bg.webp',
-            'area' => get_the_terms(null, 'area'),
-            'area_middle' => get_field('中エリア'),
-            'shops' => get_field('おすすめ練習場'),
-            'shops_count' => 0,
+            'heading' => get_field('見出し'),
+            'clubs' => get_field('おすすめクラブ'),
+            'clubs_count' => 0,
             '自由記述' => [
                 '見出し' => get_field('自由記述_見出し'),
                 '内容' => get_field('自由記述_内容'),
             ],
             '記事監修者紹介' => get_field('記事監修者紹介'),
         ];
-        $settings['shops_count'] = count($settings['shops']);
+        $settings['clubs_count'] = count($settings['clubs']);
         $settings['eyecatch_src'] = $settings['eyecatch'] ? array_shift($settings['eyecatch']): $settings['eyecatch_src'];
     ?>
     <div class="p-article">
@@ -47,14 +46,14 @@
                     </div>
                     <div class="cm-article-index__list">
                         <ol>
-                            <li><a href="#h1">1. <?= $settings['area_middle'] ?>のアウトドアゴルフ練習場<?= $settings['shops_count'] ?>選</a>
+                            <li><a href="#h1">1. <?= $settings['heading'] ?>のおすすめ<?= $settings['clubs_count'] ?>選</a>
                                 <ol>
-                                    <?php foreach ($settings['shops'] as $k => $shop): ?>
-                                        <li><a href="#h1-<?= $k + 1 ?>">1-<?= $k + 1 ?>. <?= get_the_title($shop['練習場']) ?></a></li>
+                                    <?php foreach ($settings['clubs'] as $k => $club): ?>
+                                        <li><a href="#h1-<?= $k + 1 ?>">1-<?= $k + 1 ?>. <?= get_the_title($club['クラブ']) ?></a></li>
                                     <?php endforeach; ?>
                                 </ol>
                             </li>
-                            <li><a href="#h2">2. 店舗比較一覧</a></li>
+                            <li><a href="#h2">2. <?= $settings['heading'] ?>比較一覧</a></li>
                             <li><a href="#h3">3. <?= $settings['自由記述']['見出し'] ?></a></li>
                             <li><a href="#h4">4. まとめ</a></li>
                             <?php if ($settings['記事監修者紹介']): ?>
@@ -65,33 +64,33 @@
                 </div>
                 <div class="cm-article-shops">
                     <div class="cm-article-shops__head" id="h1">
-                        <h2 class="c-heading-bar">1. <?= $settings['area_middle'] ?>のアウトドアゴルフ練習場<?= $settings['shops_count'] ?>選</h2>
+                        <h2 class="c-heading-bar">1. <?= $settings['heading'] ?>のおすすめ<?= $settings['clubs_count'] ?>選</h2>
                     </div>
                     <div class="cm-article-shops__list">
-                        <?php foreach ($settings['shops'] as $k => $shop): ?>
-                            <?php get_template_part('template/loop-shop', null, ['shop_id' => $shop['練習場'], 'indoor' => false, 'cnt' => $k+1]) ?>
+                        <?php foreach ($settings['clubs'] as $k => $club): ?>
+                            <?php get_template_part('template/loop-club', null, ['post_id' => $club['クラブ'], 'cnt' => $k+1]) ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
                 <div class="cm-article-hikaku">
                     <div class="cm-article-hikaku__head" id="h2">
-                        <h2 class="c-heading-bar">2. 店舗比較一覧</h2>
+                        <h2 class="c-heading-bar">2. <?= $settings['heading'] ?>比較一覧</h2>
                     </div>
                     <div class="cm-article-hikaku__body">
                         <table class="cm-article-hikaku-table">
                             <thead class="cm-article-hikaku-table__head">
                             <tr>
-                                <th>店舗名</th>
-                                <td>営業時間</td>
-                                <td>駐車場</td>
-                                <td>料金</td>
-                                <td>打席数</td>
-                                <td>距離</td>
+                                <th>メーカー</th>
+                                <td>モデル</td>
+                                <td>価格</td>
+                                <td>長さ</td>
+                                <td>重量</td>
+                                <td>ロフト角</td>
                             </tr>
                             </thead>
                             <tbody class="cm-article-hikaku-table__body">
-                            <?php foreach ($settings['shops'] as $k => $shop): ?>
-                                <?php get_template_part('template/loop-shop-hikaku', null, ['shop_id' => $shop['練習場'], 'indoor' => false, 'cnt' => $k+1]) ?>
+                            <?php foreach ($settings['clubs'] as $k => $club): ?>
+                                <?php get_template_part('template/loop-club-hikaku', null, ['post_id' => $club['クラブ'], 'cnt' => $k+1]) ?>
                             <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -125,33 +124,7 @@
                 <?php endif; ?>
             </div>
         </div>
-<!--         <div class="p-article__related">
-            <div class="cm-article-list">
-                <div class="cm-article-list__head">
-                    <div class="c-heading c-heading--center c-heading--sub">
-                        <p class="c-heading__sub">Related Articles</p>
-                        <h2 class="c-heading__main">他おすすめ記事</h2>
-                    </div>
-                </div>
-                <div class="cm-article-list__body">
-                    <div class="c-card-article"><a class="c-card-article__link" href="#">
-                            <figure class="c-card-article__pic"><img src="<?= get_stylesheet_directory_uri() ?>/assets/img/600x450.webp" alt=""/></figure>
-                            <div class="c-card-article__meta"><span class="c-card-article__date">2024年5月1日</span>
-                                <h3 class="c-card-article__title">親譲りの無鉄砲で小供の時から損ばかりしている</h3>
-                            </div></a></div>
-                    <div class="c-card-article"><a class="c-card-article__link" href="#">
-                            <figure class="c-card-article__pic"><img src="<?= get_stylesheet_directory_uri() ?>/assets/img/600x450.webp" alt=""/></figure>
-                            <div class="c-card-article__meta"><span class="c-card-article__date">2024年5月1日</span>
-                                <h3 class="c-card-article__title">親譲りの無鉄砲で小供の時から損ばかりしている</h3>
-                            </div></a></div>
-                    <div class="c-card-article"><a class="c-card-article__link" href="#">
-                            <figure class="c-card-article__pic"><img src="<?= get_stylesheet_directory_uri() ?>/assets/img/600x450.webp" alt=""/></figure>
-                            <div class="c-card-article__meta"><span class="c-card-article__date">2024年5月1日</span>
-                                <h3 class="c-card-article__title">親譲りの無鉄砲で小供の時から損ばかりしている</h3>
-                            </div></a></div>
-                </div>
-            </div>
-        </div> -->
+
     </div>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

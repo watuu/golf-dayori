@@ -69,7 +69,7 @@
                     </div>
                     <div class="cm-article-shops__list">
                         <?php foreach ($settings['shops'] as $k => $shop): ?>
-                            <?php get_template_part('template/loop-shop', null, ['shop_id' => $shop['練習場'], 'cnt' => $k+1]) ?>
+                            <?php get_template_part('template/loop-shop', null, ['shop_id' => $shop['練習場'], 'indoor' => true, 'cnt' => $k+1]) ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             </thead>
                             <tbody class="cm-article-hikaku-table__body">
                             <?php foreach ($settings['shops'] as $k => $shop): ?>
-                                <?php get_template_part('template/loop-shop-hikaku', null, ['shop_id' => $shop['練習場'], 'cnt' => $k+1]) ?>
+                                <?php get_template_part('template/loop-shop-hikaku', null, ['shop_id' => $shop['練習場'], 'indoor' => true, 'cnt' => $k+1]) ?>
                             <?php endforeach; ?>
                             </tbody>
                         </table>

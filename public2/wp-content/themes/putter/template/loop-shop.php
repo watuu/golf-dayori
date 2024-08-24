@@ -2,6 +2,7 @@
 $settings = [
     'id' => $args['shop_id'],
     'cnt' => $args['cnt'],
+    'indoor' => $args['indoor'],
     'pic' => theme_get_picture(get_field('画像', $args['shop_id']), 'shop'),
     '設備' => get_field('設備', $args['shop_id']),
 ];
@@ -72,12 +73,12 @@ $facility_images = array(
             <dd><?= get_field('基本情報_住所', $settings['id']) ?></dd>
         </dl>
         <dl>
-            <dt>電話番号</dt>
+            <dt>お問い合わせ先</dt>
             <dd><?= get_field('基本情報_電話番号', $settings['id']) ?></dd>
         </dl>
         <dl>
             <dt>営業時間</dt>
-            <dd><?= get_field('基本情報_営業時間', $settings['id']) ?></dd>
+            <dd><?= nl2br(get_field('基本情報_営業時間', $settings['id'])) ?></dd>
         </dl>
         <?php if (get_field('基本情報_URL', $settings['id'])): ?>
         <dl>
@@ -97,10 +98,12 @@ $facility_images = array(
             <dt>打席数</dt>
             <dd><?= get_field('基本情報_打席数', $settings['id']) ?></dd>
         </dl>
+        <?php if ($settings['indoor']): ?>
         <dl>
             <dt>シミュレーター</dt>
             <dd><?= get_field('基本情報_シミュレーター', $settings['id']) ?></dd>
         </dl>
+        <?php endif; ?>
         <?php if (get_field('基本情報_距離', $settings['id'])): ?>
         <dl>
             <dt>距離</dt>

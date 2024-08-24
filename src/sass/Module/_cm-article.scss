@@ -128,6 +128,9 @@
 		font-weight: bold;
 		background: var(--color-accent);
 		color: #fff;
+		small {
+			font-size: 75%;
+		}
 	}
 	dd {
 		padding: 8/16+rem;
@@ -141,6 +144,9 @@
 		}
 		dt {
 			width: 130/16+rem;
+			.cm-article-shop--club & {
+				width: 240/16+rem;
+			}
 		}
 	}
 }
