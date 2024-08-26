@@ -13,6 +13,7 @@
                 '見出し' => get_field('自由記述_見出し'),
                 '内容' => get_field('自由記述_内容'),
             ],
+            'まとめ' => get_field('まとめ'),
             '記事監修者紹介' => get_field('記事監修者紹介'),
         ];
         $settings['clubs_count'] = count($settings['clubs']);
@@ -40,31 +41,10 @@
                 <div class="cm-article-editor">
                     <?= get_field('概要') ?>
                 </div>
-                <div class="cm-article-index">
-                    <div class="cm-article-index__head">
-                        <p>目次</p>
-                    </div>
-                    <div class="cm-article-index__list">
-                        <ol>
-                            <li><a href="#h1">1. <?= $settings['heading'] ?>のおすすめ<?= $settings['clubs_count'] ?>選</a>
-                                <ol>
-                                    <?php foreach ($settings['clubs'] as $k => $club): ?>
-                                        <li><a href="#h1-<?= $k + 1 ?>">1-<?= $k + 1 ?>. <?= get_the_title($club['クラブ']) ?></a></li>
-                                    <?php endforeach; ?>
-                                </ol>
-                            </li>
-                            <li><a href="#h2">2. <?= $settings['heading'] ?>比較一覧</a></li>
-                            <li><a href="#h3">3. <?= $settings['自由記述']['見出し'] ?></a></li>
-                            <li><a href="#h4">4. まとめ</a></li>
-                            <?php if ($settings['記事監修者紹介']): ?>
-                            <li><a href="#h5">5. 記事監修者紹介</a></li>
-                            <?php endif; ?>
-                        </ol>
-                    </div>
-                </div>
+                <?php the_content(); ?>
                 <div class="cm-article-shops">
-                    <div class="cm-article-shops__head" id="h1">
-                        <h2 class="c-heading-bar">1. <?= $settings['heading'] ?>のおすすめ<?= $settings['clubs_count'] ?>選</h2>
+                    <div class="cm-article-shops__head" id="i-club">
+                        <h2 class="c-heading-bar"><?= $settings['heading'] ?>のおすすめ<?= $settings['clubs_count'] ?>選</h2>
                     </div>
                     <div class="cm-article-shops__list">
                         <?php foreach ($settings['clubs'] as $k => $club): ?>
@@ -73,8 +53,8 @@
                     </div>
                 </div>
                 <div class="cm-article-hikaku">
-                    <div class="cm-article-hikaku__head" id="h2">
-                        <h2 class="c-heading-bar">2. <?= $settings['heading'] ?>比較一覧</h2>
+                    <div class="cm-article-hikaku__head" id="i-compare">
+                        <h2 class="c-heading-bar"><?= $settings['heading'] ?>比較一覧</h2>
                     </div>
                     <div class="cm-article-hikaku__body">
                         <table class="cm-article-hikaku-table">
@@ -96,31 +76,25 @@
                         </table>
                     </div>
                 </div>
-                <div class="cm-article-block">
-                    <div class="cm-article-block__head" id="h3">
-                        <h2 class="c-heading-bar">3. <?= $settings['自由記述']['見出し'] ?></h2>
+                <?php if ($settings['まとめ']): ?>
+                    <div class="cm-article-matome">
+                        <div class="cm-article-matome__head" id="i-matom">
+                            <h2 class="c-heading-bar">まとめ</h2>
+                        </div>
+                        <div class="cm-article-matome__body">
+                            <?= get_field('まとめ') ?>
+                        </div>
                     </div>
-                    <div class="cm-article-block__body">
-                        <?= $settings['自由記述']['内容'] ?>
-                    </div>
-                </div>
-                <div class="cm-article-matome">
-                    <div class="cm-article-matome__head" id="h4">
-                        <h2 class="c-heading-bar">4. まとめ</h2>
-                    </div>
-                    <div class="cm-article-matome__body">
-                        <?= get_field('まとめ') ?>
-                    </div>
-                </div>
+                <?php endif; ?>
                 <?php if ($settings['記事監修者紹介']): ?>
-                <div class="cm-article-block">
-                    <div class="cm-article-block__head" id="h5">
-                        <h2 class="c-heading-bar">5. 記事監修者紹介</h2>
+                    <div class="cm-article-block">
+                        <div class="cm-article-block__head" id="i-author">
+                            <h2 class="c-heading-bar">記事監修者紹介</h2>
+                        </div>
+                        <div class="cm-article-block__body">
+                            <?= get_field('記事監修者紹介') ?>
+                        </div>
                     </div>
-                    <div class="cm-article-block__body">
-                        <?= get_field('記事監修者紹介') ?>
-                    </div>
-                </div>
                 <?php endif; ?>
             </div>
         </div>

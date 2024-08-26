@@ -8,6 +8,42 @@ $settings = [
 ];
 
 // Define the associative array mapping facilities to images
+// $facility_images = array(
+//     'facility01' => '24hours2.svg',
+//     'facility02' => 'reception.svg',
+//     'facility03' => 'selfentry.svg',
+//     'facility04' => 'timegolf.svg',
+// 	'facility05' => 'rentalclub2.svg',
+//     'facility06' => 'rentalshoes.svg',
+//     'facility07' => 'gloves.svg',
+//     'facility08' => 'virtual2.svg',
+//     'facility09' => 'food.svg',
+//     'facility10' => 'coffee.svg',
+//     'facility11' => 'group.svg',
+//     'facility12' => 'visitor.svg',
+//     'facility13' => 'analysis.svg',
+//     'facility14' => 'measure.svg',
+//     'facility15' => 'lefthand.svg',
+//     'facility16' => 'putter.svg',
+//     'facility17' => 'bunker2.svg',
+//     'facility18' => 'golftee.svg',
+//     'facility19' => 'room.svg',
+//     'facility20' => 'vip.svg',
+//     'facility21' => 'angle.svg',
+//     'facility22' => 'WC.svg',
+//     'facility23' => 'changing.svg',
+//     'facility24' => 'golfclass.svg',
+//     'facility25' => 'golfschool.svg',
+//     'facility26' => 'expert.svg',
+//     'facility27' => 'golfshop.svg',
+//     'facility28' => 'timegolf.svg',
+//     'facility29' => 'rest.svg',
+//     'facility30' => 'lounge.svg',
+//     'facility31' => 'shower.svg',
+    
+// );
+
+
 $facility_images = array(
     'facility01' => '24hours.svg',
     'facility02' => 'manned.svg',
@@ -42,6 +78,9 @@ $facility_images = array(
     'facility31' => 'shower.svg',
     
 );
+
+
+
 
 ?>
 

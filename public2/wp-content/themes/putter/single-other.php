@@ -37,45 +37,26 @@
                 <div class="cm-article-editor">
                     <?= get_field('概要') ?>
                 </div>
-                <div class="cm-article-index">
-                    <div class="cm-article-index__head">
-                        <p>目次</p>
+                <?php the_content(); ?>
+                <?php if ($settings['まとめ']): ?>
+                    <div class="cm-article-matome">
+                        <div class="cm-article-matome__head" id="i-matom">
+                            <h2 class="c-heading-bar">まとめ</h2>
+                        </div>
+                        <div class="cm-article-matome__body">
+                            <?= get_field('まとめ') ?>
+                        </div>
                     </div>
-                    <div class="cm-article-index__list">
-                        <ol>
-                            <li><a href="#h1">1. <?= $settings['自由記述']['見出し'] ?></a></li>
-                            <li><a href="#h2">2. まとめ</a></li>
-                            <?php if ($settings['記事監修者紹介']): ?>
-                            <li><a href="#h3">3. 記事監修者紹介</a></li>
-                            <?php endif; ?>
-                        </ol>
-                    </div>
-                </div>
-                <div class="cm-article-block">
-                    <div class="cm-article-block__head" id="h1">
-                        <h2 class="c-heading-bar">3. <?= $settings['自由記述']['見出し'] ?></h2>
-                    </div>
-                    <div class="cm-article-block__body">
-                        <?= $settings['自由記述']['内容'] ?>
-                    </div>
-                </div>
-                <div class="cm-article-matome">
-                    <div class="cm-article-matome__head" id="h2">
-                        <h2 class="c-heading-bar">2. まとめ</h2>
-                    </div>
-                    <div class="cm-article-matome__body">
-                        <?= get_field('まとめ') ?>
-                    </div>
-                </div>
+                <?php endif; ?>
                 <?php if ($settings['記事監修者紹介']): ?>
-                <div class="cm-article-block">
-                    <div class="cm-article-block__head" id="h3">
-                        <h2 class="c-heading-bar">3. 記事監修者紹介</h2>
+                    <div class="cm-article-block">
+                        <div class="cm-article-block__head" id="i-author">
+                            <h2 class="c-heading-bar">記事監修者紹介</h2>
+                        </div>
+                        <div class="cm-article-block__body">
+                            <?= get_field('記事監修者紹介') ?>
+                        </div>
                     </div>
-                    <div class="cm-article-block__body">
-                        <?= get_field('記事監修者紹介') ?>
-                    </div>
-                </div>
                 <?php endif; ?>
             </div>
         </div>

@@ -2,7 +2,6 @@
     $settings = [
         'id' => $args['post_id'],
         'cnt' => $args['cnt'],
-        'indoor' => $args['indoor'],
         'pic' => theme_get_picture(get_field('画像', $args['post_id']), 'shop'),
     ];
     // var_dump($settings);
